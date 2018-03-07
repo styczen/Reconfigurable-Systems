@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1519806357">
+  <File Type="ROUTE-PWR-SUM" Name="led_button_power_summary_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="led_button_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="led_button_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="led_button_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="led_button_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-PB" Name="led_button_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="led_button_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="led_button_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="led_button_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="led_button_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="led_button_routed_error.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="led_button_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="led_button_postplace_pwropt.dcp"/>
+  <File Type="PLACE-CTRL" Name="led_button_control_sets_placed.rpt"/>
+  <File Type="OPT-DRC" Name="led_button_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="led_button_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PA-TCL" Name="led_button.tcl"/>
+  <File Type="PLACE-DCP" Name="led_button_placed.dcp"/>
+  <File Type="OPT-DCP" Name="led_button_opt.dcp"/>
+  <File Type="BG-BIT" Name="led_button.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="led_button_route_status.pb"/>
+  <File Type="BG-BIN" Name="led_button.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="led_button_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="led_button.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="led_button_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="led_button.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="led_button_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="led_button.nky"/>
+  <File Type="BITSTR-BMM" Name="led_button_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="led_button_clock_utilization_routed.rpt"/>
+  <File Type="BG-DRC" Name="led_button.drc"/>
+  <File Type="BITSTR-MMI" Name="led_button.mmi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="led_button_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BGN" Name="led_button.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="led_button.sysdef"/>
+  <File Type="BITSTR-LTX" Name="led_button.ltx"/>
+  <File Type="REPORTS-TCL" Name="led_button_reports.tcl"/>
+  <File Type="PWROPT-DCP" Name="led_button_pwropt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="led_button_postroute_physopt.dcp"/>
+  <File Type="ROUTE-STATUS" Name="led_button_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="led_button_power_routed.rpx"/>
+  <File Type="PLACE-IO" Name="led_button_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="led_button.vdi"/>
+  <File Type="PLACE-UTIL-PB" Name="led_button_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="led_button_utilization_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="led_button.hwdef"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/led_button.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="led_button"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/StyczenBartlomiej/ZYBO_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ZYBO_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1519806077"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

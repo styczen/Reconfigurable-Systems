@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Feb 28 09:25:58 2018
+# Process ID: 4999
+# Current directory: /home/lsriw/sr/StyczenBartlomiej/intro/intro.runs/impl_1
+# Command line: vivado -log led_button.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source led_button.tcl -notrace
+# Log file: /home/lsriw/sr/StyczenBartlomiej/intro/intro.runs/impl_1/led_button.vdi
+# Journal file: /home/lsriw/sr/StyczenBartlomiej/intro/intro.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source led_button.tcl -notrace
