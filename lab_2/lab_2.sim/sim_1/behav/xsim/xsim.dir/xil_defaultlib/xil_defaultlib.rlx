@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.srcs/sim_1/new/stimulate.v,1520775060,verilog,,C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.srcs/sim_1/new/tb_long_and_gate.v,,stimulate,,,,,,,,
+C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.srcs/sim_1/new/tb_long_and_gate.v,1520774868,verilog,,,,tb_long_and_gate,,,,,,,,
+C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.srcs/sources_1/new/and_gate.v,1520766277,verilog,,C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.srcs/sources_1/new/long_and_gate.v,,and_gate,,,,,,,,
+C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.srcs/sources_1/new/long_and_gate.v,1520767722,verilog,,C:/Users/Bartek/Systemy-Rekonfigurowalne/lab_2/lab_2.srcs/sim_1/new/stimulate.v,,long_and_gate,,,,,,,,
