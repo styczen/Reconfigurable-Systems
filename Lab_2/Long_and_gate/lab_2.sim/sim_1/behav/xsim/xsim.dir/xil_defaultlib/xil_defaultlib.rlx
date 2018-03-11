@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.sim/sim_1/behav/xsim/glbl.v,1520777108,verilog,,,,glbl,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.srcs/sim_1/new/stimulate.v,1520777108,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.srcs/sim_1/new/tb_long_and_gate.v,,stimulate,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.srcs/sim_1/new/tb_long_and_gate.v,1520777108,verilog,,,,tb_long_and_gate,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.srcs/sources_1/new/and_gate.v,1520777108,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.srcs/sources_1/new/long_and_gate.v,,and_gate,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.srcs/sources_1/new/long_and_gate.v,1520777108,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Long_and_gate/lab_2.srcs/sim_1/new/stimulate.v,,long_and_gate,,,,,,,,
