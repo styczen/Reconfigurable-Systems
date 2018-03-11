@@ -7,9 +7,9 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.stimulate(LENGTH=13)
+Compiling module xil_defaultlib.stimulate(LENGTH=7)
 Compiling module xil_defaultlib.and_gate
-Compiling module xil_defaultlib.long_and_gate(LENGTH=13)
+Compiling module xil_defaultlib.long_and_gate(LENGTH=7)
 Compiling module xil_defaultlib.tb_long_and_gate
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_long_and_gate_behav

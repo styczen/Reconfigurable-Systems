@@ -29,32 +29,16 @@ module tb_long_and_gate
     );
     wire [LENGTH-1:0] x;
     wire y;
-    // stimulate block, have to send LENGTH parameter
+    
+    // Stimulate block, have to send LENGTH parameter
     stimulate
     #(
         .LENGTH(LENGTH)
     )
-    st_i 
+    st_block 
     (
         .x(x)
     );
-        
-//    reg clk=1'b0;
-//    reg [LENGTH-1:0]cnt=0;
-    
-//    initial
-//    begin
-//        while(1)
-//        begin
-//            #1; clk=1'b0;
-//            #1; clk=1'b1;
-//        end
-//    end
-    
-//    always @(posedge clk)
-//    begin
-//        cnt <= cnt + 1;
-//    end
     
     // DUT which is chain of and gates, have to send LENGTH parameter
     long_and_gate
