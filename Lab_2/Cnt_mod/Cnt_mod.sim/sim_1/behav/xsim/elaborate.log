@@ -3,8 +3,6 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto bdf66b4e72174a8a872ab572bb31d73c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_cnt_mod_behav xil_defaultlib.tb_cnt_mod xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 4 for port y [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.srcs/sim_1/new/tb_cnt_mod.v:57]
-WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 3 for port y [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.srcs/sim_1/new/tb_cnt_mod.v:70]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

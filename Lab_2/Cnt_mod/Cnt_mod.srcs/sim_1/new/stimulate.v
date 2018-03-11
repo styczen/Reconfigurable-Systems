@@ -51,7 +51,7 @@ module stimulate
     
     initial
     begin
-        ce=1'b0;
+        #35; ce=1'b0;
         #3; ce=1'b1;
     end
     

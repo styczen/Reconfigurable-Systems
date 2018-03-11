@@ -29,9 +29,9 @@ module cnt
         input clk, // clock
         input ce, // chip enable
         input rst, // reset
-        output [WIDTH:0]y 
+        output [WIDTH-1:0]y 
     );
-    reg [WIDTH:0]val = 0;
+    reg [WIDTH-1:0]val = 0;
     always @(posedge clk)
     begin
         if (rst | val == N-1) val <= 0;
