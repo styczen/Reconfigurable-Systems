@@ -1,2 +1,2 @@
-# Systemy-Rekonfigurowalne
-Kodu konfigurujące FPGA w języku Verilog
+# Reconfigurable Systems
+Code for FPGA configuration in Verilog
