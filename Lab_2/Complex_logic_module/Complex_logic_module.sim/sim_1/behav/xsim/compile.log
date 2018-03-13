@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Complex_logic_module/Complex_logic_module.srcs/sources_1/new/and_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Complex_logic_module/Complex_logic_module.srcs/sources_1/new/complex_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complex_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Complex_logic_module/Complex_logic_module.srcs/sources_1/new/or_gate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_gate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Complex_logic_module/Complex_logic_module.srcs/sim_1/new/stimulate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Complex_logic_module/Complex_logic_module.srcs/sim_1/new/tb_complex_logic_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_complex_logic_module
