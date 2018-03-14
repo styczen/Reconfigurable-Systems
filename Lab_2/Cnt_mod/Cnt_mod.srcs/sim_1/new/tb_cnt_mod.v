@@ -23,7 +23,7 @@
 module tb_cnt_mod
     (
     );
-    localparam N_tb1 = 11;
+    localparam N_tb1 = 12;
     localparam N_tb2 = 6;
     
     wire clk_tb;
@@ -33,11 +33,7 @@ module tb_cnt_mod
     wire [$clog2(N_tb2)-1:0] y_tb2;
     
     // Stimulate block to generate inputs for tested modules
-    stimulate
-//    #(
-//        .N_stim(N_tb1)
-//    )
-    stim_i
+    stimulate stim_i
     (
         .clk_stim(clk_tb),
         .ce_stim(ce_tb),

@@ -27,8 +27,8 @@ module stimulate
     );
     
     reg clk=1'b0;
-    reg temp_x=8'h00;
-    reg temp_a=3'b000;
+    reg [7:0] temp_x=8'b11110111;
+    reg [2:0] temp_a=3'b111;
     
     initial
     begin 
@@ -44,6 +44,7 @@ module stimulate
         temp_x = temp_x + 1;
         temp_a = temp_a + 1;
     end
+    
     assign x = temp_x;
     assign a = temp_a;
 endmodule

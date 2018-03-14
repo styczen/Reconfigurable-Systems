@@ -21,9 +21,6 @@
 
 
 module stimulate
-//    #(
-//        parameter N_stim = 6
-//    )
     (
         output clk_stim,
         output ce_stim,
@@ -34,7 +31,8 @@ module stimulate
     reg ce=1'b1;
     reg rst=1'b0;
     
-    reg cnt=8'h00;
+    reg [7:0] cnt_rst=8'h00;
+    reg [7:0] cnt_ce=8'h00;
     
     initial
     begin
@@ -44,30 +42,30 @@ module stimulate
             #1; clk <= 1'b0;
         end
     end
-    
-    initial
-    begin
-        #36; rst<=1'b1;
-        #2; rst<=1'b0;
-        #27; rst<=1'b1;
-        #2; rst<=1'b0;
-    end
-    
-//    initial
-//    begin
-//        #35; ce<=1'b0;
-//        #3; ce<=1'b1;
-//    end
 
-//    always @(posedge clk)
-//    begin
-//        cnt <= cnt + 1;
-//        if (cnt == 20)
-//        begin
-//            cnt <= 0;
-//            rst <= 1'b1;
-//        end
-//    end
+    always @(posedge clk)
+    begin
+        cnt_rst <= cnt_rst + 1;
+        cnt_ce <= cnt_ce + 1;
+        
+        if (cnt_rst == 7)
+        begin
+            cnt_rst <= 0;
+            rst <= 1'b1;
+        end
+        else begin
+            rst <= 1'b0;
+        end
+        
+        if (cnt_ce == 15)
+        begin
+            cnt_ce <= 0;
+            ce <= 1'b0;
+        end
+        else begin
+            ce <= 1'b1;
+        end
+    end
     
     assign clk_stim = clk;
     assign ce_stim = ce;
