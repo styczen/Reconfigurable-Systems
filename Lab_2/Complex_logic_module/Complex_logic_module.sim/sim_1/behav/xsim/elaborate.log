@@ -4,13 +4,4 @@ Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 32a7290e1d
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.stimulate
-Compiling module xil_defaultlib.and_gate
-Compiling module xil_defaultlib.or_gate
-Compiling module xil_defaultlib.complex_logic_default
-Compiling module xil_defaultlib.tb_complex_logic_module
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_complex_logic_module_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -8,8 +8,8 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.stimulate
+Compiling module xil_defaultlib.cnt(N=11)
 Compiling module xil_defaultlib.cnt(N=6)
-Compiling module xil_defaultlib.cnt(N=4)
 Compiling module xil_defaultlib.tb_cnt_mod
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_cnt_mod_behav

@@ -34,10 +34,12 @@ module cnt
     reg [WIDTH-1:0]val = 0;
     always @(posedge clk)
     begin
-        if (rst | val == N-1) val <= 0;
-        else
-            if (ce) val <= val + 1;
-            else val <= val;
+        if (ce)
+            if (rst | val == N-1) 
+                val <= 0;
+            else 
+                val <= val + 1;
+        else val <= val;
     end
     assign y = val;
 endmodule

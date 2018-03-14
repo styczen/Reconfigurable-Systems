@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/stimulate.v,1521010207,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/tb_mux.v,,stimulate,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/tb_mux.v,1521010040,verilog,,,,tb_mux,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sources_1/new/main.v,1521009809,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/stimulate.v,,mux,,,,,,,,
