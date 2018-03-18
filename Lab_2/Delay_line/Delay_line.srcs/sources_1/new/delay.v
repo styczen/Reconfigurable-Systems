@@ -22,7 +22,7 @@
 
 module delay
     #(
-        parameter N = 3
+        parameter N = 1
     )
     (
         input clk,

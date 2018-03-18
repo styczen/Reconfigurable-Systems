@@ -30,4 +30,24 @@ module delay_line
         input clk,
         output [N-1:0] odata
     );
+    wire [N-1:0] tdata [DELAY:0];
+
+    assign tdata[0] = idata;
+    genvar i;
+    generate
+        for (i=0; i < DELAY; i=i+1)
+        begin 
+            delay
+            #(
+                .N(N)
+            )
+            delay_i
+            (
+                .clk(clk),
+                .d(tdata[i]),
+                .q(tdata[i+1])
+            );
+        end
+    endgenerate
+    assign odata = tdata[DELAY];
 endmodule
