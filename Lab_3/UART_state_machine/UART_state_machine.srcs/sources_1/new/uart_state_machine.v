@@ -38,7 +38,7 @@ module uart_state_machine
     reg prev_send=1'b0;
     reg [7:0]data_t = 8'h00;
     reg txd_t = 1'b0;
-    reg [2:0]cnt = 3'd0;
+    integer cnt = 0;
     
     always @(posedge clk)
     begin
@@ -83,9 +83,11 @@ module uart_state_machine
                 end    
                 else if (cnt == 7) begin
                     txd_t = data[cnt];
+                end 
+                else if (cnt == 8) begin
                     cnt = 0;
                     state = STATE4;
-                end 
+                end
                 cnt = cnt + 1;
             end
             STATE4:
