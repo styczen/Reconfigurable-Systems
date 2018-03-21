@@ -36,9 +36,9 @@ module uart_state_machine
     
     reg [1:0]state = STATE1;
     reg prev_send=1'b0;
-    reg [7:0]data_t = 8'h00;
+    reg [7:0]data_t;
     reg txd_t = 1'b0;
-    integer cnt = 0;
+    integer cnt = 0;                                                                                    
     
     always @(posedge clk)
     begin
@@ -48,7 +48,7 @@ module uart_state_machine
             case(state)
             STATE1:
             begin
-                if (prev_send == 1'b0 & send == 1'b1) begin
+                if (prev_send == 1'b0 && send == 1'b1) begin
                     data_t = data;
                     state = STATE2;
                 end
@@ -60,43 +60,23 @@ module uart_state_machine
             end
             STATE3:
             begin
-                if (cnt == 0) begin
+                if (cnt < 8) begin
                     txd_t = data[cnt];
+                    cnt = cnt + 1;
                 end
-                else if (cnt == 1) begin
-                    txd_t = data[cnt];
-                end
-                else if (cnt == 2) begin
-                    txd_t = data[cnt];
-                end    
-                else if (cnt == 3) begin
-                    txd_t = data[cnt];
-                end 
-                else if (cnt == 4) begin
-                    txd_t = data[cnt];
-                end 
-                else if (cnt == 5) begin
-                    txd_t = data[cnt];
-                end
-                else if (cnt == 6) begin
-                    txd_t = data[cnt];
-                end    
-                else if (cnt == 7) begin
-                    txd_t = data[cnt];
-                end 
-                else if (cnt == 8) begin
+                else begin
                     cnt = 0;
                     state = STATE4;
                 end
-                cnt = cnt + 1;
             end
             STATE4:
             begin
                 txd_t = 1'b0;
+                state = STATE1;
             end
             endcase
-            prev_send = send;     
         end
+        prev_send = send;
     end
     assign txd = txd_t;
 endmodule

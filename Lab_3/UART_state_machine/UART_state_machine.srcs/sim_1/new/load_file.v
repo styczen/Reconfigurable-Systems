@@ -27,22 +27,25 @@ module load_file
     );
     
     integer file;
-    reg [7:0]data_t = 8'h00;
+    reg [7:0]data_t = 0;
     reg send_t = 1'b0;
     reg [7:0]i;
     
     initial
     begin
-        file = $fopen("/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/input","rb");
+//        $display("LOAD FILE START");
+//        file = $fopen("/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/input.txt","rb");
+        file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/input.txt", "rb");
         for (i=0;i<16;i=i+1)
         begin
-            data_t=$fgetc(file);    // read one byte from file
-            send_t = 1'b1;          // set send flag to initiate data read
-            #2;                     // wait 1 clock cycle
-            send_t = 1'b0;          // clear flag, readout initiated before
-            #22;                    // wait 11 clock cycles 
+            data_t = $fgetc(file); // read one byte from file
+            send_t = 1'b1; // set send flag to initiate data read
+            #2; // wait 1 clock cycle
+            send_t = 1'b0; // clear flag, readout initiated before
+            #22; // wait 11 clock cycles 
         end
         $fclose(file);
+        data_t = 0;
     end
     
     assign data = data_t;

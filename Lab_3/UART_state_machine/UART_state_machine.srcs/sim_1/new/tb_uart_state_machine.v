@@ -24,10 +24,10 @@ module tb_uart_state_machine
     (
     );
     wire clk;
-    wire send = 1'b0;
+    wire send;
     wire rst = 1'b0;
-    wire txd = 1'b0;
-    wire [7:0]data = 0;
+    wire txd;
+    wire [7:0]data;
     
     stimulate stim
     (
