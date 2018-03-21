@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-7228-debian/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z010clg400-1
@@ -23,16 +24,16 @@ create_project -in_memory -part xc7z010clg400-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.cache/wt [current_project]
-set_property parent.project_path C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.xpr [current_project]
+set_property webtalk.parent_dir /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.cache/wt [current_project]
+set_property parent.project_path /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_output_repo c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.cache/ip [current_project]
+set_property ip_output_repo /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.srcs/sources_1/new/delay.v
-  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.srcs/sources_1/new/delay_line.v
+  /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.srcs/sources_1/new/delay.v
+  /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/Delay_line/Delay_line.srcs/sources_1/new/delay_line.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

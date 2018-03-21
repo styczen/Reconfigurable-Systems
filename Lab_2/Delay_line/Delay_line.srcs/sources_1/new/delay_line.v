@@ -22,8 +22,8 @@
 
 module delay_line
     #(
-        parameter N = 1,
-        parameter DELAY = 1
+        parameter N = 3,
+        parameter DELAY = 4
     )
     (
         input [N-1:0] idata,
