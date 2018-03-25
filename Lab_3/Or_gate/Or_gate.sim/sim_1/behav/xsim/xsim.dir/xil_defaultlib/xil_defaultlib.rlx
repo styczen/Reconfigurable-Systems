@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.srcs/sim_1/new/stimulate.v,1522001105,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.srcs/sim_1/new/verify.v,,stimulate,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.srcs/sim_1/new/tb_or_gate.v,1522000901,verilog,,,,tb_or_gate,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.srcs/sim_1/new/verify.v,1522004781,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.srcs/sim_1/new/tb_or_gate.v,,verify,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.srcs/sources_1/imports/Desktop/or_gate.v,1521993330,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/Or_gate.srcs/sim_1/new/stimulate.v,,or_gate,,,,,,,,
