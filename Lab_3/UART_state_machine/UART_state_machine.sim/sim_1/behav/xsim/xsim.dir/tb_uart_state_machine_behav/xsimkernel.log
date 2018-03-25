@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_uart_state_machine_behav/xsimk.exe -simmode gui -wdb tb_uart_state_machine_behav.wdb -simrunnum 0 -socket 57471
+Running: xsim.dir/tb_uart_state_machine_behav/xsimk.exe -simmode gui -wdb tb_uart_state_machine_behav.wdb -simrunnum 0 -socket 60305
 Design successfully loaded
-Design Loading Memory Usage: 6632 KB (Peak: 6632 KB)
+Design Loading Memory Usage: 6640 KB (Peak: 6640 KB)
 Design Loading CPU Usage: 31 ms
 Simulation completed
-Simulation Memory Usage: 7404 KB (Peak: 7404 KB)
+Simulation Memory Usage: 7432 KB (Peak: 7432 KB)
 Simulation CPU Usage: 31 ms

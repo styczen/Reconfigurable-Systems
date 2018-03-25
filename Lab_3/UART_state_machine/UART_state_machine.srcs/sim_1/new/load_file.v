@@ -45,7 +45,6 @@ module load_file
             #22; // wait 11 clock cycles 
         end
         $fclose(file);
-        data_t = 0;
     end
     
     assign data = data_t;
