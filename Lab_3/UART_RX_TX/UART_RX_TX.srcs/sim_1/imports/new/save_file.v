@@ -36,7 +36,7 @@ module save_file
         file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/output.txt", "wb");
         for (i=0;i<500;i=i+1)
         begin
-            #2; // wait 1 clock cycle
+            #1; // wait 1 clock cycle
             if (received_flag == 1'b1 && prev_received_flag == 1'b0) begin                            
                 $fwrite(file, "%c", data); // write 1 bit to file
             end
