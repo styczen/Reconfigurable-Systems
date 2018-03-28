@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/load_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/save_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module save_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/stimulate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stimulate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sources_1/new/uart_state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/tb_uart_state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart_state_machine

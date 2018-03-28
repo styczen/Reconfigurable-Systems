@@ -49,34 +49,34 @@ module uart_state_machine
             STATE1:
             begin
                 if (prev_send == 1'b0 && send == 1'b1) begin
-                    data_t = data;
-                    state = STATE2;
+                    data_t <= data;
+                    state <= STATE2;
                 end
             end
             STATE2:
             begin
-                txd_t = 1'b1;
-                state = STATE3;
+                txd_t <= 1'b1;
+                state <= STATE3;
             end
             STATE3:
             begin
                 if (cnt < 8) begin
-                    txd_t = data[cnt];
-                    cnt = cnt + 1;
+                    txd_t <= data[cnt];
+                    cnt <= cnt + 1;
                 end
                 else begin
-                    cnt = 0;
-                    state = STATE4;
+                    cnt <= 0;
+                    state <= STATE4;
                 end
             end
             STATE4:
             begin
-                txd_t = 1'b0;
-                state = STATE1;
+                txd_t <= 1'b0;
+                state <= STATE1;
             end
             endcase
         end
-        prev_send = send;
+        prev_send <= send;
     end
     assign txd = txd_t;
 endmodule

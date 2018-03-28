@@ -33,8 +33,8 @@ module load_file
     
     initial
     begin
-//        file = $fopen("/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/input.txt","rb");
-        file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/input.txt", "rb");
+        file = $fopen("/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/input.txt","rb");
+//        file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/input.txt", "rb");
         for (i=0;i<16;i=i+1)
         begin
             data_t = $fgetc(file); // read one byte from file

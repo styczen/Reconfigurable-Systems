@@ -1,11 +1,11 @@
 0.6
 2017.4
 Dec 15 2017
-21:07:18
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/imports/new/load_file.v,1522176645,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/imports/new/save_file.v,,load_file,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/imports/new/save_file.v,1522176803,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/stimulate.v,,save_file,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/stimulate.v,1522170456,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/new/uart_rx.v,,stimulate,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/tb_uart_communication.v,1522172583,verilog,,,,tb_uart_communication,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/imports/new/uart_state_machine.v,1522168057,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/tb_uart_communication.v,,UART_TX,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/new/uart_rx.v,1522174162,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/imports/new/uart_state_machine.v,,UART_RX,,,,,,,,
+20:57:24
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.sim/sim_1/behav/xsim/glbl.v,1522217018,verilog,,,,glbl,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/imports/new/load_file.v,1522217630,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/imports/new/save_file.v,,load_file,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/imports/new/save_file.v,1522217018,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/stimulate.v,,save_file,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/stimulate.v,1522217018,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/new/uart_rx.v,,stimulate,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/tb_uart_communication.v,1522217018,verilog,,,,tb_uart_communication,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/imports/new/uart_state_machine.v,1522217018,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sim_1/new/tb_uart_communication.v,,UART_TX,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/new/uart_rx.v,1522217018,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_RX_TX/UART_RX_TX.srcs/sources_1/imports/new/uart_state_machine.v,,UART_RX,,,,,,,,

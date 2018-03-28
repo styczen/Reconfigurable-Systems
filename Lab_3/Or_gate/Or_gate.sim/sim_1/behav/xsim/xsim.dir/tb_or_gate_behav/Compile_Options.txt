@@ -1,1 +1,1 @@
--wto "add56ac94e07471581b2d3530d3f9088" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_or_gate_behav" "xil_defaultlib.tb_or_gate" "xil_defaultlib.glbl" -log "elaborate.log" 
+-wto "add56ac94e07471581b2d3530d3f9088" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_or_gate_behav" "xil_defaultlib.tb_or_gate" "xil_defaultlib.glbl" -log "elaborate.log" 

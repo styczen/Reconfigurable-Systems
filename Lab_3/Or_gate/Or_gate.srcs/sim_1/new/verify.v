@@ -31,7 +31,8 @@ module verify
     
     initial
     begin
-        file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/log.txt", "wb");
+//        file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/log.txt", "wb");
+        file = $fopen("/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/Or_gate/log.txt", "wb");
         for (i = 0; i < 1024; i=i+1) begin
             #2; // wait 1 clock cycle
             for (j = 0; j < 10; j=j+1) begin

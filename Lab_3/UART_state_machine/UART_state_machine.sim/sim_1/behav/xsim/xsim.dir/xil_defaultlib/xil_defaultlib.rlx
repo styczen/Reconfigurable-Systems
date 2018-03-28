@@ -1,10 +1,10 @@
 0.6
 2017.4
 Dec 15 2017
-21:07:18
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.sim/sim_1/behav/xsim/glbl.v,1521624948,verilog,,,,glbl,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/load_file.v,1521987451,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/save_file.v,,load_file,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/save_file.v,1521992781,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/stimulate.v,,save_file,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/stimulate.v,1521630267,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sources_1/new/uart_state_machine.v,,stimulate,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/tb_uart_state_machine.v,1521631041,verilog,,,,tb_uart_state_machine,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sources_1/new/uart_state_machine.v,1521631203,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/tb_uart_state_machine.v,,uart_state_machine,,,,,,,,
+20:57:24
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/load_file.v,1522217310,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/save_file.v,,load_file,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/save_file.v,1522217323,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/stimulate.v,,save_file,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/stimulate.v,1522217018,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sources_1/new/uart_state_machine.v,,stimulate,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/tb_uart_state_machine.v,1522217018,verilog,,,,tb_uart_state_machine,,,,,,,,
+/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sources_1/new/uart_state_machine.v,1522217861,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/UART_state_machine.srcs/sim_1/new/tb_uart_state_machine.v,,uart_state_machine,,,,,,,,

@@ -50,31 +50,31 @@ module UART_RX
             STATE1:
             begin
                 if (prev_rxd == 1'b0 && rxd == 1'b1) begin
-                    received_t = 1'b0;
-                    state = STATE2;
+                    received_t <= 1'b0;
+                    state <= STATE2;
                 end
             end
             STATE2:
             begin
                 if (cnt < 8) begin
-                    data_t[cnt] = rxd;
+                    data_t[cnt] <= rxd;
                     cnt = cnt + 1;
                 end
                 else begin
-                    cnt = 0;
-                    state = STATE3;
+                    cnt <= 0;
+                    state <= STATE3;
                 end
             end
             STATE3:
             begin
                 if (rxd == 1'b0) begin
-                    received_t = 1'b1;
+                    received_t <= 1'b1;
                 end
-                state = STATE1;
+                state <= STATE1;
             end
             endcase
         end
-        prev_rxd = rxd;
+        prev_rxd <= rxd;
     end
     assign data = data_t;
     assign received = received_t;

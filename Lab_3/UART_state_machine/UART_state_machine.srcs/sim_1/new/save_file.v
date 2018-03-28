@@ -30,8 +30,8 @@ module save_file
     
     initial
     begin
-//        file = $fopen("/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/output.txt", "wb");
-        file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/output.txt", "wb");
+        file = $fopen("/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/output.txt", "wb");
+//        file = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_3/UART_state_machine/output.txt", "wb");
         for (i=0;i<192;i=i+1) // 16 * 12 bits
         begin
             #2; // wait 1 clock cycle                           
