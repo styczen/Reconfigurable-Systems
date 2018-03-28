@@ -1,9 +1,13 @@
 clear all
 close all
 
-A = double(0.32345);
-B = double(-0.78743);
-C = double(0.56532);
+% A = double(0.32345);
+% B = double(-0.78743);
+% C = double(0.56532);
+
+A = double(1);
+B = double(1);
+C = double(1);
 
 prec_i=1;   % number of integer part bits (Nc)     % one bit
 sign=1;     % 0-unsignedvalue, 1-signedvalue       % sign
@@ -25,13 +29,13 @@ for prec_f=0:16  % number of fractional part bits (Nu)  % eight bits
     Z = A + B;
     
     % calculate real value
-    Y = (A + B) * C;
+    Y = Z * C;
     
     % calculate sum with fixed point
     Z_fix = A_fix + B_fix;
 
     % calculate fixed point result
-    Y_fix = (A_fix + B_fix) * C_fix;
+    Y_fix = Z_fix * C_fix;
 
     % back to double
     A_new_double = double(A_fix);
@@ -53,8 +57,9 @@ end
 [min, best_prec] = min(res);
 best_prec = best_prec - 1; % decrease value by 1 because indexing starts from 1
 scatter(0:16, res, 'b*')
+best_prec = 13;
 sign = 1; % signed value
-word = 1 + prec_i + prec_f; % whole word number of bits
+word = 1 + prec_i + best_prec; % whole word number of bits
 % create best fixed point variables
 A_fix_best = fi(A, sign, word, best_prec);
 B_fix_best = fi(B, sign, word, best_prec);
