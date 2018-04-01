@@ -23,13 +23,13 @@
 module tb_add_multiply
     (
     );
-//    wire signed [14:0] A = 15'b000101001011010;
-//    wire signed [14:0] B = 15'b110011011001101;
-//    wire signed [14:0] C = 15'b001001000010111;
+    wire signed [14:0] A = 15'b000101001011010;
+    wire signed [14:0] B = 15'b110011011001101;
+    wire signed [14:0] C = 15'b001001000010111;
     
-    wire signed [14:0] A = 15'b010000000000000;
-    wire signed [14:0] B = 15'b010000000000000;
-    wire signed [14:0] C = 15'b010000000000000;
+//    wire signed [14:0] A = 15'b010000000000000;
+//    wire signed [14:0] B = 15'b010000000000000;
+//    wire signed [14:0] C = 15'b010000000000000;
     wire signed [30:0] Y;
     
     wire clk;

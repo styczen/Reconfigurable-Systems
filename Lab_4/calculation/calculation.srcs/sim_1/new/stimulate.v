@@ -24,13 +24,13 @@ module stimulate
     (
         output clk
     );
-    reg clk_t = 1'b1;
+    reg clk_t = 1'b0;
     initial
     begin
         while(1)
         begin
-            #1; clk_t <= 1'b0;
             #1; clk_t <= 1'b1;
+            #1; clk_t <= 1'b0;
         end 
     end
     assign clk = clk_t;
