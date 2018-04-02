@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_complex_arithmetic_behav/xsimk.exe -simmode gui -wdb tb_complex_arithmetic_behav.wdb -simrunnum 0 -socket 57850
+Running: xsim.dir/tb_complex_arithmetic_behav/xsimk.exe -simmode gui -wdb tb_complex_arithmetic_behav.wdb -simrunnum 0 -socket 65102
 Design successfully loaded
-Design Loading Memory Usage: 6624 KB (Peak: 6624 KB)
-Design Loading CPU Usage: 31 ms
+Design Loading Memory Usage: 6928 KB (Peak: 6928 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 7256 KB (Peak: 7256 KB)
-Simulation CPU Usage: 31 ms
+Simulation Memory Usage: 7828 KB (Peak: 7828 KB)
+Simulation CPU Usage: 15 ms

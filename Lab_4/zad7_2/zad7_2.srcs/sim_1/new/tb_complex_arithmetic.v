@@ -23,7 +23,27 @@
 module tb_complex_arithmetic
     (
     );
-    wire [2:0] x = 3'b111;
-    wire [5:0] y;
-    assign y = {3'b000, x}; 
+    wire signed [17:0] A = 18'h39ba9;
+    wire signed [7:0] B = 8'h3b;
+    wire signed [11:0] C = 12'hd8a;
+
+    wire signed [30:0] Y;
+    
+    wire clk;
+    wire ce = 1'b1;
+    
+    stimulate stim
+    (
+        .clk(clk)
+    );
+    
+    complex_arithmetic arith
+    (
+        .clk(clk),
+        .ce(ce),
+        .A(A),
+        .B(B),
+        .C(C),
+        .Y(Y)
+    );
 endmodule
