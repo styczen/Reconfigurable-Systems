@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../zad7_2.srcs/sources_1/ip/add_D_E/sim/add_D_E.vhd" \
+
+nosort
