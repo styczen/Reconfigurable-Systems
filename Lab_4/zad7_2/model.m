@@ -1,4 +1,5 @@
 close all
+clear all
 
 A = double(-100.34);
 B = double(7.367);
