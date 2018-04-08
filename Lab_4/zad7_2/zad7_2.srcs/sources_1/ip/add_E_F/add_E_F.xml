@@ -364,11 +364,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:05:23 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:01:47 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53a13a6e</spirit:value>
+            <spirit:value>7:dad0694d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -401,11 +401,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:05:23 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:01:47 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53a13a6e</spirit:value>
+            <spirit:value>7:dad0694d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -419,11 +419,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:05:23 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:01:47 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53a13a6e</spirit:value>
+            <spirit:value>7:dad0694d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -438,11 +438,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:05:23 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:01:47 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53a13a6e</spirit:value>
+            <spirit:value>7:dad0694d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -475,11 +475,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:05:23 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:01:47 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:0187f7d7</spirit:value>
+            <spirit:value>7:a1a38796</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -494,11 +494,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:05:23 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:01:47 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:0187f7d7</spirit:value>
+            <spirit:value>7:a1a38796</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -512,11 +512,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:05:23 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:01:47 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53a13a6e</spirit:value>
+            <spirit:value>7:dad0694d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -530,11 +530,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Apr 07 21:06:52 UTC 2018</spirit:value>
+            <spirit:value>Sun Apr 08 10:03:03 UTC 2018</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:53a13a6e</spirit:value>
+            <spirit:value>7:dad0694d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -799,7 +799,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_OUT_WIDTH&apos;)) - 1)">18</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_OUT_WIDTH&apos;)) - 1)">19</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -838,7 +838,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_OUT_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUT_WIDTH">19</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_OUT_WIDTH">20</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_CE_OVERRIDES_SCLR</spirit:name>
@@ -1282,7 +1282,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Out_Width</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Out_Width" spirit:order="8" spirit:minimum="19" spirit:maximum="20" spirit:rangeType="long">19</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.Out_Width" spirit:order="8" spirit:minimum="19" spirit:maximum="20" spirit:rangeType="long">20</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>Latency_Configuration</spirit:name>

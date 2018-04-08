@@ -1,9 +1,8 @@
 Vivado Simulator 2017.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4b9c71f637824a83ab4b316f86042144 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_8 -L xbip_pipe_v3_0_4 -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L xil_defaultlib -L c_reg_fd_v12_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_complex_arithmetic_behav xil_defaultlib.tb_complex_arithmetic xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4b9c71f637824a83ab4b316f86042144 --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_8 -L c_reg_fd_v12_0_4 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_4 -L xbip_dsp48_addsub_v3_0_4 -L xbip_addsub_v3_0_4 -L c_addsub_v12_0_11 -L xil_defaultlib -L xbip_bram18k_v3_0_4 -L mult_gen_v12_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_complex_arithmetic_behav xil_defaultlib.tb_complex_arithmetic xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 31 differs from formal bit length 37 for port Y [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/tb_complex_arithmetic.v:47]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -42,12 +41,29 @@ Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_
 Compiling architecture add_a_b_arch of entity xil_defaultlib.add_A_B [add_a_b_default]
 Compiling module xil_defaultlib.delay(N=12)
 Compiling module xil_defaultlib.delay_line(N=12,DELAY=1)
+Compiling architecture synth of entity xbip_addsub_v3_0_4.xbip_addsub_v3_0_4_viv [\xbip_addsub_v3_0_4_viv(c_xdevic...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [\c_addsub_v12_0_11_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
+Compiling architecture add_d_e_arch of entity xil_defaultlib.add_D_E [add_d_e_default]
+Compiling architecture synth of entity xbip_addsub_v3_0_4.xbip_addsub_v3_0_4_viv [\xbip_addsub_v3_0_4_viv(c_xdevic...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [\c_addsub_v12_0_11_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
+Compiling architecture add_e_f_arch of entity xil_defaultlib.add_E_F [add_e_f_default]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.delay_line [\delay_line(c_xdevicefamily="zyn...]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.op_resize [\op_resize(ai_width=19,bi_width=...]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13_viv [\mult_gen_v12_0_13_viv(c_verbosi...]
 Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13 [\mult_gen_v12_0_13(c_xdevicefami...]
 Compiling architecture mul_1_arch of entity xil_defaultlib.mul_1 [mul_1_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.op_resize [\op_resize(ai_width=15,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13_viv [\mult_gen_v12_0_13_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_13.mult_gen_v12_0_13 [\mult_gen_v12_0_13(c_xdevicefami...]
+Compiling architecture mul_2_arch of entity xil_defaultlib.mul_2 [mul_2_default]
+Compiling architecture synth of entity xbip_addsub_v3_0_4.xbip_addsub_v3_0_4_viv [\xbip_addsub_v3_0_4_viv(c_xdevic...]
+Compiling architecture synth of entity c_addsub_v12_0_11.c_addsub_v12_0_11_viv [\c_addsub_v12_0_11_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_11.c_addsub_v12_0_11 [\c_addsub_v12_0_11(c_xdevicefami...]
+Compiling architecture sumy_arch of entity xil_defaultlib.sumY [sumy_default]
 Compiling module xil_defaultlib.complex_arithmetic
 Compiling module xil_defaultlib.tb_complex_arithmetic
 Compiling module xil_defaultlib.glbl

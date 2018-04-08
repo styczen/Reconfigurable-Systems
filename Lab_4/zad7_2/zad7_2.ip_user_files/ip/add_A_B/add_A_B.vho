@@ -57,7 +57,6 @@ COMPONENT add_A_B
     A : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
     B : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     CLK : IN STD_LOGIC;
-    CE : IN STD_LOGIC;
     S : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
   );
 END COMPONENT;
@@ -72,7 +71,6 @@ your_instance_name : add_A_B
     A => A,
     B => B,
     CLK => CLK,
-    CE => CE,
     S => S
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------

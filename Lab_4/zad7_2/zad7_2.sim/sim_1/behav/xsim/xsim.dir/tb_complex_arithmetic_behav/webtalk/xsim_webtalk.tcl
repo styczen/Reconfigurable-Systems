@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/xsim.dir/tb_complex_arithmetic_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Apr  2 15:04:47 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun Apr  8 12:48:52 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "f72f8ee5-afb7-45ac-9cbd-6dc1d06d06e8" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "4b9c71f637824a83ab4b316f86042144" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "74" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "105" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "use
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "5" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7828_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3254937031 -regid "" -xml C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/xsim.dir/tb_complex_arithmetic_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/xsim.dir/tb_complex_arithmetic_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/xsim.dir/tb_complex_arithmetic_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key runtime -value "30 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "22" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.20_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "9192_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 831300631 -regid "" -xml C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/xsim.dir/tb_complex_arithmetic_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/xsim.dir/tb_complex_arithmetic_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/xsim.dir/tb_complex_arithmetic_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

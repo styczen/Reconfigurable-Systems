@@ -30,7 +30,6 @@ module complex_arithmetic
         .A(A),
         .B({B, 5'b0}),
         .CLK(clk),
-        .CE(ce),
         .S(sumAB) 
     );
     

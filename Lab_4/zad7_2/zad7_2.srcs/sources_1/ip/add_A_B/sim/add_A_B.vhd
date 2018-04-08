@@ -61,7 +61,6 @@ ENTITY add_A_B IS
     A : IN STD_LOGIC_VECTOR(17 DOWNTO 0);
     B : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     CLK : IN STD_LOGIC;
-    CE : IN STD_LOGIC;
     S : OUT STD_LOGIC_VECTOR(18 DOWNTO 0)
   );
 END add_A_B;
@@ -117,8 +116,6 @@ ARCHITECTURE add_A_B_arch OF add_A_B IS
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF S: SIGNAL IS "XIL_INTERFACENAME s_intf, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF S: SIGNAL IS "xilinx.com:signal:data:1.0 s_intf DATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF CE: SIGNAL IS "XIL_INTERFACENAME ce_intf, POLARITY ACTIVE_LOW";
-  ATTRIBUTE X_INTERFACE_INFO OF CE: SIGNAL IS "xilinx.com:signal:clockenable:1.0 ce_intf CE";
   ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF s_intf:c_out_intf:sinit_intf:sset_intf:bypass_intf:c_in_intf:add_intf:b_intf:a_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 100000000, PHASE 0.000";
   ATTRIBUTE X_INTERFACE_INFO OF CLK: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_intf CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF B: SIGNAL IS "XIL_INTERFACENAME b_intf, LAYERED_METADATA undef";
@@ -149,7 +146,7 @@ BEGIN
       C_HAS_C_IN => 0,
       C_HAS_C_OUT => 0,
       C_BORROW_LOW => 1,
-      C_HAS_CE => 1,
+      C_HAS_CE => 0,
       C_HAS_BYPASS => 0,
       C_HAS_SCLR => 0,
       C_HAS_SSET => 0,
@@ -161,7 +158,7 @@ BEGIN
       CLK => CLK,
       ADD => '1',
       C_IN => '0',
-      CE => CE,
+      CE => '1',
       BYPASS => '0',
       SCLR => '0',
       SSET => '0',

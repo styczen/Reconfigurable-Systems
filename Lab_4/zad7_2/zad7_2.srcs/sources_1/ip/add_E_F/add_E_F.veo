@@ -59,7 +59,7 @@ add_E_F your_instance_name (
   .B(B),      // input wire [18 : 0] B
   .CLK(CLK),  // input wire CLK
   .CE(CE),    // input wire CE
-  .S(S)      // output wire [18 : 0] S
+  .S(S)      // output wire [19 : 0] S
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

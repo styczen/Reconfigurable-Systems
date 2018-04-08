@@ -3,10 +3,14 @@
 Dec 15 2017
 21:07:18
 C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/stimulate.v,1522672204,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/tb_complex_arithmetic.v,,stimulate,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/tb_complex_arithmetic.v,1522671242,verilog,,,,tb_complex_arithmetic,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/stimulate.v,1523182573,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/tb_complex_arithmetic.v,,stimulate,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/tb_complex_arithmetic.v,1523184347,verilog,,,,tb_complex_arithmetic,,,,,,,,
 C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/imports/new/delay.v,1521375867,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/imports/new/delay_line.v,,delay,,,,,,,,
 C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/imports/new/delay_line.v,1521624948,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sim_1/new/stimulate.v,,delay_line,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/ip/add_A_B/sim/add_A_B.vhd,1522667713,vhdl,,,,add_a_b,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/ip/add_A_B/sim/add_A_B.vhd,1523183486,vhdl,,,,add_a_b,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/ip/add_D_E/sim/add_D_E.vhd,1523181665,vhdl,,,,add_d_e,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/ip/add_E_F/sim/add_E_F.vhd,1523181707,vhdl,,,,add_e_f,,,,,,,,
 C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/ip/mul_1/sim/mul_1.vhd,1522669189,vhdl,,,,mul_1,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/new/complex_arithmetic.v,1522673405,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/imports/new/delay.v,,complex_arithmetic,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/ip/mul_2/sim/mul_2.vhd,1523135345,vhdl,,,,mul_2,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/ip/sumY/sim/sumY.vhd,1523136035,vhdl,,,,sumy,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/new/complex_arithmetic.v,1523184022,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.srcs/sources_1/imports/new/delay.v,,complex_arithmetic,,,,,,,,
