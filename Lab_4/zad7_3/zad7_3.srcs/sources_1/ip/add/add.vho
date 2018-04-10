@@ -55,9 +55,10 @@
 COMPONENT add
   PORT (
     A : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
-    B : IN STD_LOGIC_VECTOR(13 DOWNTO 0);
+    B : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
     CLK : IN STD_LOGIC;
-    S : OUT STD_LOGIC_VECTOR(13 DOWNTO 0)
+    CE : IN STD_LOGIC;
+    S : OUT STD_LOGIC_VECTOR(255 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -71,6 +72,7 @@ your_instance_name : add
     A => A,
     B => B,
     CLK => CLK,
+    CE => CE,
     S => S
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------

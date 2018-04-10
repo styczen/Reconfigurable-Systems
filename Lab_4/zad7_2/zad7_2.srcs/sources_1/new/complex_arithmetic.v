@@ -92,8 +92,8 @@ module complex_arithmetic
         .B({mulDEF, 1'b0}),
         .CLK(clk),
         .CE(ce),
-        .S(Y_t)
+        .S(Y)
     );
     
-    assign Y = Y_t;
+//    assign Y = Y_t;
 endmodule
