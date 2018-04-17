@@ -69,7 +69,7 @@ set_property IOSTANDARD TMDS_33 [get_ports {hdmi_in_data_p[2]}]
 #set_property -dict { PACKAGE_PIN E19   IOSTANDARD LVCMOS33 } [get_ports hdmi_cec]; #IO_L5N_T0_AD9N_35 Sch=HDMI_CEC
 set_property PACKAGE_PIN E18 [get_ports {hdmi_hpd[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {hdmi_hpd[0]}]
-#set_property -dict { PACKAGE_PIN F17   IOSTANDARD LVCMOS33 } [get_ports hdmi_out_en]; #IO_L6N_T0_VREF_35 Sch=HDMI_OUT_EN
+set_property -dict { PACKAGE_PIN F17   IOSTANDARD LVCMOS33 } [get_ports hdmi_out_en]; #IO_L6N_T0_VREF_35 Sch=HDMI_OUT_EN
 set_property -dict {PACKAGE_PIN G17 IOSTANDARD LVCMOS33} [get_ports hdmi_in_ddc_scl_io]
 set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS33} [get_ports hdmi_in_ddc_sda_io]
 

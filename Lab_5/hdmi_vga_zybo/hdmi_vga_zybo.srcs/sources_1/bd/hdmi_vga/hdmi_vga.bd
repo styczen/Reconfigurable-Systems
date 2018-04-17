@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xE9552386458D74C2" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.4" bd:top="hdmi_vga" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xC84CBE190774E93E" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.4" bd:top="hdmi_vga" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -14,16 +14,16 @@
     </spirit:parameters>
     <spirit:busInterfaces>
       <spirit:busInterface>
-        <spirit:name>hdmi_in</spirit:name>
-        <spirit:slave/>
-        <spirit:busType spirit:library="interface" spirit:name="tmds" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="interface" spirit:name="tmds_rtl" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
-      </spirit:busInterface>
-      <spirit:busInterface>
         <spirit:name>hdmi_in_ddc</spirit:name>
         <spirit:master/>
         <spirit:busType spirit:library="interface" spirit:name="iic" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:abstractionType spirit:library="interface" spirit:name="iic_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>hdmi_in</spirit:name>
+        <spirit:slave/>
+        <spirit:busType spirit:library="interface" spirit:name="tmds" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="tmds_rtl" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
       </spirit:busInterface>
       <spirit:busInterface>
         <spirit:name>CLK.SYS_CLOCK</spirit:name>
@@ -89,7 +89,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>hdmi_hdp</spirit:name>
+          <spirit:name>hdmi_out_en</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -99,7 +99,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>hdmi_out_en</spirit:name>
+          <spirit:name>hdmi_hpd</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
             <spirit:vector>
@@ -161,18 +161,19 @@
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
       <spirit:componentInstance>
-        <spirit:instanceName>rgb2vga_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="rgb2vga" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_rgb2vga_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>dvi2rgb_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="dvi2rgb" spirit:vendor="digilentinc.com" spirit:version="1.8"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_dvi2rgb_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="kClkRange">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="kClkRange">3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="kEdidFileName">dgl_720p_cea.data</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rgb2vga_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="rgb2vga" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_rgb2vga_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -181,6 +182,11 @@
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_clk_wiz_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="PRIMITIVE">PLL</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_INCLK_SWITCHOVER">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="SECONDARY_SOURCE">Single_ended_clock_capable_pin</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKIN2_JITTER_PS">100.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_USED">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="NUM_OUT_CLKS">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">200.000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_DRIVES">BUFG</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT2_DRIVES">BUFG</spirit:configurableElementValue>
@@ -189,20 +195,23 @@
           <spirit:configurableElementValue spirit:referenceId="CLKOUT5_DRIVES">BUFG</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT6_DRIVES">BUFG</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT7_DRIVES">BUFG</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="FEEDBACK_SOURCE">FDBK_AUTO</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_CLKFBOUT_MULT_F">8</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKIN2_PERIOD">10.0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_COMPENSATION">ZHOLD</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT0_DIVIDE_F">5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT1_DIVIDE">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">109.241</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">96.948</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_JITTER">130.958</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_PHASE_ERROR">98.575</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>GND</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_xlconstant_0_3</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_xlconstant_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
@@ -210,7 +219,7 @@
         <spirit:instanceName>VCC</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
         <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_xlconstant_0_4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_xlconstant_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -228,10 +237,10 @@
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xlconstant_0_dout</spirit:name>
+        <spirit:name>GND_dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="GND" spirit:portRef="dout"/>
-        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="reset"/>
         <spirit:externalPortReference spirit:portRef="hdmi_out_en"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="reset"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_clk_out1</spirit:name>
@@ -246,7 +255,7 @@
       <spirit:adHocConnection>
         <spirit:name>VCC_dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="VCC" spirit:portRef="dout"/>
-        <spirit:externalPortReference spirit:portRef="hdmi_hdp"/>
+        <spirit:externalPortReference spirit:portRef="hdmi_hpd"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>rgb2vga_0_vga_pRed</spirit:name>
@@ -275,11 +284,11 @@
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
-      <spirit:hierConnection spirit:interfaceRef="hdmi_in/hdmi_in_1">
-        <spirit:activeInterface spirit:busRef="TMDS" spirit:componentRef="dvi2rgb_0"/>
-      </spirit:hierConnection>
       <spirit:hierConnection spirit:interfaceRef="hdmi_in_ddc/dvi2rgb_0_DDC">
         <spirit:activeInterface spirit:busRef="DDC" spirit:componentRef="dvi2rgb_0"/>
+      </spirit:hierConnection>
+      <spirit:hierConnection spirit:interfaceRef="hdmi_in/hdmi_in_1">
+        <spirit:activeInterface spirit:busRef="TMDS" spirit:componentRef="dvi2rgb_0"/>
       </spirit:hierConnection>
     </spirit:hierConnections>
   </spirit:design>

@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Wed Apr 11 09:26:12 2018
-//Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
+//Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+//Date        : Tue Apr 17 21:44:56 2018
+//Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
 //Purpose     : IP block netlist
@@ -11,7 +11,7 @@
 
 (* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
 module hdmi_vga
-   (hdmi_hdp,
+   (hdmi_hpd,
     hdmi_in_clk_n,
     hdmi_in_clk_p,
     hdmi_in_data_n,
@@ -29,7 +29,7 @@ module hdmi_vga
     vga_pHSync,
     vga_pRed,
     vga_pVSync);
-  output [0:0]hdmi_hdp;
+  output [0:0]hdmi_hpd;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_N" *) input hdmi_in_clk_n;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 hdmi_in CLK_P" *) input hdmi_in_clk_p;
   (* X_INTERFACE_INFO = "digilentinc.com:interface:tmds:1.0 hdmi_in DATA_N" *) input [2:0]hdmi_in_data_n;
@@ -48,6 +48,7 @@ module hdmi_vga
   output [4:0]vga_pRed;
   output vga_pVSync;
 
+  wire [0:0]GND_dout;
   wire [0:0]VCC_dout;
   wire clk_wiz_0_clk_out1;
   wire dvi2rgb_0_DDC_SCL_I;
@@ -71,11 +72,10 @@ module hdmi_vga
   wire [4:0]rgb2vga_0_vga_pRed;
   wire rgb2vga_0_vga_pVSync;
   wire sys_clock_1;
-  wire [0:0]xlconstant_0_dout;
 
   assign dvi2rgb_0_DDC_SCL_I = hdmi_in_ddc_scl_i;
   assign dvi2rgb_0_DDC_SDA_I = hdmi_in_ddc_sda_i;
-  assign hdmi_hdp[0] = VCC_dout;
+  assign hdmi_hpd[0] = VCC_dout;
   assign hdmi_in_1_CLK_N = hdmi_in_clk_n;
   assign hdmi_in_1_CLK_P = hdmi_in_clk_p;
   assign hdmi_in_1_DATA_N = hdmi_in_data_n[2:0];
@@ -84,21 +84,21 @@ module hdmi_vga
   assign hdmi_in_ddc_scl_t = dvi2rgb_0_DDC_SCL_T;
   assign hdmi_in_ddc_sda_o = dvi2rgb_0_DDC_SDA_O;
   assign hdmi_in_ddc_sda_t = dvi2rgb_0_DDC_SDA_T;
-  assign hdmi_out_en[0] = xlconstant_0_dout;
+  assign hdmi_out_en[0] = GND_dout;
   assign sys_clock_1 = sys_clock;
   assign vga_pBlue[4:0] = rgb2vga_0_vga_pBlue;
   assign vga_pGreen[5:0] = rgb2vga_0_vga_pGreen;
   assign vga_pHSync = rgb2vga_0_vga_pHSync;
   assign vga_pRed[4:0] = rgb2vga_0_vga_pRed;
   assign vga_pVSync = rgb2vga_0_vga_pVSync;
-  hdmi_vga_xlconstant_0_3 GND
-       (.dout(xlconstant_0_dout));
-  hdmi_vga_xlconstant_0_4 VCC
+  hdmi_vga_xlconstant_0_0 GND
+       (.dout(GND_dout));
+  hdmi_vga_xlconstant_0_1 VCC
        (.dout(VCC_dout));
   hdmi_vga_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(sys_clock_1),
         .clk_out1(clk_wiz_0_clk_out1),
-        .reset(xlconstant_0_dout));
+        .reset(GND_dout));
   hdmi_vga_dvi2rgb_0_0 dvi2rgb_0
        (.PixelClk(dvi2rgb_0_PixelClk),
         .RefClk(clk_wiz_0_clk_out1),

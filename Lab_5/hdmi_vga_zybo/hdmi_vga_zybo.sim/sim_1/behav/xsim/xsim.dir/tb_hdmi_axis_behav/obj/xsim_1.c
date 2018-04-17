@@ -43,6 +43,7 @@
 #define alloca _alloca
 #endif
 typedef void (*funcp)(char *, char *);
+extern int main(int, char**);
 extern void vlog_simple_process_execute_0_fast_no_reg_no_agg(char*, char*, char*);
 extern void execute_3(char*, char *);
 extern void execute_4(char*, char *);
