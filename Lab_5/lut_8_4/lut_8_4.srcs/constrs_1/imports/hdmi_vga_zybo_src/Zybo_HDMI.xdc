@@ -69,11 +69,11 @@ set_property IOSTANDARD TMDS_33 [get_ports {hdmi_in_data_p[2]}]
 #set_property -dict { PACKAGE_PIN E19   IOSTANDARD LVCMOS33 } [get_ports hdmi_cec]; #IO_L5N_T0_AD9N_35 Sch=HDMI_CEC
 set_property PACKAGE_PIN E18 [get_ports {hdmi_hpd[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {hdmi_hpd[0]}]
-#set_property -dict { PACKAGE_PIN F17   IOSTANDARD LVCMOS33 } [get_ports hdmi_out_en]; #IO_L6N_T0_VREF_35 Sch=HDMI_OUT_EN
+set_property -dict { PACKAGE_PIN F17   IOSTANDARD LVCMOS33 } [get_ports {hdmi_out_en[0]}]; #IO_L6N_T0_VREF_35 Sch=HDMI_OUT_EN
 set_property -dict {PACKAGE_PIN G17 IOSTANDARD LVCMOS33} [get_ports hdmi_in_ddc_scl_io]
 set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS33} [get_ports hdmi_in_ddc_sda_io]
 
-create_clock -period 9.259 -name hdmi_in_clk_p -waveform {0.000 4.629} [get_ports hdmi_in_clk_p]
+create_clock -period 15 -name hdmi_in_clk_p -waveform {0.000 7.5} [get_ports hdmi_in_clk_p]
 
 ##Pmod Header JA (XADC)
 #set_property -dict { PACKAGE_PIN N15   IOSTANDARD LVCMOS33 } [get_ports { ja_p[0] }]; #IO_L21P_T3_DQS_AD14P_35 Sch=JA1_R_p

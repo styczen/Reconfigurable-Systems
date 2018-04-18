@@ -1,15 +1,15 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Tue Apr 17 21:44:56 2018
-//Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+//Date        : Wed Apr 18 08:59:50 2018
+//Host        : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
+(* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=2,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
 module hdmi_vga
    (hdmi_hpd,
     hdmi_in_clk_n,
@@ -58,10 +58,10 @@ module hdmi_vga
   wire dvi2rgb_0_DDC_SDA_O;
   wire dvi2rgb_0_DDC_SDA_T;
   wire dvi2rgb_0_PixelClk;
-  wire dvi2rgb_0_RGB_ACTIVE_VIDEO;
-  wire [23:0]dvi2rgb_0_RGB_DATA;
-  wire dvi2rgb_0_RGB_HSYNC;
-  wire dvi2rgb_0_RGB_VSYNC;
+  wire [23:0]dvi2rgb_0_vid_pData;
+  wire dvi2rgb_0_vid_pHSync;
+  wire dvi2rgb_0_vid_pVDE;
+  wire dvi2rgb_0_vid_pVSync;
   wire hdmi_in_1_CLK_N;
   wire hdmi_in_1_CLK_P;
   wire [2:0]hdmi_in_1_DATA_N;
@@ -72,6 +72,10 @@ module hdmi_vga
   wire [4:0]rgb2vga_0_vga_pRed;
   wire rgb2vga_0_vga_pVSync;
   wire sys_clock_1;
+  wire vp_0_de_out;
+  wire vp_0_h_sync_out;
+  wire [23:0]vp_0_pixel_out;
+  wire vp_0_v_sync_out;
 
   assign dvi2rgb_0_DDC_SCL_I = hdmi_in_ddc_scl_i;
   assign dvi2rgb_0_DDC_SDA_I = hdmi_in_ddc_sda_i;
@@ -114,19 +118,29 @@ module hdmi_vga
         .TMDS_Data_p(hdmi_in_1_DATA_P),
         .aRst(1'b0),
         .pRst(1'b0),
-        .vid_pData(dvi2rgb_0_RGB_DATA),
-        .vid_pHSync(dvi2rgb_0_RGB_HSYNC),
-        .vid_pVDE(dvi2rgb_0_RGB_ACTIVE_VIDEO),
-        .vid_pVSync(dvi2rgb_0_RGB_VSYNC));
+        .vid_pData(dvi2rgb_0_vid_pData),
+        .vid_pHSync(dvi2rgb_0_vid_pHSync),
+        .vid_pVDE(dvi2rgb_0_vid_pVDE),
+        .vid_pVSync(dvi2rgb_0_vid_pVSync));
   hdmi_vga_rgb2vga_0_0 rgb2vga_0
        (.PixelClk(dvi2rgb_0_PixelClk),
-        .rgb_pData(dvi2rgb_0_RGB_DATA),
-        .rgb_pHSync(dvi2rgb_0_RGB_HSYNC),
-        .rgb_pVDE(dvi2rgb_0_RGB_ACTIVE_VIDEO),
-        .rgb_pVSync(dvi2rgb_0_RGB_VSYNC),
+        .rgb_pData(vp_0_pixel_out),
+        .rgb_pHSync(vp_0_h_sync_out),
+        .rgb_pVDE(vp_0_de_out),
+        .rgb_pVSync(vp_0_v_sync_out),
         .vga_pBlue(rgb2vga_0_vga_pBlue),
         .vga_pGreen(rgb2vga_0_vga_pGreen),
         .vga_pHSync(rgb2vga_0_vga_pHSync),
         .vga_pRed(rgb2vga_0_vga_pRed),
         .vga_pVSync(rgb2vga_0_vga_pVSync));
+  hdmi_vga_vp_0_0 vp_0
+       (.clk(dvi2rgb_0_PixelClk),
+        .de_in(dvi2rgb_0_vid_pVDE),
+        .de_out(vp_0_de_out),
+        .h_sync_in(dvi2rgb_0_vid_pHSync),
+        .h_sync_out(vp_0_h_sync_out),
+        .pixel_in(dvi2rgb_0_vid_pData),
+        .pixel_out(vp_0_pixel_out),
+        .v_sync_in(dvi2rgb_0_vid_pVSync),
+        .v_sync_out(vp_0_v_sync_out));
 endmodule
