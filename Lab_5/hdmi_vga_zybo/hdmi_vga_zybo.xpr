@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/hdmi_vga_zybo/hdmi_vga_zybo.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/hdmi_vga_zybo/hdmi_vga_zybo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="b219da41a1c54094a507950a3ce6d487"/>
@@ -34,7 +34,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="5"/>
+    <Option Name="WTXSimLaunchSim" Val="6"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -64,23 +64,23 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci">
-          <Proxy FileSetName="hdmi_vga_vp_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci">
-          <Proxy FileSetName="hdmi_vga_dvi2rgb_0_0"/>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_xlconstant_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci">
           <Proxy FileSetName="hdmi_vga_rgb2vga_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_xlconstant_0_1/hdmi_vga_xlconstant_0_1.xci">
-          <Proxy FileSetName="hdmi_vga_xlconstant_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.xci">
-          <Proxy FileSetName="hdmi_vga_xlconstant_0_0"/>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_dvi2rgb_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xci">
           <Proxy FileSetName="hdmi_vga_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_xlconstant_0_1/hdmi_vga_xlconstant_0_1.xci">
+          <Proxy FileSetName="hdmi_vga_xlconstant_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_vp_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v">
@@ -118,36 +118,8 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_axis_in.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/hdmi_axis_in.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_axis_out.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/hdmi_axis_out.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/tb_hdmi_axis.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/tb_hdmi_axis.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_in.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/hdmi_in.v"/>
           <Attr Name="ImportTime" Val="1523795546"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -157,7 +129,6 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_out.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/hdmi_out.v"/>
           <Attr Name="ImportTime" Val="1523795546"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -167,8 +138,37 @@
       </File>
       <File Path="$PSRCDIR/sim_1/imports/tb_src/tb_hdmi.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/tb_hdmi.v"/>
+          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_axis_in.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/hdmi_axis_in.v"/>
+          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_axis_out.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/hdmi_axis_out.v"/>
+          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/imports/tb_src/tb_hdmi_axis.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../hdmi_vga_zybo_src/tb_src/tb_hdmi_axis.v"/>
           <Attr Name="ImportTime" Val="1523795546"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -177,7 +177,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="tb_hdmi_axis"/>
+        <Option Name="TopModule" Val="tb_hdmi"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -232,14 +232,11 @@
     <Simulator Name="Questa">
       <Option Name="Description" Val="Questa Advanced Simulator"/>
     </Simulator>
-    <Simulator Name="IES">
-      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
-    </Simulator>
-    <Simulator Name="VCS">
-      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
-    </Simulator>
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
@@ -299,9 +296,7 @@
     </Run>
     <Run Id="hdmi_vga_vp_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_vga_vp_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_vga_vp_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_vga_vp_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -407,9 +402,7 @@
     </Run>
     <Run Id="hdmi_vga_vp_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_vga_vp_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="hdmi_vga_vp_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

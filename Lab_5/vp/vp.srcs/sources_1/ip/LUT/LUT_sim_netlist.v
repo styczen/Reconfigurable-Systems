@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Apr 17 19:23:09 2018
+// Date        : Tue Apr 24 14:54:39 2018
 // Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/vp/vp.srcs/sources_1/ip/LUT/LUT_sim_netlist.v
+//               C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/vp/vp.srcs/sources_1/ip/LUT/LUT_sim_netlist.v
 // Design      : LUT
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

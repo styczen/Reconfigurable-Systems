@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1524034812">
-  <File Type="VDS-TIMING-PB" Name="hdmi_vga_wrapper_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="hdmi_vga_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="hdmi_vga_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="hdmi_vga_wrapper_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="hdmi_vga_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="hdmi_vga_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="hdmi_vga_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="hdmi_vga_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="hdmi_vga_wrapper.vds"/>
   <File Type="PA-TCL" Name="hdmi_vga_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -57,8 +54,8 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_vp_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_rgb2vga_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_xlconstant_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_rgb2vga_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_dvi2rgb_0_0"/>
 </GenRun>
