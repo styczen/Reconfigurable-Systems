@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_5/8_5.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc rfile:../../../8_5.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_5/8_5.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc rfile:../../../8_5.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } [get_ports { sys_clock }]; #IO_L11P_T1_SRCC_35 Sch=sysclk
 set_property src_info {type:XDC file:1 line:55 export:INPUT save:INPUT read:READ} [current_design]

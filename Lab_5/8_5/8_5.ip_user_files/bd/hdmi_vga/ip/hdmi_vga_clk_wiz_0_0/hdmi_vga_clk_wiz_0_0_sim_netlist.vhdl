@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Wed Apr 25 00:33:44 2018
+-- Date        : Wed Apr 25 00:33:43 2018
 -- Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_5/8_5.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_vga_clk_wiz_0_0 -prefix
+--               hdmi_vga_clk_wiz_0_0_ hdmi_vga_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : hdmi_vga_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz is
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz : entity is "hdmi_vga_clk_wiz_0_0_clk_wiz";
 end hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz;
 
 architecture STRUCTURE of hdmi_vga_clk_wiz_0_0_hdmi_vga_clk_wiz_0_0_clk_wiz is

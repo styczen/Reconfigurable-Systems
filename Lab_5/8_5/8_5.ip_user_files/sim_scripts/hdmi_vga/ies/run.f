@@ -1,3 +1,9 @@
+-makelib ies_lib/xil_defaultlib -sv \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+-endlib
+-makelib ies_lib/xpm \
+  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+-endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/hdmi_vga/ipshared/69dc/src/rgb2vga.vhd" \
   "../../../bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/sim/hdmi_vga_rgb2vga_0_0.vhd" \
@@ -29,12 +35,12 @@
   "../../../bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/sim/hdmi_vga_xlconstant_0_1.v" \
 -endlib
 -makelib ies_lib/dist_mem_gen_v8_0_12 \
-  "../../../../8_5.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_bin_c_0_1/src/LUT_bin/simulation/dist_mem_gen_v8_0.v" \
+  "../../../../8_5.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/LUT/simulation/dist_mem_gen_v8_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_bin_c_0_1/src/LUT_bin/sim/LUT_bin.v" \
-  "../../../bd/hdmi_vga/ipshared/91d2/src/vp_bin_c.v" \
-  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_bin_c_0_1/sim/hdmi_vga_vp_bin_c_0_1.v" \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/LUT/sim/LUT.v" \
+  "../../../bd/hdmi_vga/ipshared/b96b/src/vp.v" \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/sim/hdmi_vga_vp_0_0.v" \
   "../../../bd/hdmi_vga/sim/hdmi_vga.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

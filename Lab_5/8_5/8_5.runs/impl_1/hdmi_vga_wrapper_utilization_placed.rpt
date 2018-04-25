@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Apr 25 00:37:59 2018
-| Host         : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Wed Apr 25 09:23:01 2018
+| Host         : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 | Command      : report_utilization -file hdmi_vga_wrapper_utilization_placed.rpt -pb hdmi_vga_wrapper_utilization_placed.pb
 | Design       : hdmi_vga_wrapper
 | Device       : 7z010clg400-1
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs                 |  398 |     0 |     17600 |  2.26 |
-|   LUT as Logic             |  374 |     0 |     17600 |  2.13 |
+| Slice LUTs                 |  460 |     0 |     17600 |  2.61 |
+|   LUT as Logic             |  436 |     0 |     17600 |  2.48 |
 |   LUT as Memory            |   24 |     0 |      6000 |  0.40 |
 |     LUT as Distributed RAM |   24 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
-| Slice Registers            |  477 |     0 |     35200 |  1.36 |
-|   Register as Flip Flop    |  477 |     0 |     35200 |  1.36 |
+| Slice Registers            |  534 |     0 |     35200 |  1.52 |
+|   Register as Flip Flop    |  534 |     0 |     35200 |  1.52 |
 |   Register as Latch        |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                   |   16 |     0 |      8800 |  0.18 |
 | F8 Muxes                   |    8 |     0 |      4400 |  0.18 |
@@ -59,7 +59,7 @@ Table of Contents
 | 20    |          Yes |           - |          Set |
 | 10    |          Yes |           - |        Reset |
 | 12    |          Yes |         Set |            - |
-| 435   |          Yes |       Reset |            - |
+| 492   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -69,23 +69,23 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |  176 |     0 |      4400 |  4.00 |
-|   SLICEL                                  |  120 |     0 |           |       |
-|   SLICEM                                  |   56 |     0 |           |       |
-| LUT as Logic                              |  374 |     0 |     17600 |  2.13 |
+| Slice                                     |  191 |     0 |      4400 |  4.34 |
+|   SLICEL                                  |  127 |     0 |           |       |
+|   SLICEM                                  |   64 |     0 |           |       |
+| LUT as Logic                              |  436 |     0 |     17600 |  2.48 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    |  289 |       |           |       |
-|   using O5 and O6                         |   85 |       |           |       |
+|   using O6 output only                    |  338 |       |           |       |
+|   using O5 and O6                         |   98 |       |           |       |
 | LUT as Memory                             |   24 |     0 |      6000 |  0.40 |
 |   LUT as Distributed RAM                  |   24 |     0 |           |       |
 |     using O5 output only                  |    0 |       |           |       |
 |     using O6 output only                  |    0 |       |           |       |
 |     using O5 and O6                       |   24 |       |           |       |
 |   LUT as Shift Register                   |    0 |     0 |           |       |
-| LUT Flip Flop Pairs                       |  200 |     0 |     17600 |  1.14 |
-|   fully used LUT-FF pairs                 |   52 |       |           |       |
-|   LUT-FF pairs with one unused LUT output |  140 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |  109 |       |           |       |
+| LUT Flip Flop Pairs                       |  237 |     0 |     17600 |  1.35 |
+|   fully used LUT-FF pairs                 |   77 |       |           |       |
+|   LUT-FF pairs with one unused LUT output |  152 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |  121 |       |           |       |
 | Unique Control Sets                       |   35 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
@@ -181,16 +181,16 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| FDRE       |  435 |        Flop & Latch |
-| LUT6       |  157 |                 LUT |
-| LUT5       |   80 |                 LUT |
-| LUT4       |   69 |                 LUT |
-| LUT3       |   69 |                 LUT |
+| FDRE       |  492 |        Flop & Latch |
+| LUT6       |  198 |                 LUT |
+| LUT5       |   92 |                 LUT |
+| LUT4       |   91 |                 LUT |
+| LUT3       |   72 |                 LUT |
 | LUT2       |   63 |                 LUT |
 | RAMD32     |   36 |  Distributed Memory |
-| LUT1       |   21 |                 LUT |
 | OBUF       |   20 |                  IO |
 | FDPE       |   20 |        Flop & Latch |
+| LUT1       |   18 |                 LUT |
 | CARRY4     |   18 |          CarryLogic |
 | MUXF7      |   16 |               MuxFx |
 | RAMS32     |   12 |  Distributed Memory |
@@ -227,7 +227,7 @@ Table of Contents
 +-------------------------+------+
 | hdmi_vga_xlconstant_0_1 |    1 |
 | hdmi_vga_xlconstant_0_0 |    1 |
-| hdmi_vga_vp_bin_c_0_1   |    1 |
+| hdmi_vga_vp_0_0         |    1 |
 | hdmi_vga_rgb2vga_0_0    |    1 |
 | hdmi_vga_dvi2rgb_0_0    |    1 |
 | hdmi_vga_clk_wiz_0_0    |    1 |

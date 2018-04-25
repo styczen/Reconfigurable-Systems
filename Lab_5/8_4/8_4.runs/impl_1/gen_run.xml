@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1524638312">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="tb_hdmi.drc"/>
+  <File Type="BG-BGN" Name="tb_hdmi.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="tb_hdmi.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="tb_hdmi.ltx"/>
+  <File Type="BITSTR-MMI" Name="tb_hdmi.mmi"/>
+  <File Type="BITSTR-BMM" Name="tb_hdmi_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="tb_hdmi.nky"/>
+  <File Type="BITSTR-RBT" Name="tb_hdmi.rbt"/>
+  <File Type="BITSTR-MSK" Name="tb_hdmi.msk"/>
+  <File Type="BG-BIN" Name="tb_hdmi.bin"/>
+  <File Type="BG-BIT" Name="tb_hdmi.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tb_hdmi_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tb_hdmi_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tb_hdmi_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="tb_hdmi_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="tb_hdmi_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="tb_hdmi_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="tb_hdmi_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="tb_hdmi_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="tb_hdmi_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="tb_hdmi_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="tb_hdmi_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="tb_hdmi_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="tb_hdmi_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="tb_hdmi_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="tb_hdmi_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tb_hdmi_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tb_hdmi_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="tb_hdmi_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="tb_hdmi_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="tb_hdmi_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="tb_hdmi_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="tb_hdmi_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="tb_hdmi_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="tb_hdmi_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="tb_hdmi_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="tb_hdmi_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="tb_hdmi_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="tb_hdmi_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="tb_hdmi_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="tb_hdmi_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="tb_hdmi_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="tb_hdmi_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="tb_hdmi_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="tb_hdmi_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="tb_hdmi_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="tb_hdmi_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="tb_hdmi_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="tb_hdmi.vdi"/>
+  <File Type="PWROPT-TIMING" Name="tb_hdmi_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="tb_hdmi_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="tb_hdmi_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="tb_hdmi.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="tb_hdmi_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="tb_hdmi_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="tb_hdmi_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="tb_hdmi_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="tb_hdmi_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="tb_hdmi_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="tb_hdmi_placed.dcp"/>
+  <File Type="PA-TCL" Name="tb_hdmi.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/tb_src/hdmi_in.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Resources/hdmi_vga_zybo_src/tb_src/hdmi_in.v"/>
+        <Attr Name="ImportTime" Val="1523795546"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tb_src/hdmi_out.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Resources/hdmi_vga_zybo_src/tb_src/hdmi_out.v"/>
+        <Attr Name="ImportTime" Val="1523795546"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/tb_src/tb_hdmi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Resources/hdmi_vga_zybo_src/tb_src/tb_hdmi.v"/>
+        <Attr Name="ImportTime" Val="1523795546"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/vp_0/src/lut.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tb_hdmi"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Resources/hdmi_vga_zybo_src/Zybo_HDMI.xdc"/>
+        <Attr Name="ImportTime" Val="1524636341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="vp_0"/>
+</GenRun>

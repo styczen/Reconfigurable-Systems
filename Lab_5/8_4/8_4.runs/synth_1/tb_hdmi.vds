@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Apr 25 08:38:33 2018
+# Process ID: 7661
+# Current directory: /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.runs/synth_1
+# Command line: vivado -log tb_hdmi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_hdmi.tcl
+# Log file: /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.runs/synth_1/tb_hdmi.vds
+# Journal file: /home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source tb_hdmi.tcl -notrace
+Command: synth_design -top tb_hdmi -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7670 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1315.531 ; gain = 84.996 ; free physical = 9648 ; free virtual = 28264
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tb_hdmi' [/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.srcs/sources_1/imports/tb_src/tb_hdmi.v:21]
+INFO: [Synth 8-638] synthesizing module 'hdmi_in' [/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.srcs/sources_1/imports/tb_src/hdmi_in.v:8]
+	Parameter hr bound to: 64 - type: integer 
+	Parameter hbp bound to: 8 - type: integer 
+	Parameter hfp bound to: 8 - type: integer 
+	Parameter hs bound to: 2 - type: integer 
+	Parameter vr bound to: 64 - type: integer 
+	Parameter vbp bound to: 8 - type: integer 
+	Parameter vfp bound to: 8 - type: integer 
+	Parameter vs bound to: 4 - type: integer 
+ERROR: [Synth 8-462] no clock signal specified in event control [/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.srcs/sources_1/imports/tb_src/hdmi_in.v:61]
+ERROR: [Synth 8-285] failed synthesizing module 'hdmi_in' [/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.srcs/sources_1/imports/tb_src/hdmi_in.v:8]
+ERROR: [Synth 8-285] failed synthesizing module 'tb_hdmi' [/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_4/8_4.srcs/sources_1/imports/tb_src/tb_hdmi.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1383.062 ; gain = 152.527 ; free physical = 9661 ; free virtual = 28277
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 25 08:38:54 2018...

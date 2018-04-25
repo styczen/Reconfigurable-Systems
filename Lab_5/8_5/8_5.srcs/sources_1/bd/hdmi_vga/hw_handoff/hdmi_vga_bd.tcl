@@ -210,8 +210,8 @@ proc create_root_design { parentCell } {
   # Create instance: rgb2vga_0, and set properties
   set rgb2vga_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2vga:1.0 rgb2vga_0 ]
 
-  # Create instance: vp_bin_c_0, and set properties
-  set vp_bin_c_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:vp_bin_c:1.0 vp_bin_c_0 ]
+  # Create instance: vp_0, and set properties
+  set vp_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:vp:1.0 vp_0 ]
 
   # Create interface connections
   connect_bd_intf_net -intf_net dvi2rgb_0_DDC [get_bd_intf_ports hdmi_in_ddc] [get_bd_intf_pins dvi2rgb_0/DDC]
@@ -221,21 +221,21 @@ proc create_root_design { parentCell } {
   connect_bd_net -net GND_dout [get_bd_ports hdmi_out_en] [get_bd_pins GND/dout] [get_bd_pins clk_wiz_0/reset]
   connect_bd_net -net VCC_dout [get_bd_ports hdmi_hpd] [get_bd_pins VCC/dout]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
-  connect_bd_net -net dvi2rgb_0_PixelClk [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2vga_0/PixelClk] [get_bd_pins vp_bin_c_0/clk]
-  connect_bd_net -net dvi2rgb_0_vid_pData [get_bd_pins dvi2rgb_0/vid_pData] [get_bd_pins vp_bin_c_0/pixel_in]
-  connect_bd_net -net dvi2rgb_0_vid_pHSync [get_bd_pins dvi2rgb_0/vid_pHSync] [get_bd_pins vp_bin_c_0/h_sync_in]
-  connect_bd_net -net dvi2rgb_0_vid_pVDE [get_bd_pins dvi2rgb_0/vid_pVDE] [get_bd_pins vp_bin_c_0/de_in]
-  connect_bd_net -net dvi2rgb_0_vid_pVSync [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins vp_bin_c_0/v_sync_in]
+  connect_bd_net -net dvi2rgb_0_PixelClk [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2vga_0/PixelClk] [get_bd_pins vp_0/clk]
+  connect_bd_net -net dvi2rgb_0_vid_pData [get_bd_pins dvi2rgb_0/vid_pData] [get_bd_pins vp_0/pixel_in]
+  connect_bd_net -net dvi2rgb_0_vid_pHSync [get_bd_pins dvi2rgb_0/vid_pHSync] [get_bd_pins vp_0/h_sync_in]
+  connect_bd_net -net dvi2rgb_0_vid_pVDE [get_bd_pins dvi2rgb_0/vid_pVDE] [get_bd_pins vp_0/de_in]
+  connect_bd_net -net dvi2rgb_0_vid_pVSync [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins vp_0/v_sync_in]
   connect_bd_net -net rgb2vga_0_vga_pBlue [get_bd_ports vga_pBlue] [get_bd_pins rgb2vga_0/vga_pBlue]
   connect_bd_net -net rgb2vga_0_vga_pGreen [get_bd_ports vga_pGreen] [get_bd_pins rgb2vga_0/vga_pGreen]
   connect_bd_net -net rgb2vga_0_vga_pHSync [get_bd_ports vga_pHSync] [get_bd_pins rgb2vga_0/vga_pHSync]
   connect_bd_net -net rgb2vga_0_vga_pRed [get_bd_ports vga_pRed] [get_bd_pins rgb2vga_0/vga_pRed]
   connect_bd_net -net rgb2vga_0_vga_pVSync [get_bd_ports vga_pVSync] [get_bd_pins rgb2vga_0/vga_pVSync]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net vp_bin_c_0_de_out [get_bd_pins rgb2vga_0/rgb_pVDE] [get_bd_pins vp_bin_c_0/de_out]
-  connect_bd_net -net vp_bin_c_0_h_sync_out [get_bd_pins rgb2vga_0/rgb_pHSync] [get_bd_pins vp_bin_c_0/h_sync_out]
-  connect_bd_net -net vp_bin_c_0_pixel_out [get_bd_pins rgb2vga_0/rgb_pData] [get_bd_pins vp_bin_c_0/pixel_out]
-  connect_bd_net -net vp_bin_c_0_v_sync_out [get_bd_pins rgb2vga_0/rgb_pVSync] [get_bd_pins vp_bin_c_0/v_sync_out]
+  connect_bd_net -net vp_0_de_out [get_bd_pins rgb2vga_0/rgb_pVDE] [get_bd_pins vp_0/de_out]
+  connect_bd_net -net vp_0_h_sync_out [get_bd_pins rgb2vga_0/rgb_pHSync] [get_bd_pins vp_0/h_sync_out]
+  connect_bd_net -net vp_0_pixel_out [get_bd_pins rgb2vga_0/rgb_pData] [get_bd_pins vp_0/pixel_out]
+  connect_bd_net -net vp_0_v_sync_out [get_bd_pins rgb2vga_0/rgb_pVSync] [get_bd_pins vp_0/v_sync_out]
 
   # Create address segments
 

@@ -2,12 +2,20 @@ vlib modelsim_lib/work
 vlib modelsim_lib/msim
 
 vlib modelsim_lib/msim/xil_defaultlib
+vlib modelsim_lib/msim/xpm
 vlib modelsim_lib/msim/xlconstant_v1_1_3
 vlib modelsim_lib/msim/dist_mem_gen_v8_0_12
 
 vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
+vmap xpm modelsim_lib/msim/xpm
 vmap xlconstant_v1_1_3 modelsim_lib/msim/xlconstant_v1_1_3
 vmap dist_mem_gen_v8_0_12 modelsim_lib/msim/dist_mem_gen_v8_0_12
+
+vlog -work xil_defaultlib -64 -incr -sv "+incdir+../../../../8_5.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../8_5.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+
+vcom -work xpm -64 -93 \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/hdmi_vga/ipshared/69dc/src/rgb2vga.vhd" \
@@ -40,12 +48,12 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../../8_5.srcs/sources_1/bd/h
 "../../../bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/sim/hdmi_vga_xlconstant_0_1.v" \
 
 vlog -work dist_mem_gen_v8_0_12 -64 -incr "+incdir+../../../../8_5.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../8_5.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
-"../../../../8_5.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_bin_c_0_1/src/LUT_bin/simulation/dist_mem_gen_v8_0.v" \
+"../../../../8_5.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/LUT/simulation/dist_mem_gen_v8_0.v" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../8_5.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../8_5.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vp_bin_c_0_1/src/LUT_bin/sim/LUT_bin.v" \
-"../../../bd/hdmi_vga/ipshared/91d2/src/vp_bin_c.v" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vp_bin_c_0_1/sim/hdmi_vga_vp_bin_c_0_1.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/LUT/sim/LUT.v" \
+"../../../bd/hdmi_vga/ipshared/b96b/src/vp.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/sim/hdmi_vga_vp_0_0.v" \
 "../../../bd/hdmi_vga/sim/hdmi_vga.v" \
 
 vlog -work xil_defaultlib \

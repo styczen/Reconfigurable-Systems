@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 // Date        : Wed Apr 25 00:34:30 2018
 // Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_5/8_5.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/hdmi_vga_xlconstant_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top hdmi_vga_xlconstant_0_1 -prefix
+//               hdmi_vga_xlconstant_0_1_ hdmi_vga_xlconstant_0_1_stub.v
 // Design      : hdmi_vga_xlconstant_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

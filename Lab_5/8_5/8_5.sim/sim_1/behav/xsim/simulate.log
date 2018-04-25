@@ -4,4 +4,3 @@ WARNING: This core is supplied with a behavioral model. To model cycle-accurate 
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 out  0.ppm saved
-out  1.ppm saved

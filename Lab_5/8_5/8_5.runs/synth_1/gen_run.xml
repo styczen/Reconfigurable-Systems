@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1524609378">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1524640841">
+  <File Type="VDS-TIMING-PB" Name="hdmi_vga_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="hdmi_vga_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="hdmi_vga_wrapper.dcp"/>
   <File Type="PA-TCL" Name="hdmi_vga_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="hdmi_vga_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hdmi_vga_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="hdmi_vga_wrapper.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="hdmi_vga_wrapper_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="hdmi_vga_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="hdmi_vga_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="hdmi_vga_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="hdmi_vga_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="hdmi_vga_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/hdmi_vga.bd">
@@ -25,43 +25,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/tb_src/hdmi_in.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Resources/hdmi_vga_zybo_src/tb_src/hdmi_in.v"/>
-        <Attr Name="ImportTime" Val="1523795546"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/tb_src/hdmi_out.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Resources/hdmi_vga_zybo_src/tb_src/hdmi_out.v"/>
-        <Attr Name="ImportTime" Val="1523795546"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/tb_src/tb_hdmi.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Resources/hdmi_vga_zybo_src/tb_src/tb_hdmi.v"/>
-        <Attr Name="ImportTime" Val="1523795546"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/vp_bin_c_0/src/lut_binarize.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_bin_c_0_1/src/lut_binarize.coe">
+    <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/lut.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -90,9 +54,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_clk_wiz_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_rgb2vga_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_dvi2rgb_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_xlconstant_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_xlconstant_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_vp_0_0"/>
 </GenRun>

@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Wed Apr 25 00:33:54 2018
+-- Date        : Wed Apr 25 00:33:52 2018
 -- Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_5/8_5.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top hdmi_vga_dvi2rgb_0_0 -prefix
+--               hdmi_vga_dvi2rgb_0_0_ hdmi_vga_dvi2rgb_0_0_sim_netlist.vhdl
 -- Design      : hdmi_vga_dvi2rgb_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -29,8 +29,6 @@ entity hdmi_vga_dvi2rgb_0_0_ChannelBond is
     pRdy_1 : in STD_LOGIC;
     pDataInRaw : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_ChannelBond : entity is "ChannelBond";
 end hdmi_vga_dvi2rgb_0_0_ChannelBond;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ChannelBond is
@@ -1853,8 +1851,6 @@ entity hdmi_vga_dvi2rgb_0_0_GlitchFilter is
     RefClk : in STD_LOGIC;
     SS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_GlitchFilter : entity is "GlitchFilter";
 end hdmi_vga_dvi2rgb_0_0_GlitchFilter;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_GlitchFilter is
@@ -2174,8 +2170,6 @@ entity hdmi_vga_dvi2rgb_0_0_InputSERDES is
     CLKB : in STD_LOGIC;
     \out\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_InputSERDES : entity is "InputSERDES";
 end hdmi_vga_dvi2rgb_0_0_InputSERDES;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_InputSERDES is
@@ -2781,8 +2775,6 @@ entity hdmi_vga_dvi2rgb_0_0_PhaseAlign is
     pIDLY_CE_reg_0 : in STD_LOGIC_VECTOR ( 4 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_PhaseAlign : entity is "PhaseAlign";
 end hdmi_vga_dvi2rgb_0_0_PhaseAlign;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_PhaseAlign is
@@ -7632,8 +7624,6 @@ entity hdmi_vga_dvi2rgb_0_0_ResyncToBUFG is
     pC1 : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_ResyncToBUFG : entity is "ResyncToBUFG";
 end hdmi_vga_dvi2rgb_0_0_ResyncToBUFG;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ResyncToBUFG is
@@ -7874,8 +7864,6 @@ entity hdmi_vga_dvi2rgb_0_0_SyncAsync is
     RefClk : in STD_LOGIC;
     AS : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_SyncAsync : entity is "SyncAsync";
 end hdmi_vga_dvi2rgb_0_0_SyncAsync;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_SyncAsync is
@@ -8524,8 +8512,6 @@ entity hdmi_vga_dvi2rgb_0_0_ResetBridge is
     in0 : in STD_LOGIC;
     PixelClk_int : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_ResetBridge : entity is "ResetBridge";
 end hdmi_vga_dvi2rgb_0_0_ResetBridge;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_ResetBridge is
@@ -8624,8 +8610,6 @@ entity hdmi_vga_dvi2rgb_0_0_SyncBase is
     rTimeoutCnt_reg : in STD_LOGIC_VECTOR ( 23 downto 0 );
     PixelClk_int : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_SyncBase : entity is "SyncBase";
 end hdmi_vga_dvi2rgb_0_0_SyncBase;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_SyncBase is
@@ -9068,8 +9052,6 @@ entity hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl is
     SDA_I : in STD_LOGIC;
     SCL_I : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl : entity is "TWI_SlaveCtl";
 end hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_TWI_SlaveCtl is
@@ -10002,8 +9984,6 @@ entity hdmi_vga_dvi2rgb_0_0_EEPROM_8b is
     SDA_I : in STD_LOGIC;
     SCL_I : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_EEPROM_8b : entity is "EEPROM_8b";
 end hdmi_vga_dvi2rgb_0_0_EEPROM_8b;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_EEPROM_8b is
@@ -10985,8 +10965,6 @@ entity hdmi_vga_dvi2rgb_0_0_TMDS_Clocking is
     TMDS_Clk_p : in STD_LOGIC;
     TMDS_Clk_n : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_TMDS_Clocking : entity is "TMDS_Clocking";
 end hdmi_vga_dvi2rgb_0_0_TMDS_Clocking;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_TMDS_Clocking is
@@ -11422,8 +11400,6 @@ entity hdmi_vga_dvi2rgb_0_0_TMDS_Decoder is
     pRst : in STD_LOGIC;
     pAllVldBgnFlag : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_TMDS_Decoder : entity is "TMDS_Decoder";
 end hdmi_vga_dvi2rgb_0_0_TMDS_Decoder;
 
 architecture STRUCTURE of hdmi_vga_dvi2rgb_0_0_TMDS_Decoder is
@@ -13349,8 +13325,6 @@ entity hdmi_vga_dvi2rgb_0_0_dvi2rgb is
     pRst : in STD_LOGIC;
     pRst_n : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of hdmi_vga_dvi2rgb_0_0_dvi2rgb : entity is "dvi2rgb";
   attribute kAddBUFG : string;
   attribute kAddBUFG of hdmi_vga_dvi2rgb_0_0_dvi2rgb : entity is "TRUE";
   attribute kClkRange : integer;

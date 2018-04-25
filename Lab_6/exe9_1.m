@@ -55,6 +55,7 @@ for i=1:length(filtered_mask)
     end
 end
 
+% Center of mass
 x_sc = round(m10 / m00);
 y_sc = round(m01 / m00);
 
