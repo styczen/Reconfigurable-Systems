@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May  6 19:53:00 2018
+# Process ID: 1068
+# Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/10/vp/vp.runs/synth_1
+# Command line: vivado.exe -log vp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vp.tcl
+# Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/10/vp/vp.runs/synth_1/vp.vds
+# Journal file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/10/vp/vp.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vp.tcl -notrace

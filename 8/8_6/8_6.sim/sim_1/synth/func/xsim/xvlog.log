@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_6/8_6.sim/sim_1/synth/func/xsim/tb_main_LUT_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LUT
+INFO: [VRFC 10-311] analyzing module main_LUT
+INFO: [VRFC 10-311] analyzing module LUT_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module LUT_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module LUT_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module LUT_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module LUT_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module LUT_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_6/8_6.srcs/sim_1/new/tb_main_LUT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_main_LUT

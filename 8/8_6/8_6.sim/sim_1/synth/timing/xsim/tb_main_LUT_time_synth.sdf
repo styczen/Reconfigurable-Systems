@@ -1,0 +1,260 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "main_LUT")
+(DATE "Tue May  1 11:47:09 2018")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2017.4")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[4\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[5\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[6\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE addr_IBUF\[7\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (848.7:982.4:982.4) (848.7:982.4:982.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[4\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[5\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[6\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE dout_OBUF\[7\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2487.8:2644.2:2644.2) (2487.8:2644.2:2644.2))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "RAMB18E1")
+  (INSTANCE lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH CLKBWRCLK DOPBDOP[1:0] (468.0:882.0:882.0) (468.0:882.0:882.0))
+      (IOPATH CLKARDCLK DOPADOP[1:0] (468.0:882.0:882.0) (468.0:882.0:882.0))
+      (IOPATH CLKBWRCLK DOBDO[15:0] (468.0:882.0:882.0) (468.0:882.0:882.0))
+      (IOPATH CLKARDCLK DOADO[15:0] (468.0:882.0:882.0) (468.0:882.0:882.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge ENARDEN) (posedge CLKARDCLK) (-227.0:443.0:443.0) (227.0:227.0:227.0))
+      (SETUPHOLD (negedge ENARDEN) (posedge CLKARDCLK) (-227.0:443.0:443.0) (227.0:227.0:227.0))
+      (SETUPHOLD (posedge ENBWREN) (posedge CLKBWRCLK) (-227.0:443.0:443.0) (227.0:227.0:227.0))
+      (SETUPHOLD (negedge ENBWREN) (posedge CLKBWRCLK) (-227.0:443.0:443.0) (227.0:227.0:227.0))
+      (SETUPHOLD (posedge REGCEAREGCE) (posedge CLKARDCLK) (-155.0:360.0:360.0) (155.0:155.0:155.0))
+      (SETUPHOLD (negedge REGCEAREGCE) (posedge CLKARDCLK) (-155.0:360.0:360.0) (155.0:155.0:155.0))
+      (SETUPHOLD (posedge REGCEB) (posedge CLKBWRCLK) (-155.0:360.0:360.0) (155.0:155.0:155.0))
+      (SETUPHOLD (negedge REGCEB) (posedge CLKBWRCLK) (-155.0:360.0:360.0) (155.0:155.0:155.0))
+      (SETUPHOLD (posedge RSTRAMARSTRAM) (posedge CLKARDCLK) (-453.0:359.0:359.0) (453.0:453.0:453.0))
+      (SETUPHOLD (negedge RSTRAMARSTRAM) (posedge CLKARDCLK) (-453.0:359.0:359.0) (453.0:453.0:453.0))
+      (SETUPHOLD (posedge RSTRAMB) (posedge CLKBWRCLK) (-453.0:359.0:359.0) (453.0:453.0:453.0))
+      (SETUPHOLD (negedge RSTRAMB) (posedge CLKBWRCLK) (-453.0:359.0:359.0) (453.0:453.0:453.0))
+      (SETUPHOLD (posedge RSTREGARSTREG) (posedge CLKARDCLK) (-67.0:342.0:342.0) (67.0:67.0:67.0))
+      (SETUPHOLD (negedge RSTREGARSTREG) (posedge CLKARDCLK) (-67.0:342.0:342.0) (67.0:67.0:67.0))
+      (SETUPHOLD (posedge RSTREGB) (posedge CLKBWRCLK) (-67.0:342.0:342.0) (67.0:67.0:67.0))
+      (SETUPHOLD (negedge RSTREGB) (posedge CLKBWRCLK) (-67.0:342.0:342.0) (67.0:67.0:67.0))
+      (SETUPHOLD (posedge DIADI[15:0]) (posedge CLKARDCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (negedge DIADI[15:0]) (posedge CLKARDCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (posedge WEA[1:0]) (posedge CLKARDCLK) (-197.0:532.0:532.0) (197.0:197.0:197.0))
+      (SETUPHOLD (negedge WEA[1:0]) (posedge CLKARDCLK) (-197.0:532.0:532.0) (197.0:197.0:197.0))
+      (SETUPHOLD (posedge DIPADIP[1:0]) (posedge CLKARDCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (negedge DIPADIP[1:0]) (posedge CLKARDCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (posedge ADDRARDADDR[13:0]) (posedge CLKARDCLK) (-360.0:566.0:566.0) (360.0:360.0:360.0))
+      (SETUPHOLD (negedge ADDRARDADDR[13:0]) (posedge CLKARDCLK) (-360.0:566.0:566.0) (360.0:360.0:360.0))
+      (SETUPHOLD (posedge WEBWE[3:0]) (posedge CLKBWRCLK) (-197.0:532.0:532.0) (197.0:197.0:197.0))
+      (SETUPHOLD (negedge WEBWE[3:0]) (posedge CLKBWRCLK) (-197.0:532.0:532.0) (197.0:197.0:197.0))
+      (SETUPHOLD (posedge DIBDI[15:0]) (posedge CLKBWRCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (negedge DIBDI[15:0]) (posedge CLKBWRCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (posedge DIPBDIP[1:0]) (posedge CLKBWRCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (negedge DIPBDIP[1:0]) (posedge CLKBWRCLK) (-667.0:737.0:737.0) (667.0:667.0:667.0))
+      (SETUPHOLD (posedge ADDRBWRADDR[13:0]) (posedge CLKBWRCLK) (-360.0:566.0:566.0) (360.0:360.0:360.0))
+      (SETUPHOLD (negedge ADDRBWRADDR[13:0]) (posedge CLKBWRCLK) (-360.0:566.0:566.0) (360.0:360.0:360.0))
+    )
+)
+(CELL 
+    (CELLTYPE "main_LUT")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT addr_IBUF\[0\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[5] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[0\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[5] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[1\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[6] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[1\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[6] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[2\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[7] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[2\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[7] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[3\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[8] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[3\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[8] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[4\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[9] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[4\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[9] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[5\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[10] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[5\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[10] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[6\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[11] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[6\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[11] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[7\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRARDADDR[12] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT addr_IBUF\[7\]_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/ADDRBWRADDR[12] (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT clk_IBUF_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/CLKARDCLK (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_inst/O lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/CLKBWRCLK (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOADO[9] dout_OBUF\[3\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOADO[8] dout_OBUF\[2\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOADO[1] dout_OBUF\[1\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOADO[0] dout_OBUF\[0\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOBDO[9] dout_OBUF\[7\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOBDO[8] dout_OBUF\[6\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOBDO[1] dout_OBUF\[5\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      (INTERCONNECT lut_i/U0/inst_blk_mem_gen/gnbram\.gnativebmg\.native_blk_mem_gen/valid\.cstr/ramloop\[0\]\.ram\.r/prim_init\.ram/DEVICE_7SERIES\.NO_BMM_INFO\.SP\.WIDE_PRIM18\.ram/DOBDO[0] dout_OBUF\[4\]_inst/I (760.7:800.7:800.7) (760.7:800.7:800.7))
+      )
+    )
+)
+)

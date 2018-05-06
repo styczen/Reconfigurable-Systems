@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/vp/vp.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/vp/vp.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/vp/vp.srcs/sources_1/new/vp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vp
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/vp/vp.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi

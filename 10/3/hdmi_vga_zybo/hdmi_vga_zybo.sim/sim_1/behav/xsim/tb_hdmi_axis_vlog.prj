@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_axis_in.v" \
+"../../../../hdmi_vga_zybo.srcs/sim_1/imports/tb_src/hdmi_axis_out.v" \
+"../../../../hdmi_vga_zybo.srcs/sim_1/imports/tb_src/tb_hdmi_axis.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../zad7_2.srcs/sources_1/new/complex_arithmetic.v" \
+"../../../../zad7_2.srcs/sources_1/imports/new/delay.v" \
+"../../../../zad7_2.srcs/sources_1/imports/new/delay_line.v" \
+"../../../../zad7_2.srcs/sim_1/new/stimulate.v" \
+"../../../../zad7_2.srcs/sim_1/new/tb_complex_arithmetic.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

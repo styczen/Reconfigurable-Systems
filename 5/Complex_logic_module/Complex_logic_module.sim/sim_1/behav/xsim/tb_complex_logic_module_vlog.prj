@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Complex_logic_module.srcs/sources_1/new/and_gate.v" \
+"../../../../Complex_logic_module.srcs/sources_1/new/complex_logic.v" \
+"../../../../Complex_logic_module.srcs/sources_1/new/or_gate.v" \
+"../../../../Complex_logic_module.srcs/sim_1/new/stimulate.v" \
+"../../../../Complex_logic_module.srcs/sim_1/new/tb_complex_logic_module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

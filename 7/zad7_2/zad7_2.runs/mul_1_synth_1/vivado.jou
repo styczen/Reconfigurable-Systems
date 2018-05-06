@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  2 13:39:54 2018
+# Process ID: 9764
+# Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.runs/mul_1_synth_1
+# Command line: vivado.exe -log mul_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_1.tcl
+# Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.runs/mul_1_synth_1/mul_1.vds
+# Journal file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_4/zad7_2/zad7_2.runs/mul_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mul_1.tcl -notrace

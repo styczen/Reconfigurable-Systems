@@ -1,0 +1,5 @@
+behavioral simulation 						delay = 10.100 ns
+post synthesis functional simulation 		delay = 10.100 ns
+post synthesis timing simulation			delay = 15.892 ns
+post implementation functional simulation	delay = 10.100 ns
+post implementation timing simulation		delay = 18.400 ns
