@@ -1,8 +1,0 @@
-0.6
-2017.4
-Dec 15 2017
-21:07:18
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.srcs/sim_1/new/stimulate.v,1521024143,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.srcs/sim_1/new/tb_cnt_mod.v,,stimulate,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.srcs/sim_1/new/tb_cnt_mod.v,1521007877,verilog,,,,tb_cnt_mod,,,,,,,,
-C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.srcs/sources_1/new/cnt.v,1521009213,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_2/Cnt_mod/Cnt_mod.srcs/sim_1/new/stimulate.v,,cnt,,,,,,,,

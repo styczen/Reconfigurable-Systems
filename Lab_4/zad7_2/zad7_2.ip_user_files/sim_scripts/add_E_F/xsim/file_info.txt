@@ -1,1 +1,0 @@
-add_E_F.vhd,vhdl,xil_defaultlib,../../../../zad7_2.srcs/sources_1/ip/add_E_F/sim/add_E_F.vhd,

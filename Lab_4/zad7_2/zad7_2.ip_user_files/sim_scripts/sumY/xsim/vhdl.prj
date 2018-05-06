@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../zad7_2.srcs/sources_1/ip/sumY/sim/sumY.vhd" \
-
-nosort

@@ -1,1 +1,0 @@
--wto "98e7f5e7ec82474fbfa02762c3430cb2" --incr --debug "typical" --relax --mt "2" -L "dist_mem_gen_v8_0_12" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_hdmi_behav" "xil_defaultlib.tb_hdmi" "xil_defaultlib.glbl" -log "elaborate.log" 

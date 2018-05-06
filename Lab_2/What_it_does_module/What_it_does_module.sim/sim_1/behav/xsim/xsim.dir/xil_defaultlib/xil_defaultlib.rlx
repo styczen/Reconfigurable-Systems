@@ -1,8 +1,0 @@
-0.6
-2017.4
-Dec 15 2017
-20:57:24
-/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.sim/sim_1/behav/xsim/glbl.v,1521616028,verilog,,,,glbl,,,,,,,,
-/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/stimulate.v,1521616028,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/tb_mux.v,,stimulate,,,,,,,,
-/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/tb_mux.v,1521616028,verilog,,,,tb_mux,,,,,,,,
-/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sources_1/new/main.v,1521616028,verilog,,/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/Lab_2/What_it_does_module/What_it_does_module.srcs/sim_1/new/stimulate.v,,mux,,,,,,,,
