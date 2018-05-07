@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:vp:1.1
-// IP Revision: 4
+// IP Revision: 6
 
 `timescale 1ns/1ps
 
@@ -66,7 +66,7 @@ module hdmi_vga_vp_0_0 (
   pixel_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN hdmi_vga_dvi2rgb_0_0_PixelClk" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN hdmi_vga_dvi2rgb_1_1_PixelClk" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 input wire de_in;

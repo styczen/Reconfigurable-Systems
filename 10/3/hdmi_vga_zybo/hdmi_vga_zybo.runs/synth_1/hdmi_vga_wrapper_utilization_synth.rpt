@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sun May  6 23:49:33 2018
+| Date         : Mon May  7 16:49:38 2018
 | Host         : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file hdmi_vga_wrapper_utilization_synth.rpt -pb hdmi_vga_wrapper_utilization_synth.pb
 | Design       : hdmi_vga_wrapper
@@ -161,8 +161,8 @@ Table of Contents
 | hdmi_vga_xlconstant_0_1 |    1 |
 | hdmi_vga_xlconstant_0_0 |    1 |
 | hdmi_vga_vp_0_0         |    1 |
-| hdmi_vga_rgb2vga_0_0    |    1 |
-| hdmi_vga_dvi2rgb_0_0    |    1 |
+| hdmi_vga_rgb2vga_1_0    |    1 |
+| hdmi_vga_dvi2rgb_1_1    |    1 |
 | hdmi_vga_clk_wiz_0_0    |    1 |
 +-------------------------+------+
 

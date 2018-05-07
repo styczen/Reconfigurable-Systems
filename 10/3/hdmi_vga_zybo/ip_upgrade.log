@@ -1,6 +1,48 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon May  7 16:46:16 2018
+| Host         : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (xilinx.com:user:vp:1.1) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon May  7 16:36:07 2018
+| Host         : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'hdmi_vga_vp_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of hdmi_vga_vp_0_0 (xilinx.com:user:vp:1.1) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 | Date         : Sun May  6 23:45:29 2018
 | Host         : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

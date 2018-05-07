@@ -6,12 +6,6 @@
 # Block Designs: bd/hdmi_vga/hdmi_vga.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga || ORIG_REF_NAME==hdmi_vga} -quiet] -quiet
 
-# IP: bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/hdmi_vga_dvi2rgb_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_dvi2rgb_0_0 || ORIG_REF_NAME==hdmi_vga_dvi2rgb_0_0} -quiet] -quiet
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_rgb2vga_0_0 || ORIG_REF_NAME==hdmi_vga_rgb2vga_0_0} -quiet] -quiet
-
 # IP: bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_clk_wiz_0_0 || ORIG_REF_NAME==hdmi_vga_clk_wiz_0_0} -quiet] -quiet
 
@@ -20,6 +14,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlcons
 
 # IP: bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/hdmi_vga_xlconstant_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlconstant_0_1 || ORIG_REF_NAME==hdmi_vga_xlconstant_0_1} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_rgb2vga_1_0/hdmi_vga_rgb2vga_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_rgb2vga_1_0 || ORIG_REF_NAME==hdmi_vga_rgb2vga_1_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/hdmi_vga_dvi2rgb_1_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_dvi2rgb_1_1 || ORIG_REF_NAME==hdmi_vga_dvi2rgb_1_1} -quiet] -quiet
 
 # IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_vp_0_0 || ORIG_REF_NAME==hdmi_vga_vp_0_0} -quiet] -quiet

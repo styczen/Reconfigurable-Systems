@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Sun May  6 23:47:32 2018
+// Date        : Mon May  7 16:47:36 2018
 // Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0_stub.v
+//               c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0_stub.v
 // Design      : hdmi_vga_vp_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

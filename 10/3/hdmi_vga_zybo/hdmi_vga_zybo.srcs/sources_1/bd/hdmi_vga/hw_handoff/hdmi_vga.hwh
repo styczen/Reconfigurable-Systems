@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May  6 23:45:46 2018" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon May  7 16:48:27 2018" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="hdmi_in_clk_p" SIGIS="clk"/>
-    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="hdmi_in_clk_n" SIGIS="clk"/>
-    <PORT DIR="I" LEFT="2" NAME="hdmi_in_data_p" RIGHT="0" SIGIS="undef"/>
-    <PORT DIR="I" LEFT="2" NAME="hdmi_in_data_n" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="I" NAME="hdmi_in_ddc_scl_i" SIGIS="undef"/>
     <PORT DIR="O" NAME="hdmi_in_ddc_scl_o" SIGIS="undef"/>
     <PORT DIR="O" NAME="hdmi_in_ddc_scl_t" SIGIS="undef"/>
     <PORT DIR="I" NAME="hdmi_in_ddc_sda_i" SIGIS="undef"/>
     <PORT DIR="O" NAME="hdmi_in_ddc_sda_o" SIGIS="undef"/>
     <PORT DIR="O" NAME="hdmi_in_ddc_sda_t" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="hdmi_in_clk_p" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="hdmi_in_clk_n" SIGIS="clk"/>
+    <PORT DIR="I" LEFT="2" NAME="hdmi_in_data_p" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="2" NAME="hdmi_in_data_n" RIGHT="0" SIGIS="undef"/>
     <PORT DIR="O" LEFT="0" NAME="hdmi_out_en" RIGHT="0" SIGIS="undef" SIGNAME="GND_dout">
       <CONNECTIONS>
         <CONNECTION INSTANCE="GND" PORT="dout"/>
@@ -24,34 +24,34 @@
         <CONNECTION INSTANCE="VCC" PORT="dout"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="4" NAME="vga_pRed" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pRed">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pRed"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="5" NAME="vga_pGreen" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pGreen">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pGreen"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pBlue">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pBlue"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="vga_pHSync" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pHSync">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pHSync"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="vga_pVSync" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pVSync">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2vga_0" PORT="vga_pVSync"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT CLKFREQUENCY="125000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="vga_pRed" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pRed">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_1" PORT="vga_pRed"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="5" NAME="vga_pGreen" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pGreen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_1" PORT="vga_pGreen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pBlue">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_1" PORT="vga_pBlue"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="vga_pHSync" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pHSync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_1" PORT="vga_pHSync"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="vga_pVSync" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pVSync">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2vga_1" PORT="vga_pVSync"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="2" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
@@ -62,15 +62,7 @@
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
-    <BUSINTERFACE BUSNAME="External_Interface_hdmi_in" NAME="hdmi_in" TYPE="TARGET">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="CLK_P" PHYSICAL="hdmi_in_clk_p"/>
-        <PORTMAP LOGICAL="CLK_N" PHYSICAL="hdmi_in_clk_n"/>
-        <PORTMAP LOGICAL="DATA_P" PHYSICAL="hdmi_in_data_p"/>
-        <PORTMAP LOGICAL="DATA_N" PHYSICAL="hdmi_in_data_n"/>
-      </PORTMAPS>
-    </BUSINTERFACE>
-    <BUSINTERFACE BUSNAME="dvi2rgb_0_DDC" NAME="hdmi_in_ddc" TYPE="INITIATOR">
+    <BUSINTERFACE BUSNAME="dvi2rgb_1_DDC" NAME="hdmi_in_ddc" TYPE="INITIATOR">
       <PORTMAPS>
         <PORTMAP LOGICAL="SCL_I" PHYSICAL="hdmi_in_ddc_scl_i"/>
         <PORTMAP LOGICAL="SCL_O" PHYSICAL="hdmi_in_ddc_scl_o"/>
@@ -78,6 +70,14 @@
         <PORTMAP LOGICAL="SDA_I" PHYSICAL="hdmi_in_ddc_sda_i"/>
         <PORTMAP LOGICAL="SDA_O" PHYSICAL="hdmi_in_ddc_sda_o"/>
         <PORTMAP LOGICAL="SDA_T" PHYSICAL="hdmi_in_ddc_sda_t"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+    <BUSINTERFACE BUSNAME="External_Interface_hdmi_in" NAME="hdmi_in" TYPE="TARGET">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="CLK_P" PHYSICAL="hdmi_in_clk_p"/>
+        <PORTMAP LOGICAL="CLK_N" PHYSICAL="hdmi_in_clk_n"/>
+        <PORTMAP LOGICAL="DATA_P" PHYSICAL="hdmi_in_data_p"/>
+        <PORTMAP LOGICAL="DATA_N" PHYSICAL="hdmi_in_data_n"/>
       </PORTMAPS>
     </BUSINTERFACE>
   </EXTERNALINTERFACES>
@@ -700,16 +700,16 @@
         </PORT>
         <PORT CLKFREQUENCY="200000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="RefClk"/>
+            <CONNECTION INSTANCE="dvi2rgb_1" PORT="RefClk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/dvi2rgb_0" HWVERSION="1.8" INSTANCE="dvi2rgb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dvi2rgb" VLNV="digilentinc.com:ip:dvi2rgb:1.8">
+    <MODULE FULLNAME="/dvi2rgb_1" HWVERSION="1.8" INSTANCE="dvi2rgb_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dvi2rgb" VLNV="digilentinc.com:ip:dvi2rgb:1.8">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/8/Resources/hdmi_vga_ip_repo/dvi2rgb_v1_8/docs/dvi2rgb.pdf"/>
+        <DOCUMENT SOURCE="c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/Resources/hdmi_vga_ip_repo/dvi2rgb_v1_8/docs/dvi2rgb.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="kEmulateDDC" VALUE="true"/>
@@ -719,7 +719,7 @@
         <PARAMETER NAME="kIDLY_TapWidth" VALUE="5"/>
         <PARAMETER NAME="kAddBUFG" VALUE="true"/>
         <PARAMETER NAME="kEdidFileName" VALUE="dgl_720p_cea.data"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_dvi2rgb_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_dvi2rgb_1_1"/>
         <PARAMETER NAME="kEnableSerialClkOutput" VALUE="false"/>
         <PARAMETER NAME="TMDS_BOARD_INTERFACE"/>
         <PARAMETER NAME="IIC_BOARD_INTERFACE"/>
@@ -736,29 +736,29 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="aRst" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pData">
+        <PORT DIR="O" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pData">
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="pixel_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vid_pVDE" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
+        <PORT DIR="O" NAME="vid_pVDE" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pVDE">
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="de_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vid_pHSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
+        <PORT DIR="O" NAME="vid_pHSync" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pHSync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="h_sync_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vid_pVSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
+        <PORT DIR="O" NAME="vid_pVSync" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pVSync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="vp_0" PORT="v_sync_in"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_1_PixelClk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="PixelClk"/>
+            <CONNECTION INSTANCE="rgb2vga_1" PORT="PixelClk"/>
             <CONNECTION INSTANCE="vp_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
@@ -788,7 +788,7 @@
             <PORTMAP LOGICAL="ACTIVE_VIDEO" PHYSICAL="vid_pVDE"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="dvi2rgb_0_DDC" NAME="DDC" TYPE="INITIATOR" VLNV="xilinx.com:interface:iic:1.0">
+        <BUSINTERFACE BUSNAME="dvi2rgb_1_DDC" NAME="DDC" TYPE="INITIATOR" VLNV="xilinx.com:interface:iic:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="SCL_I" PHYSICAL="SCL_I"/>
             <PORTMAP LOGICAL="SCL_O" PHYSICAL="SCL_O"/>
@@ -800,16 +800,16 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/rgb2vga_0" HWVERSION="1.0" INSTANCE="rgb2vga_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2vga" VLNV="digilentinc.com:ip:rgb2vga:1.0">
+    <MODULE FULLNAME="/rgb2vga_1" HWVERSION="1.0" INSTANCE="rgb2vga_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2vga" VLNV="digilentinc.com:ip:rgb2vga:1.0">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/8/Resources/hdmi_vga_ip_repo/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
+        <DOCUMENT SOURCE="c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/Resources/hdmi_vga_ip_repo/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="VID_IN_DATA_WIDTH" VALUE="24"/>
         <PARAMETER NAME="kRedDepth" VALUE="5"/>
         <PARAMETER NAME="kGreenDepth" VALUE="6"/>
         <PARAMETER NAME="kBlueDepth" VALUE="5"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_rgb2vga_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_rgb2vga_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -833,32 +833,32 @@
             <CONNECTION INSTANCE="vp_0" PORT="v_sync_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_1_PixelClk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
+            <CONNECTION INSTANCE="dvi2rgb_1" PORT="PixelClk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="4" NAME="vga_pRed" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pRed">
+        <PORT DIR="O" LEFT="4" NAME="vga_pRed" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pRed">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_pRed"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="5" NAME="vga_pGreen" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pGreen">
+        <PORT DIR="O" LEFT="5" NAME="vga_pGreen" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pGreen">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_pGreen"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pBlue">
+        <PORT DIR="O" LEFT="4" NAME="vga_pBlue" RIGHT="0" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pBlue">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_pBlue"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vga_pHSync" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pHSync">
+        <PORT DIR="O" NAME="vga_pHSync" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pHSync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_pHSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="vga_pVSync" SIGIS="undef" SIGNAME="rgb2vga_0_vga_pVSync">
+        <PORT DIR="O" NAME="vga_pVSync" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pVSync">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="vga_pVSync"/>
           </CONNECTIONS>
@@ -882,29 +882,29 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="dvi2rgb_1_PixelClk">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
+            <CONNECTION INSTANCE="dvi2rgb_1" PORT="PixelClk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="de_in" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
+        <PORT DIR="I" NAME="de_in" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVDE"/>
+            <CONNECTION INSTANCE="dvi2rgb_1" PORT="vid_pVDE"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="h_sync_in" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
+        <PORT DIR="I" NAME="h_sync_in" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pHSync"/>
+            <CONNECTION INSTANCE="dvi2rgb_1" PORT="vid_pHSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="v_sync_in" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
+        <PORT DIR="I" NAME="v_sync_in" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVSync"/>
+            <CONNECTION INSTANCE="dvi2rgb_1" PORT="vid_pVSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="23" NAME="pixel_in" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pData">
+        <PORT DIR="I" LEFT="23" NAME="pixel_in" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pData"/>
+            <CONNECTION INSTANCE="dvi2rgb_1" PORT="vid_pData"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="2" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
@@ -914,22 +914,22 @@
         </PORT>
         <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="vp_0_de_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
+            <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pVDE"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="vp_0_h_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
+            <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pHSync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="v_sync_out" SIGIS="undef" SIGNAME="vp_0_v_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
+            <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pVSync"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="23" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="vp_0_pixel_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
+            <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pData"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

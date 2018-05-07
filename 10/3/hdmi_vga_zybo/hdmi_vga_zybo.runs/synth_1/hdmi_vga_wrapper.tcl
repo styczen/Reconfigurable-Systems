@@ -30,18 +30,18 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/8/Resources/hdmi_vga_ip_repo
   c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs
+  c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/Resources
 } [current_project]
 set_property ip_output_repo c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v
 add_files C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga.bd
-set_property used_in_implementation false [get_files -all c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/src/dvi2rgb.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/src/dvi2rgb_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdmi_vga_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

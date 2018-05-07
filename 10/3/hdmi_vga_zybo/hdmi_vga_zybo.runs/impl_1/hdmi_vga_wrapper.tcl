@@ -73,8 +73,8 @@ set rc [catch {
   set_property webtalk.parent_dir C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.cache/wt [current_project]
   set_property parent.project_path C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.xpr [current_project]
   set_property ip_repo_paths {
-  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/8/Resources/hdmi_vga_ip_repo
   C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs
+  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/Resources
 } [current_project]
   set_property ip_output_repo C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3/hdmi_vga_zybo/hdmi_vga_zybo.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

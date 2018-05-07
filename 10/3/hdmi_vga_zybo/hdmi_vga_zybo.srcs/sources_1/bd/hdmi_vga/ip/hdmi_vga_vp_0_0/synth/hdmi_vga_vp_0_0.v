@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:vp:1.1
-// IP Revision: 4
+// IP Revision: 6
 
 (* X_CORE_INFO = "vp,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "hdmi_vga_vp_0_0,vp,{}" *)
-(* CORE_GENERATION_INFO = "hdmi_vga_vp_0_0,vp,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vp,x_ipVersion=1.1,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "hdmi_vga_vp_0_0,vp,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vp,x_ipVersion=1.1,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module hdmi_vga_vp_0_0 (
   clk,
@@ -67,7 +67,7 @@ module hdmi_vga_vp_0_0 (
   pixel_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN hdmi_vga_dvi2rgb_0_0_PixelClk" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN hdmi_vga_dvi2rgb_1_1_PixelClk" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 input wire de_in;

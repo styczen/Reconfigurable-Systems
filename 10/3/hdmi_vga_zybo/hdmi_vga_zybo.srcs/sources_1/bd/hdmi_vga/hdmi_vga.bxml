@@ -2,27 +2,11 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="hdmi_vga" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1525643146"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1525643146"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1525643146"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1525643146"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1525704507"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1525704507"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1525704507"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1525704507"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\hdmi_vga_dvi2rgb_0_0\hdmi_vga_dvi2rgb_0_0.xci" Type="IP">
-        <Instance HierarchyPath="dvi2rgb_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\hdmi_vga_rgb2vga_0_0\hdmi_vga_rgb2vga_0_0.xci" Type="IP">
-        <Instance HierarchyPath="rgb2vga_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\hdmi_vga_clk_wiz_0_0\hdmi_vga_clk_wiz_0_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -47,8 +31,16 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\hdmi_vga_vp_0_0\hdmi_vga_vp_0_0.xci" Type="IP">
-        <Instance HierarchyPath="vp_0"/>
+      <File Name="ip\hdmi_vga_rgb2vga_1_0\hdmi_vga_rgb2vga_1_0.xci" Type="IP">
+        <Instance HierarchyPath="rgb2vga_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\hdmi_vga_dvi2rgb_1_1\hdmi_vga_dvi2rgb_1_1.xci" Type="IP">
+        <Instance HierarchyPath="dvi2rgb_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -64,6 +56,14 @@
       <File Name="sim\hdmi_vga.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\hdmi_vga_vp_0_0\hdmi_vga_vp_0_0.xci" Type="IP">
+        <Instance HierarchyPath="vp_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="hdmi_vga_ooc.xdc" Type="XDC">
