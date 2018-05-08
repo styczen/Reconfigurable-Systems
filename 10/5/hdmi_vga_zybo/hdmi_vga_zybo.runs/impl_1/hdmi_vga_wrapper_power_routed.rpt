@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Tue May  8 19:20:31 2018
+| Date             : Tue May  8 21:11:32 2018
 | Host             : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_vga_wrapper_power_routed.rpt -pb hdmi_vga_wrapper_power_summary_routed.pb -rpx hdmi_vga_wrapper_power_routed.rpx
 | Design           : hdmi_vga_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.007 |       12 |       --- |             --- |
-| Slice Logic              |    <0.001 |     1249 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      396 |     17600 |            2.25 |
+| Slice Logic              |    <0.001 |     1256 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      404 |     17600 |            2.30 |
 |   CARRY4                 |    <0.001 |       18 |      4400 |            0.41 |
 |   Register               |    <0.001 |      522 |     35200 |            1.48 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
 |   Others                 |    <0.001 |      138 |       --- |             --- |
 |   F7/F8 Muxes            |    <0.001 |       24 |     17600 |            0.14 |
 |   LUT as Shift Register  |     0.000 |        4 |      6000 |            0.07 |
-| Signals                  |    <0.001 |      981 |       --- |             --- |
+| Signals                  |    <0.001 |      992 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
 | PLL                      |     0.110 |        1 |         2 |           50.00 |
 | DSPs                     |     0.000 |       18 |        80 |           22.50 |

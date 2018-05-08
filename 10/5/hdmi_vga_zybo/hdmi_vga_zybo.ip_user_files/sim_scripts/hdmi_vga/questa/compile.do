@@ -104,7 +104,7 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../hdmi_vga_zybo.srcs/sources_1/
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/sim/rgb2ycbcr_0.v" \
-"../../../bd/hdmi_vga/ipshared/3042/src/vp.v" \
+"../../../bd/hdmi_vga/ipshared/6ffd/src/vp.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/sim/hdmi_vga_vp_0_0.v" \
 
 vlog -work xil_defaultlib \

@@ -18,6 +18,7 @@ module vp(
     wire de_mux[7:0];
     wire hsync_mux[7:0];
     wire vsync_mux[7:0];
+    wire [7:0] bin;
 
 //    Inputs assignments
     assign rgb_mux[0] = pixel_in;
@@ -25,7 +26,7 @@ module vp(
     assign hsync_mux[0] = h_sync_in;
     assign vsync_mux[0] = v_sync_in;
     
-//    RGB to YCbCr conversion
+//    RGB to YCbCr conversion; sw = 0001
     rgb2ycbcr_0 rgb2ycbcr_i(
         .clk(clk),
         .de(de_mux[0]),
@@ -39,6 +40,14 @@ module vp(
         .pixel_out(rgb_mux[1])
         );
     
+//    Binarize; sw = 0010
+    localparam Ta = 105;
+    localparam Tb = 120;
+    localparam Tc = 129;
+    localparam Td = 255;
+    
+    assign bin = (rgb_mux[1][15-:8] > Ta && rgb_mux[1][15-:8] < Tb && rgb_mux[1][7-:8] > Tc && rgb_mux[1][7-:8] < Td ) ? 8'd255 : 0;
+    assign rgb_mux[2] = {bin, bin, bin};
 
 //    Output assignments
     assign de_out = de_mux[sw];
