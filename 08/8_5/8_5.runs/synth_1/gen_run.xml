@@ -93,8 +93,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_rgb2vga_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_dvi2rgb_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_xlconstant_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_xlconstant_0_1"/>
