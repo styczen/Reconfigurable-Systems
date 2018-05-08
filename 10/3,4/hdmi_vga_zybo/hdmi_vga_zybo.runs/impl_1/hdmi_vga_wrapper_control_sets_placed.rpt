@@ -1,0 +1,104 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue May  8 18:31:42 2018
+| Host         : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file hdmi_vga_wrapper_control_sets_placed.rpt
+| Design       : hdmi_vga_wrapper
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    35 |
+| Unused register locations in slices containing registers |   102 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             237 |           84 |
+| No           | No                    | Yes                    |              28 |           18 |
+| No           | Yes                   | No                     |              85 |           26 |
+| Yes          | No                    | No                     |              39 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             133 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+|                       Clock Signal                       |                                                  Enable Signal                                                 |                                    Set/Reset Signal                                    | Slice Load Count | Bel Load Count |
++----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/RdyLostReset/SyncAsyncx/oSyncStages[1]          |                1 |              1 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]         |                1 |              2 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/RdyLostReset/aRst_int                           |                1 |              2 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/in0                                             |                1 |              2 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SCL/Filter.cntPeriods[3]_i_2__0_n_0 | hdmi_vga_i/dvi2rgb_1/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSCL/SS[0]       |                1 |              4 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SDA/Filter.cntPeriods[3]_i_2_n_0    | hdmi_vga_i/dvi2rgb_1/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSDA/SS[0]       |                1 |              4 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdEn                                            | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg            |                1 |              5 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/PhaseAlignX/pCenterTap[5]_i_1__1_n_0                          |                                                                                        |                2 |              5 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdEn                                            | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg            |                1 |              5 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/rDlyRstCnt[4]_i_1_n_0                                                   | hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]         |                1 |              5 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/PhaseAlignX/pCenterTap[5]_i_1__0_n_0                          |                                                                                        |                2 |              5 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdEn                                            | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg            |                2 |              5 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/PhaseAlignX/pCenterTap[5]_i_1_n_0                             |                                                                                        |                2 |              5 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/PhaseAlignX/pCtlTknRst                |                2 |              7 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/PhaseAlignX/pCtlTknRst                |                2 |              7 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/PhaseAlignX/pCtlTknRst                |                2 |              7 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/dataByte[7]_i_1_n_0                         |                                                                                        |                2 |              8 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pDataIn_reg[7][0]        |                2 |              8 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pDataIn_reg[7][0]        |                2 |              8 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/LockLostReset/SyncAsyncx/oSyncStages[1]                        |                6 |              9 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/PhaseAlignX/pStateNxt__4                                      | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/pAlignRst                             |                4 |             11 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/PhaseAlignX/pStateNxt__4                                      | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/pAlignRst_reg_n_0                     |                2 |             11 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/SR[0]                    |                3 |             11 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/PhaseAlignX/pStateNxt__4                                      | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/pAlignRst_reg_n_0                     |                3 |             11 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/LockLostReset/SyncAsyncx/oSyncStages[1]                        |                8 |             12 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/E[0]                                        |                                                                                        |                4 |             16 |
+|  hdmi_vga_i/dvi2rgb_1/U0/GenerateBUFG.ResyncToBUFG_X/CLK |                                                                                                                | hdmi_vga_i/vp_0/inst/de_out                                                            |                7 |             16 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg            |                6 |             21 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/rTimeoutCnt[0]_i_1_n_0                                        | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1] |                6 |             24 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/rTimeoutCnt[0]_i_1__0_n_0                                     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1] |                6 |             24 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/rTimeoutCnt[0]_i_1__1_n_0                                     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1] |                6 |             24 |
+|  hdmi_vga_i/dvi2rgb_1/U0/GenerateBUFG.ResyncToBUFG_X/CLK |                                                                                                                |                                                                                        |               18 |             40 |
+|  hdmi_vga_i/clk_wiz_0/inst/clk_out1                      |                                                                                                                |                                                                                        |               22 |             40 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     | hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/PhaseAlignX/pAllVld                                           |                                                                                        |                6 |             48 |
+|  hdmi_vga_i/dvi2rgb_1/U0/TMDS_ClockingX/PixelClk_int     |                                                                                                                |                                                                                        |               46 |            161 |
++----------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     3 |
+| 4      |                     2 |
+| 5      |                     7 |
+| 7      |                     3 |
+| 8      |                     3 |
+| 9      |                     1 |
+| 11     |                     4 |
+| 12     |                     1 |
+| 16+    |                    10 |
++--------+-----------------------+
+
+

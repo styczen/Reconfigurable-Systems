@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../rgb2ycbcr.srcs/sources_1/imports/new/delay.v" \
+"../../../../rgb2ycbcr.srcs/sources_1/imports/new/delay_line.v" \
+"../../../../rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v" \
+"../../../../rgb2ycbcr.srcs/sim_1/imports/Desktop/tb_rgb2ycbcr.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
