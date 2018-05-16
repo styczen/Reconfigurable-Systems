@@ -119,7 +119,8 @@ begin
 	 //TB only
 	 vsc=vsc+1;
 
-    rgbfile = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/Resources/geirangerfjord_64.ppm","rb");
+//    rgbfile = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/Resources/geirangerfjord_64.ppm","rb");
+    rgbfile = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/Resources/hand.ppm","rb");
 
 	 // read header file
 	 for(i=0;i<13;i=i+1)

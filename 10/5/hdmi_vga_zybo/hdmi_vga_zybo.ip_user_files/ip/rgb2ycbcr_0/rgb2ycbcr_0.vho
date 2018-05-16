@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:rgb2ycbcr:1.0
--- IP Revision: 2
+-- IP Revision: 3
 
 -- The following code must appear in the VHDL architecture header.
 

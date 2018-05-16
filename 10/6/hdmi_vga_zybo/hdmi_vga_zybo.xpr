@@ -41,13 +41,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="20"/>
-    <Option Name="WTModelSimExportSim" Val="20"/>
-    <Option Name="WTQuestaExportSim" Val="20"/>
-    <Option Name="WTIesExportSim" Val="20"/>
-    <Option Name="WTVcsExportSim" Val="20"/>
-    <Option Name="WTRivieraExportSim" Val="20"/>
-    <Option Name="WTActivehdlExportSim" Val="20"/>
+    <Option Name="WTXSimExportSim" Val="23"/>
+    <Option Name="WTModelSimExportSim" Val="23"/>
+    <Option Name="WTQuestaExportSim" Val="23"/>
+    <Option Name="WTIesExportSim" Val="23"/>
+    <Option Name="WTVcsExportSim" Val="23"/>
+    <Option Name="WTRivieraExportSim" Val="23"/>
+    <Option Name="WTActivehdlExportSim" Val="23"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -64,8 +64,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_vp_0_2/hdmi_vga_vp_0_2.xci">
-          <Proxy FileSetName="hdmi_vga_vp_0_2"/>
+        <CompFileExtendedInfo CompFileName="hdmi_vga.bd" FileRelPathName="ip/hdmi_vga_vp_exe10_6_0_0/hdmi_vga_vp_exe10_6_0_0.xci">
+          <Proxy FileSetName="hdmi_vga_vp_exe10_6_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v">
@@ -177,9 +177,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="hdmi_vga_vp_0_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hdmi_vga_vp_0_2">
+    <FileSet Name="hdmi_vga_vp_exe10_6_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hdmi_vga_vp_exe10_6_0_0">
       <Config>
-        <Option Name="TopModule" Val="hdmi_vga_vp_0_2"/>
+        <Option Name="TopModule" Val="hdmi_vga_vp_exe10_6_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -221,7 +221,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="hdmi_vga_vp_0_2_synth_1" Type="Ft3:Synth" SrcSet="hdmi_vga_vp_0_2" Part="xc7z010clg400-1" ConstrsSet="hdmi_vga_vp_0_2" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_vga_vp_0_2_synth_1" IncludeInArchive="true">
+    <Run Id="hdmi_vga_vp_exe10_6_0_0_synth_1" Type="Ft3:Synth" SrcSet="hdmi_vga_vp_exe10_6_0_0" Part="xc7z010clg400-1" ConstrsSet="hdmi_vga_vp_exe10_6_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hdmi_vga_vp_exe10_6_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -265,7 +265,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="hdmi_vga_vp_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_vga_vp_0_2" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="hdmi_vga_vp_0_2_synth_1" IncludeInArchive="false">
+    <Run Id="hdmi_vga_vp_exe10_6_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="hdmi_vga_vp_exe10_6_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="hdmi_vga_vp_exe10_6_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
           <Desc>Default settings for Implementation.</Desc>

@@ -20,7 +20,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 module tb_hdmi(
     );
-	 
 
 wire rx_pclk;
 
@@ -32,7 +31,6 @@ wire [7:0] rx_red;
 wire [7:0] rx_green;
 wire [7:0] rx_blue;
 
-
 wire tx_de;
 wire tx_hsync;
 wire tx_vsync;
@@ -41,7 +39,21 @@ wire [7:0] tx_red;
 wire [7:0] tx_green;
 wire [7:0] tx_blue;
 
+wire [2:0] sw = 3'b001;
 
+// --------------------------------------
+// Clock
+// -------------------------------------- 
+//reg r_clk = 1'b0;
+//initial 
+//begin
+//    while(1)
+//    begin
+//        #2; r_clk <= 1'b1;
+//        #2; r_clk <= 1'b0;
+//    end
+//end
+//assign rx_pclk = r_clk;
 
 // --------------------------------------
 // HDMI input
@@ -56,31 +68,23 @@ hdmi_in file_input (
     .hdmi_b(rx_blue)
     );
 	 
-vp dut (
+// --------------------------------------
+// Video processing
+// --------------------------------------
+vp video_processing_i (
     .clk(rx_pclk), 
+    
     .de_in(rx_de), 
     .h_sync_in(rx_hsync), 
     .v_sync_in(rx_vsync), 
     .pixel_in({rx_red, rx_green, rx_blue}),
+    .sw(sw),
     
     .de_out(tx_de), 
     .h_sync_out(tx_hsync), 
     .v_sync_out(tx_vsync), 
     .pixel_out({tx_red, tx_green, tx_blue})
     );
-	 
-	 
-// --------------------------------------
-// Output assigment
-// --------------------------------------
-//assign tx_de = rx_de;
-//assign tx_hsync = rx_hsync;
-//assign tx_vsync = rx_vsync;
-
-//assign tx_red = rx_red;
-//assign tx_green = rx_green;
-//assign tx_blue = rx_blue;
-	 
 
 // --------------------------------------
 // HDMI output

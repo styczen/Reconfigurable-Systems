@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue May  1 11:54:58 2018
+// Date        : Wed May  9 08:26:15 2018
 // Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
-//               C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/Lab_5/8_6/8_6.sim/sim_1/synth/func/xsim/tb_main_LUT_func_synth.v
+//               C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/8_6/8_6.sim/sim_1/synth/func/xsim/tb_main_LUT_func_synth.v
 // Design      : main_LUT
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,9 +17,9 @@ module LUT
    (clka,
     addra,
     douta);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_WRITE_MODE READ_WRITE" *) input clka;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *) input [7:0]addra;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *) output [7:0]douta;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_WRITE_MODE READ_WRITE" *) input clka;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *) input [7:0]addra;
+  (* x_interface_info = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *) output [7:0]douta;
 
   wire [7:0]addra;
   wire clka;

@@ -42,7 +42,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8b123573</spirit:value>
+            <spirit:value>72fa58d3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -64,7 +64,22 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8b123573</spirit:value>
+            <spirit:value>72fa58d3</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>tb_rgb2ycbcr</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>1441790a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -237,7 +252,7 @@
       <spirit:file>
         <spirit:name>src/rgb2ycbcr.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_9ec0a49b</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_f68bd58b</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -310,6 +325,14 @@
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/tb_rgb2ycbcr.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>xgui/rgb2ycbcr_v1_0.tcl</spirit:name>
@@ -347,8 +370,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>rgb2ycbcr_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-05-06T15:08:20Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-05-12T20:07:49Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:rgb2ycbcr:1.0_ARCHIVE_LOCATION">c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs/rgb2ycbcr</xilinx:tag>
       </xilinx:tags>
@@ -356,7 +379,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="287fa0a5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="93bb41c8"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ed7558e3"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="32d6ff33"/>
     </xilinx:packagingInfo>

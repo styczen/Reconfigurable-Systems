@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue May  8 19:45:31 2018" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue May  8 21:25:10 2018" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -52,11 +52,6 @@
     <PORT DIR="O" NAME="vga_pVSync" SIGIS="undef" SIGNAME="rgb2vga_1_vga_pVSync">
       <CONNECTIONS>
         <CONNECTION INSTANCE="rgb2vga_1" PORT="vga_pVSync"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="2" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="vp_0" PORT="sw"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -738,28 +733,28 @@
         <PORT DIR="I" NAME="aRst" SIGIS="undef"/>
         <PORT DIR="O" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="pixel_in"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="pixel_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVDE" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="de_in"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="de_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pHSync" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="h_sync_in"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="h_sync_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVSync" SIGIS="undef" SIGNAME="dvi2rgb_1_vid_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="v_sync_in"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="v_sync_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_1_PixelClk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2vga_1" PORT="PixelClk"/>
-            <CONNECTION INSTANCE="vp_0" PORT="clk"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="aPixelClkLckd" SIGIS="undef"/>
@@ -813,24 +808,24 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="vp_0_pixel_out">
+        <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="vp_exe10_6_0_pixel_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="pixel_out"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="pixel_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="vp_0_de_out">
+        <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="vp_exe10_6_0_de_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="de_out"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="de_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="vp_0_h_sync_out">
+        <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="vp_exe10_6_0_h_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="h_sync_out"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="h_sync_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="vp_0_v_sync_out">
+        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="vp_exe10_6_0_v_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="vp_0" PORT="v_sync_out"/>
+            <CONNECTION INSTANCE="vp_exe10_6_0" PORT="v_sync_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_1_PixelClk">
@@ -875,10 +870,10 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/vp_0" HWVERSION="1.1" INSTANCE="vp_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vp" VLNV="xilinx.com:user:vp:1.1">
+    <MODULE FULLNAME="/vp_exe10_6_0" HWVERSION="1.0" INSTANCE="vp_exe10_6_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vp_exe10_6" VLNV="xilinx.com:user:vp_exe10_6:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_vp_0_2"/>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_vp_exe10_6_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -907,27 +902,22 @@
             <CONNECTION INSTANCE="dvi2rgb_1" PORT="vid_pData"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="vp_0_de_out">
+        <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="vp_exe10_6_0_de_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pVDE"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="vp_0_h_sync_out">
+        <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="vp_exe10_6_0_h_sync_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pHSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="v_sync_out" SIGIS="undef" SIGNAME="vp_0_v_sync_out">
+        <PORT DIR="O" NAME="v_sync_out" SIGIS="undef" SIGNAME="vp_exe10_6_0_v_sync_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pVSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="vp_0_pixel_out">
+        <PORT DIR="O" LEFT="23" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="vp_exe10_6_0_pixel_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2vga_1" PORT="rgb_pData"/>
           </CONNECTIONS>

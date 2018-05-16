@@ -1,7 +1,7 @@
 clear variables
 
 % --------------Double numbers--------------
-RGB = [1; 1; 28];
+RGB = [128; 255; 28];
 offset = [0; 128; 128];
 conversion_matrix = [    0.299,     0.587,     0.114;
                      -0.168736, -0.331264,       0.5;

@@ -22,6 +22,23 @@ for i=1:length(R)
     end
 end
 
+figure(1)
+subplot(1,4,1)
+imshow(YCbCr, [])
+title('YCbCr')
+
+subplot(1,4,2)
+imshow(YCbCr(:,:,1), [])
+title('Y')
+
+subplot(1,4,3)
+imshow(YCbCr(:,:,2), [])
+title('Cb')
+
+subplot(1,4,4)
+imshow(YCbCr(:,:,3), [])
+title('Cr')
+
 % Thresholds
 Ta = 105;
 Tb = 120;
@@ -62,7 +79,7 @@ end
 x_sc = round(m10 / m00);
 y_sc = round(m01 / m00);
 
-figure
+figure(2)
 subplot(1, 5, 1)
 imshow(RGB, [])
 

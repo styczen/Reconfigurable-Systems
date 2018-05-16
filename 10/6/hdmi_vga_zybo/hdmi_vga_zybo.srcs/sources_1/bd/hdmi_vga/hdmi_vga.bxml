@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="hdmi_vga" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1525801531"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1525801531"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1525801531"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1525801531"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1525807510"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1525807510"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1525807510"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1525807510"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\hdmi_vga_clk_wiz_0_0\hdmi_vga_clk_wiz_0_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
@@ -58,8 +58,8 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\hdmi_vga_vp_0_2\hdmi_vga_vp_0_2.xci" Type="IP">
-        <Instance HierarchyPath="vp_0"/>
+      <File Name="ip\hdmi_vga_vp_exe10_6_0_0\hdmi_vga_vp_exe10_6_0_0.xci" Type="IP">
+        <Instance HierarchyPath="vp_exe10_6_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="c:/users/bartek/reconfigurable-systems-laboratory-class - copy/8/8_5/8_5.tmp/vp_bin_c_v1_0_project/vp_bin_c_v1_0_project.xpr">
+<Project Version="7" Minor="35" Path="c:/users/bartek/reconfigurable-systems-laboratory-class/08/8_5/8_5.tmp/vp_bin_c_v1_0_project/vp_bin_c_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="a32a814239444afe93631081f05cfeee"/>
+    <Option Name="Id" Val="6d6b14913efc4998981e5213198d3e2b"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -21,9 +21,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/8/Resources/hdmi_vga_ip_repo"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/8/IPs"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/My_IPs"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/Resources/hdmi_vga_ip_repo"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -59,31 +58,31 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/My_IPs/vp_bin_module/src/LUT_bin/LUT_bin.xci">
+      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs/vp_bin_module/src/LUT_bin/LUT_bin.xci">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/My_IPs/vp_bin_module/src/vp_bin_c.v">
+      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs/vp_bin_module/src/vp_bin_c.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/My_IPs/vp_bin_module/src/lut_binarize.coe">
+      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs/vp_bin_module/src/lut_binarize.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/My_IPs/vp_bin_module/component.xml">
+      <File Path="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs/vp_bin_module/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="vp_bin_c"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class - Copy/My_IPs/vp_bin_module/src/vp_bin_c.v"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs/vp_bin_module/src/vp_bin_c.v"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

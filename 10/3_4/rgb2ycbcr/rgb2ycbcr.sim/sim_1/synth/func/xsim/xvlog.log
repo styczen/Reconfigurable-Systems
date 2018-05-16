@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3_4/rgb2ycbcr/rgb2ycbcr.sim/sim_1/synth/func/xsim/tb_rgb2ycbcr_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_addsub_1
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-311] analyzing module delay_0
+INFO: [VRFC 10-311] analyzing module delay_1
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-311] analyzing module mult_gen_1
+INFO: [VRFC 10-311] analyzing module rgb2ycbcr
+INFO: [VRFC 10-311] analyzing module c_addsub_1_c_addsub_v12_0_11
+INFO: [VRFC 10-311] analyzing module mult_gen_1_mult_gen_v12_0_13
+INFO: [VRFC 10-311] analyzing module c_addsub_1_c_addsub_v12_0_11_viv
+INFO: [VRFC 10-311] analyzing module c_addsub_1_xbip_addsub_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module c_addsub_1_xbip_dsp48_addsub_synth
+INFO: [VRFC 10-311] analyzing module c_addsub_1_xbip_dsp48_addsub_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module c_addsub_1_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module c_addsub_1_xbip_pipe_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module mult_gen_1_dsp
+INFO: [VRFC 10-311] analyzing module mult_gen_1_mult_gen_v12_0_13_viv
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/3_4/rgb2ycbcr/rgb2ycbcr.srcs/sim_1/imports/Desktop/tb_rgb2ycbcr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rgb2ycbcr
