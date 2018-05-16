@@ -43,8 +43,8 @@ module vp(
     
 //    Binarize; sw = 010
     localparam Ta = 105;
-    localparam Tb = 120;
-    localparam Tc = 129;
+    localparam Tb = 130;
+    localparam Tc = 122;
     localparam Td = 255;
         
     assign bin = (rgb_mux[1][15-:8] > Ta && rgb_mux[1][15-:8] < Tb && rgb_mux[1][7-:8] > Tc && rgb_mux[1][7-:8] < Td ) ? 8'd255 : 8'd0;

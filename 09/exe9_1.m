@@ -2,7 +2,8 @@ prepare_image
 clear all
 close all
 
-RGB = imread('hand.bmp');
+% RGB = imread('hand.bmp');
+RGB = imread('hand.ppm');
 R = RGB(:,:,1);
 G = RGB(:,:,2);
 B = RGB(:,:,3);
@@ -41,10 +42,10 @@ title('Cr')
 
 % Thresholds
 Ta = 105;
-Tb = 120;
+Tb = 110;
 
-Tc = 129;
-Td = 255;
+Tc = 122;
+Td = 165;
 
 mask = uint8(zeros(64));
 
@@ -99,3 +100,12 @@ x = ones(1,64)*x_sc;
 y = ones(1,64)*y_sc;
 line(1:64, x, 'Color', 'red')
 line(y, 1:64, 'Color', 'red')
+
+% figure(3)
+% subplot(1,2,1)
+% imhist(Cb);
+% title('Cb');
+% 
+% subplot(1,2,2)
+% imhist(Cr);
+% title('Cr');
