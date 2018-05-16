@@ -39,7 +39,7 @@ wire [7:0] tx_red;
 wire [7:0] tx_green;
 wire [7:0] tx_blue;
 
-wire [2:0] sw = 3'b001;
+wire [2:0] sw = 3'b010;
 
 // --------------------------------------
 // Clock
