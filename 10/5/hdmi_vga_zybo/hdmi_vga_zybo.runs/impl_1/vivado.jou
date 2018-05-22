@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue May 15 14:44:57 2018
-# Process ID: 10144
+# Start of session at: Tue May 22 17:44:56 2018
+# Process ID: 9252
 # Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/impl_1
 # Command line: vivado.exe -log hdmi_vga_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source hdmi_vga_wrapper.tcl -notrace
 # Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/impl_1/hdmi_vga_wrapper.vdi

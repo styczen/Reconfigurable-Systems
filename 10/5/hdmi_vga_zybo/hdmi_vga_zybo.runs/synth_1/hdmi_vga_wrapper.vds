@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat May 12 22:48:57 2018
-# Process ID: 4376
+# Start of session at: Tue May 22 17:43:38 2018
+# Process ID: 2300
 # Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1
 # Command line: vivado.exe -log hdmi_vga_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_vga_wrapper.tcl
 # Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.vds
@@ -19,9 +19,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5072 
+INFO: Helper process launched with PID 8 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 371.207 ; gain = 100.918
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 371.387 ; gain = 100.922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'hdmi_vga_wrapper' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
@@ -31,24 +31,24 @@ INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
 INFO: [Synth 8-638] synthesizing module 'hdmi_vga' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:13]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_0' (2#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_1' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_1' (3#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_1_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_clk_wiz_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_clk_wiz_0_0' (4#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_0' (2#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_1' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_1' (3#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_clk_wiz_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_clk_wiz_0_0' (4#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
 WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'hdmi_vga_clk_wiz_0_0' requires 4 connections, but only 3 given [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:106]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_dvi2rgb_1_1' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_dvi2rgb_1_1_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_dvi2rgb_1_1' (5#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_dvi2rgb_1_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_dvi2rgb_1_1' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_dvi2rgb_1_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_dvi2rgb_1_1' (5#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_dvi2rgb_1_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'dvi2rgb_1' of module 'hdmi_vga_dvi2rgb_1_1' requires 19 connections, but only 18 given [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:110]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_rgb2vga_1_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_rgb2vga_1_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_rgb2vga_1_0' (6#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_rgb2vga_1_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_vp_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_vp_0_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_vp_0_0' (7#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/realtime/hdmi_vga_vp_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_rgb2vga_1_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_rgb2vga_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_rgb2vga_1_0' (6#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_rgb2vga_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_vp_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_vp_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_vp_0_0' (7#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/realtime/hdmi_vga_vp_0_0_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_vga' (8#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:13]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_wrapper' (9#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 423.543 ; gain = 153.254
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 424.191 ; gain = 153.727
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -58,7 +58,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 423.543 ; gain = 153.254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 424.191 ; gain = 153.727
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -67,18 +67,18 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
-Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
-Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp7/hdmi_vga_xlconstant_0_0_in_context.xdc] for cell 'hdmi_vga_i/GND'
-Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp7/hdmi_vga_xlconstant_0_0_in_context.xdc] for cell 'hdmi_vga_i/GND'
-Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp8/hdmi_vga_xlconstant_0_1_in_context.xdc] for cell 'hdmi_vga_i/VCC'
-Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp8/hdmi_vga_xlconstant_0_1_in_context.xdc] for cell 'hdmi_vga_i/VCC'
-Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp9/hdmi_vga_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_1'
-Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp9/hdmi_vga_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_1'
-Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_1'
-Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_1'
-Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp11/hdmi_vga_vp_0_0_in_context.xdc] for cell 'hdmi_vga_i/vp_0'
-Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp11/hdmi_vga_vp_0_0_in_context.xdc] for cell 'hdmi_vga_i/vp_0'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp7/hdmi_vga_xlconstant_0_0_in_context.xdc] for cell 'hdmi_vga_i/GND'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp7/hdmi_vga_xlconstant_0_0_in_context.xdc] for cell 'hdmi_vga_i/GND'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp8/hdmi_vga_xlconstant_0_1_in_context.xdc] for cell 'hdmi_vga_i/VCC'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp8/hdmi_vga_xlconstant_0_1_in_context.xdc] for cell 'hdmi_vga_i/VCC'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp9/hdmi_vga_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_1'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp9/hdmi_vga_rgb2vga_0_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_1'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_1'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_1'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp11/hdmi_vga_vp_0_0_in_context.xdc] for cell 'hdmi_vga_i/vp_0'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp11/hdmi_vga_vp_0_0_in_context.xdc] for cell 'hdmi_vga_i/vp_0'
 Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
 Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_vga_wrapper_propImpl.xdc].
@@ -91,38 +91,38 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 707.254 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.117 . Memory (MB): peak = 707.594 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 707.254 ; gain = 436.965
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 707.594 ; gain = 437.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 707.254 ; gain = 436.965
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 707.594 ; gain = 437.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 2).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 3).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 5).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 7).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 8).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 9).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 10).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 11).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 12).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 13).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 14).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 15).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 16).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-4376-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-2300-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_0_0_in_context.xdc, line 17).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/GND. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/VCC. (constraint file  auto generated constraint, line ).
@@ -131,10 +131,10 @@ Applied set_property DONT_TOUCH = true for hdmi_vga_i/dvi2rgb_1. (constraint fil
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/rgb2vga_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 707.254 ; gain = 436.965
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 707.594 ; gain = 437.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 707.254 ; gain = 436.965
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 707.594 ; gain = 437.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -169,7 +169,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 707.254 ; gain = 436.965
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 707.594 ; gain = 437.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -184,13 +184,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_vga_i/clk_wiz_0/clk_
 INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_vga_i/dvi2rgb_1/PixelClk' to pin 'hdmi_vga_i/dvi2rgb_1/bbstub_PixelClk/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 743.246 ; gain = 472.957
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 739.992 ; gain = 469.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 743.246 ; gain = 472.957
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 739.992 ; gain = 469.527
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -202,7 +202,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:53 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -226,7 +226,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -239,7 +239,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,25 +251,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -310,11 +310,11 @@ Report Instance Areas:
 |2     |  hdmi_vga_i |hdmi_vga |    82|
 +------+-------------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:54 . Memory (MB): peak = 749.594 ; gain = 479.129
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 752.773 ; gain = 198.773
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 752.773 ; gain = 482.484
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 749.594 ; gain = 195.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:55 . Memory (MB): peak = 749.594 ; gain = 479.129
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -327,8 +327,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 39 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 761.461 ; gain = 502.641
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 758.832 ; gain = 499.840
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_vga_wrapper_utilization_synth.rpt -pb hdmi_vga_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 761.461 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat May 12 22:49:58 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 758.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 22 17:44:48 2018...

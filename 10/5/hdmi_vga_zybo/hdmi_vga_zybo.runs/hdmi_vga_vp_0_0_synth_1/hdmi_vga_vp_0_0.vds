@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat May 12 22:47:36 2018
-# Process ID: 7432
+# Start of session at: Tue May 22 17:40:53 2018
+# Process ID: 7420
 # Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1
 # Command line: vivado.exe -log hdmi_vga_vp_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_vga_vp_0_0.tcl
 # Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/hdmi_vga_vp_0_0.vds
@@ -15,16 +15,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1104 
+INFO: Helper process launched with PID 3228 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 369.480 ; gain = 100.395
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 369.895 ; gain = 100.570
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'hdmi_vga_vp_0_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/synth/hdmi_vga_vp_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vp' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:3]
+INFO: [Synth 8-638] synthesizing module 'vp' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:3]
 	Parameter Ta bound to: 105 - type: integer 
 	Parameter Tb bound to: 120 - type: integer 
-	Parameter Tc bound to: 129 - type: integer 
-	Parameter Td bound to: 255 - type: integer 
+	Parameter Tc bound to: 130 - type: integer 
+	Parameter Td bound to: 160 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/synth/rgb2ycbcr_0.v:57]
 INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v:3]
 INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/synth/mult_gen_1.vhd:68]
@@ -91,27 +91,27 @@ INFO: [Synth 8-256] done synthesizing module 'delay' (15#1) [c:/Users/Bartek/Rec
 INFO: [Synth 8-256] done synthesizing module 'delay_line' (16#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
 INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr' (17#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v:3]
 INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr_0' (18#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/synth/rgb2ycbcr_0.v:57]
-WARNING: [Synth 8-3848] Net rgb_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:17]
-WARNING: [Synth 8-3848] Net rgb_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:17]
-WARNING: [Synth 8-3848] Net rgb_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:17]
-WARNING: [Synth 8-3848] Net rgb_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:17]
-WARNING: [Synth 8-3848] Net rgb_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:17]
-WARNING: [Synth 8-3848] Net hsync_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:19]
-WARNING: [Synth 8-3848] Net hsync_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:19]
-WARNING: [Synth 8-3848] Net hsync_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:19]
-WARNING: [Synth 8-3848] Net hsync_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:19]
-WARNING: [Synth 8-3848] Net hsync_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:19]
-WARNING: [Synth 8-3848] Net vsync_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:20]
-WARNING: [Synth 8-3848] Net vsync_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:20]
-WARNING: [Synth 8-3848] Net vsync_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:20]
-WARNING: [Synth 8-3848] Net vsync_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:20]
-WARNING: [Synth 8-3848] Net vsync_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:20]
-WARNING: [Synth 8-3848] Net de_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:18]
-WARNING: [Synth 8-3848] Net de_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:18]
-WARNING: [Synth 8-3848] Net de_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:18]
-WARNING: [Synth 8-3848] Net de_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:18]
-WARNING: [Synth 8-3848] Net de_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:18]
-INFO: [Synth 8-256] done synthesizing module 'vp' (19#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/68c2/src/vp.v:3]
+WARNING: [Synth 8-3848] Net rgb_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:17]
+WARNING: [Synth 8-3848] Net rgb_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:17]
+WARNING: [Synth 8-3848] Net rgb_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:17]
+WARNING: [Synth 8-3848] Net rgb_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:17]
+WARNING: [Synth 8-3848] Net rgb_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:17]
+WARNING: [Synth 8-3848] Net hsync_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:19]
+WARNING: [Synth 8-3848] Net hsync_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:19]
+WARNING: [Synth 8-3848] Net hsync_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:19]
+WARNING: [Synth 8-3848] Net hsync_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:19]
+WARNING: [Synth 8-3848] Net hsync_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:19]
+WARNING: [Synth 8-3848] Net vsync_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:20]
+WARNING: [Synth 8-3848] Net vsync_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:20]
+WARNING: [Synth 8-3848] Net vsync_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:20]
+WARNING: [Synth 8-3848] Net vsync_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:20]
+WARNING: [Synth 8-3848] Net vsync_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:20]
+WARNING: [Synth 8-3848] Net de_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:18]
+WARNING: [Synth 8-3848] Net de_mux[6] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:18]
+WARNING: [Synth 8-3848] Net de_mux[5] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:18]
+WARNING: [Synth 8-3848] Net de_mux[4] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:18]
+WARNING: [Synth 8-3848] Net de_mux[3] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:18]
+INFO: [Synth 8-256] done synthesizing module 'vp' (19#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:3]
 INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_vp_0_0' (20#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/synth/hdmi_vga_vp_0_0.v:57]
 WARNING: [Synth 8-3331] design xbip_dsp48e1_wrapper_v3_0 has unconnected port CEA1
 WARNING: [Synth 8-3331] design xbip_dsp48e1_wrapper_v3_0 has unconnected port CEA2
@@ -215,7 +215,7 @@ WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[8]
 WARNING: [Synth 8-3331] design dsp has unconnected port D_PORT[7]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 455.641 ; gain = 186.555
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 455.305 ; gain = 185.980
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -224,8 +224,24 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[15] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[14] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[13] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[12] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[11] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[10] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[9] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[8] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[7] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[6] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[5] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[4] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[3] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[2] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[1] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
+WARNING: [Synth 8-3295] tying undriven pin rgb2ycbcr_i:pixel_in[0] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/af6d/src/vp.v:30]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 455.641 ; gain = 186.555
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 455.305 ; gain = 185.980
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -241,16 +257,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 724.762 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.596 . Memory (MB): peak = 725.605 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 724.762 ; gain = 455.676
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 725.605 ; gain = 456.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 724.762 ; gain = 455.676
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 725.605 ; gain = 456.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -275,10 +291,10 @@ Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr_i/inst/mul_Y1. (constr
 Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr_i/inst/mul_Y2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr_i/inst/mul_Y3. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 724.762 ; gain = 455.676
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 725.605 ; gain = 456.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 724.762 ; gain = 455.676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 725.605 ; gain = 456.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -311,7 +327,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 724.762 ; gain = 455.676
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 725.605 ; gain = 456.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -323,13 +339,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 798.742 ; gain = 529.656
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 799.035 ; gain = 529.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 798.895 ; gain = 529.809
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 799.184 ; gain = 529.859
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -341,7 +357,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -365,7 +381,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -378,7 +394,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -390,25 +406,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -426,20 +442,18 @@ Report Cell Usage:
 +------+----------+------+
 |1     |DSP48E1   |     9|
 |2     |DSP48E1_1 |     9|
-|3     |LUT2      |     1|
-|4     |LUT3      |     2|
-|5     |LUT4      |     2|
-|6     |LUT5      |     3|
-|7     |LUT6      |    26|
-|8     |SRL16E    |     3|
-|9     |FDRE      |    15|
+|3     |LUT4      |     2|
+|4     |LUT5      |    20|
+|5     |LUT6      |     9|
+|6     |SRL16E    |     3|
+|7     |FDRE      |    15|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 818.063 ; gain = 279.855
-Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 818.063 ; gain = 548.977
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 818.813 ; gain = 279.188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 818.813 ; gain = 549.488
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -449,13 +463,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
+32 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 818.063 ; gain = 560.445
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 818.813 ; gain = 560.961
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/hdmi_vga_vp_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 115 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/5/hdmi_vga_zybo/hdmi_vga_zybo.runs/hdmi_vga_vp_0_0_synth_1/hdmi_vga_vp_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_vga_vp_0_0_utilization_synth.rpt -pb hdmi_vga_vp_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 818.063 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat May 12 22:48:54 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 818.813 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 22 17:42:18 2018...

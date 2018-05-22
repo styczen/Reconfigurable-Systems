@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:vp:1.1
-// IP Revision: 17
+// IP Revision: 19
 
 (* X_CORE_INFO = "vp,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "hdmi_vga_vp_0_0,vp,{}" *)
-(* CORE_GENERATION_INFO = "hdmi_vga_vp_0_0,vp,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vp,x_ipVersion=1.1,x_ipCoreRevision=17,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "hdmi_vga_vp_0_0,vp,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vp,x_ipVersion=1.1,x_ipCoreRevision=19,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module hdmi_vga_vp_0_0 (
   clk,

@@ -42,10 +42,10 @@ title('Cr')
 
 % Thresholds
 Ta = 105;
-Tb = 110;
+Tb = 120;
 
-Tc = 122;
-Td = 165;
+Tc = 130;
+Td = 160;
 
 mask = uint8(zeros(64));
 
