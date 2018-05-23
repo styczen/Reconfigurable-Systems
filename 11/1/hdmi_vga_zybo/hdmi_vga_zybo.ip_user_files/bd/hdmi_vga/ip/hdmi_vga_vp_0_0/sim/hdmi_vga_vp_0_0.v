@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:vp:1.1
-// IP Revision: 18
+// IP Revision: 20
 
 `timescale 1ns/1ps
 

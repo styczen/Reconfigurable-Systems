@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 16 13:43:30 2018" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 23 08:44:39 2018" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -709,7 +709,7 @@
     </MODULE>
     <MODULE FULLNAME="/dvi2rgb_1" HWVERSION="1.8" INSTANCE="dvi2rgb_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dvi2rgb" VLNV="digilentinc.com:ip:dvi2rgb:1.8">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/Resources/hdmi_vga_ip_repo/dvi2rgb_v1_8/docs/dvi2rgb.pdf"/>
+        <DOCUMENT SOURCE="/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/08/Resources/hdmi_vga_ip_repo/dvi2rgb_v1_8/docs/dvi2rgb.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="kEmulateDDC" VALUE="true"/>
@@ -802,7 +802,7 @@
     </MODULE>
     <MODULE FULLNAME="/rgb2vga_1" HWVERSION="1.0" INSTANCE="rgb2vga_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2vga" VLNV="digilentinc.com:ip:rgb2vga:1.0">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/08/Resources/hdmi_vga_ip_repo/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
+        <DOCUMENT SOURCE="/home/lsriw/sr/StyczenBartlomiej/Reconfigurable-Systems-Laboratory-Class/08/Resources/hdmi_vga_ip_repo/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="VID_IN_DATA_WIDTH" VALUE="24"/>

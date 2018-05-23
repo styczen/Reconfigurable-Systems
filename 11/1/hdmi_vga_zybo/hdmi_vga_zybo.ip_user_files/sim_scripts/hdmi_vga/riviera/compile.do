@@ -28,10 +28,10 @@ vmap xbip_addsub_v3_0_4 riviera/xbip_addsub_v3_0_4
 vmap c_addsub_v12_0_11 riviera/c_addsub_v12_0_11
 
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
-"C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 
 vcom -work xpm -93 \
-"C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+"/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_clk_wiz.v" \
@@ -62,9 +62,6 @@ vcom -work xil_defaultlib -93 \
 "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/sim/hdmi_vga_dvi2rgb_1_1.vhd" \
-
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/4868" "+incdir+../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/4868" \
-"../../../bd/hdmi_vga/sim/hdmi_vga.v" \
 
 vcom -work xbip_utils_v3_0_8 -93 \
 "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -104,8 +101,9 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../hdmi_vga_zybo.srcs/sources
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/sim/rgb2ycbcr_0.v" \
-"../../../bd/hdmi_vga/ipshared/0510/src/vp.v" \
+"../../../bd/hdmi_vga/ipshared/dc13/src/vp.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/sim/hdmi_vga_vp_0_0.v" \
+"../../../bd/hdmi_vga/sim/hdmi_vga.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

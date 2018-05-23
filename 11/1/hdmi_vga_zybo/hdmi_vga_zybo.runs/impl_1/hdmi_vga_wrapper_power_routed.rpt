@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed May 16 13:48:04 2018
-| Host             : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date             : Wed May 23 08:48:43 2018
+| Host             : debian running 64-bit Debian GNU/Linux 9.3 (stretch)
 | Command          : report_power -file hdmi_vga_wrapper_power_routed.rpt -pb hdmi_vga_wrapper_power_summary_routed.pb -rpx hdmi_vga_wrapper_power_routed.rpx
 | Design           : hdmi_vga_wrapper
 | Device           : xc7z010clg400-1
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.349        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.257        |
+| Dynamic (W)              | 0.256        |
 | Device Static (W)        | 0.093        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 81.0         |
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.007 |       12 |       --- |             --- |
+| Clocks                   |     0.006 |       12 |       --- |             --- |
 | Slice Logic              |    <0.001 |     1247 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      402 |     17600 |            2.28 |
+|   LUT as Logic           |    <0.001 |      400 |     17600 |            2.27 |
 |   CARRY4                 |    <0.001 |       18 |      4400 |            0.41 |
 |   Register               |    <0.001 |      521 |     35200 |            1.48 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
 |   Others                 |    <0.001 |      134 |       --- |             --- |
 |   F7/F8 Muxes            |    <0.001 |       24 |     17600 |            0.14 |
 |   LUT as Shift Register  |     0.000 |        3 |      6000 |            0.05 |
-| Signals                  |    <0.001 |      988 |       --- |             --- |
+| Signals                  |    <0.001 |      954 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
 | PLL                      |     0.110 |        1 |         2 |           50.00 |
 | DSPs                     |     0.000 |       18 |        80 |           22.50 |
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.023 |      0.004 |
+| Vccint    |       1.000 |     0.026 |       0.022 |      0.004 |
 | Vccaux    |       1.800 |     0.136 |       0.130 |      0.006 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -162,10 +162,10 @@ Table of Contents
 +-----------------------------------------------------------------------------------+-----------+
 | Name                                                                              | Power (W) |
 +-----------------------------------------------------------------------------------+-----------+
-| hdmi_vga_wrapper                                                                  |     0.257 |
+| hdmi_vga_wrapper                                                                  |     0.256 |
 |   hdmi_in_ddc_scl_iobuf                                                           |     0.000 |
 |   hdmi_in_ddc_sda_iobuf                                                           |     0.000 |
-|   hdmi_vga_i                                                                      |     0.257 |
+|   hdmi_vga_i                                                                      |     0.256 |
 |     GND                                                                           |     0.000 |
 |     VCC                                                                           |     0.000 |
 |     clk_wiz_0                                                                     |     0.110 |
