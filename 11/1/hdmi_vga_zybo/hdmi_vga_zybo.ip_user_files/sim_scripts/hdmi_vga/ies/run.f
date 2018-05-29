@@ -1,8 +1,8 @@
 -makelib ies_lib/xil_defaultlib -sv \
-  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_clk_wiz.v" \
@@ -72,7 +72,27 @@
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v" \
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v" \
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/sim/rgb2ycbcr_0.v" \
-  "../../../bd/hdmi_vga/ipshared/dc13/src/vp.v" \
+-endlib
+-makelib ies_lib/xbip_dsp48_acc_v3_0_4 \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/hdl/xbip_dsp48_acc_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_accum_v3_0_4 \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/hdl/xbip_accum_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/c_accum_v12_0_11 \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/hdl/c_accum_v12_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/sim/c_accum_0.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/divider_32_20.v" \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/sim/divider_32_20_0.v" \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/centroid.v" \
+  "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/sim/centroid_0.v" \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_centroid_0_2/src/vis_centroid.v" \
+  "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_centroid_0_2/sim/vis_centroid_0.v" \
+  "../../../bd/hdmi_vga/ipshared/2f64/src/vp.v" \
   "../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/sim/hdmi_vga_vp_0_0.v" \
   "../../../bd/hdmi_vga/sim/hdmi_vga.v" \
 -endlib

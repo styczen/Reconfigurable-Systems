@@ -39,7 +39,7 @@ wire [7:0] tx_red;
 wire [7:0] tx_green;
 wire [7:0] tx_blue;
 
-wire [2:0] sw = 3'b010;
+wire [2:0] sw = 3'b011;
 
 // --------------------------------------
 // Clock
@@ -73,7 +73,6 @@ hdmi_in file_input (
 // --------------------------------------
 vp video_processing_i (
     .clk(rx_pclk), 
-    
     .de_in(rx_de), 
     .h_sync_in(rx_hsync), 
     .v_sync_in(rx_vsync), 

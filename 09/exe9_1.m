@@ -41,8 +41,14 @@ imshow(YCbCr(:,:,3), [])
 title('Cr')
 
 % Thresholds
+% Ta = 105;
+% Tb = 120;
+% 
+% Tc = 130;
+% Td = 160;
+
 Ta = 105;
-Tb = 120;
+Tb = 140;
 
 Tc = 130;
 Td = 160;
