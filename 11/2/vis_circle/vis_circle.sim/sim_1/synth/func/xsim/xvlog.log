@@ -1,0 +1,33 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.sim/sim_1/synth/func/xsim/tb_hdmi_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-311] analyzing module delay_0
+INFO: [VRFC 10-311] analyzing module delay_1
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-311] analyzing module result
+INFO: [VRFC 10-311] analyzing module sum
+INFO: [VRFC 10-311] analyzing module vis_circle
+INFO: [VRFC 10-311] analyzing module mult_mult_gen_v12_0_13
+INFO: [VRFC 10-311] analyzing module result_c_addsub_v12_0_11
+INFO: [VRFC 10-311] analyzing module sum_c_addsub_v12_0_11
+INFO: [VRFC 10-311] analyzing module mult_dsp
+INFO: [VRFC 10-311] analyzing module mult_mult_gen_v12_0_13_viv
+INFO: [VRFC 10-311] analyzing module result_c_addsub_v12_0_11_viv
+INFO: [VRFC 10-311] analyzing module result_xbip_addsub_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module result_xbip_dsp48_addsub_synth
+INFO: [VRFC 10-311] analyzing module result_xbip_dsp48_addsub_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module result_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module result_xbip_pipe_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module sum_c_addsub_v12_0_11_viv
+INFO: [VRFC 10-311] analyzing module sum_xbip_addsub_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module sum_xbip_dsp48_addsub_synth
+INFO: [VRFC 10-311] analyzing module sum_xbip_dsp48_addsub_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module sum_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module sum_xbip_pipe_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi

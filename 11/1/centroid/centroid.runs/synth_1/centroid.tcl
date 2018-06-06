@@ -16,6 +16,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -27,7 +28,7 @@ set_property parent.project_path C:/Users/Bartek/Reconfigurable-Systems-Laborato
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/Resources [current_project]
+set_property ip_repo_paths c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/IPs [current_project]
 set_property ip_output_repo c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.srcs/sources_1/new/centroid.v

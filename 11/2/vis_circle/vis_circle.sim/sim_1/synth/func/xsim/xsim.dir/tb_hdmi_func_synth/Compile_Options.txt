@@ -1,0 +1,1 @@
+-wto "e41078b317b64bdcaa178c585347fc46" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "secureip" --snapshot "tb_hdmi_func_synth" "xil_defaultlib.tb_hdmi" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vis_centroid.srcs/sim_1/imports/tb_src/hdmi_in.v" \
+"../../../../vis_centroid.srcs/sim_1/imports/tb_src/hdmi_out.v" \
+"../../../../vis_centroid.srcs/sources_1/new/vis_centroid.v" \
+"../../../../vis_centroid.srcs/sim_1/imports/tb_src/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

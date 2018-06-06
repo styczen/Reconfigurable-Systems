@@ -1,0 +1,37 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.sim/sim_1/synth/timing/xsim/tb_hdmi_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_accum_0
+INFO: [VRFC 10-311] analyzing module c_accum_0_HD16
+INFO: [VRFC 10-311] analyzing module centroid
+INFO: [VRFC 10-311] analyzing module divider_32_20_0
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_HD24
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_divider_32_20
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_divider_32_20_HD25
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_mult_32_20_lm
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_mult_32_20_lm_HD26
+INFO: [VRFC 10-311] analyzing module c_accum_0__c_accum_v12_0_11
+INFO: [VRFC 10-311] analyzing module c_accum_0__c_accum_v12_0_11_HD17
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_mult_gen_v12_0_13
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_mult_gen_v12_0_13_HD27
+INFO: [VRFC 10-311] analyzing module c_accum_0__c_accum_v12_0_11_viv
+INFO: [VRFC 10-311] analyzing module c_accum_0__c_accum_v12_0_11_viv_HD18
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_accum_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_accum_v3_0_4_viv_HD19
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_dsp48_acc_synth
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_dsp48_acc_synth_HD21
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_dsp48_acc_v3_0_4_viv
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_dsp48_acc_v3_0_4_viv_HD20
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module c_accum_0__xbip_dsp48e_wrapper_v3_0_HD22
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_delay_line__parameterized3
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_delay_line__parameterized3_HD30
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_dsp
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_dsp_HD29
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_mult_gen_v12_0_13_viv
+INFO: [VRFC 10-311] analyzing module divider_32_20_0_mult_gen_v12_0_13_viv_HD28
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi

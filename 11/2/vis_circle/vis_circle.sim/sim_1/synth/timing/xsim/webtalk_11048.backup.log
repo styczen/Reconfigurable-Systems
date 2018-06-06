@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jun  1 16:57:34 2018
+# Process ID: 11048
+# Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.sim/sim_1/synth/timing/xsim/xsim.dir/tb_hdmi_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.sim/sim_1/synth/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/2/vis_circle/vis_circle.sim/sim_1/synth/timing/xsim/xsim.dir/tb_hdmi_time_synth/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 52.176 ; gain = 0.516
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  1 16:57:47 2018...

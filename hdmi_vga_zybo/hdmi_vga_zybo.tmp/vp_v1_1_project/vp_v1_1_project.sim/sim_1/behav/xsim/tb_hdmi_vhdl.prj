@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../IPs/vp/src/vis_circle_0_5/src/result/sim/result.vhd" \
+"../../../../../../../IPs/vp/src/vis_circle_0_5/src/sum/sim/sum.vhd" \
+"../../../../../../../IPs/vp/src/vis_circle_0_5/src/mult/sim/mult.vhd" \
+"../../../../../../../IPs/vp/src/centroid_0/src/c_accum_0/sim/c_accum_0.vhd" \
+"../../../../../../../IPs/vp/src/centroid_0/src/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
+"../../../../../../../IPs/vp/src/rgb2ycbcr_0_1/src/mult_gen_1/sim/mult_gen_1.vhd" \
+"../../../../../../../IPs/vp/src/rgb2ycbcr_0_1/src/c_addsub_1/sim/c_addsub_1.vhd" \
+
+# Do not sort compile order
+nosort

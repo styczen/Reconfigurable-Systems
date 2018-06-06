@@ -2,10 +2,10 @@ clear variables
 close all
 
 % verilog_result = imread('hdmi_vga_zybo\hdmi_vga_zybo.sim\sim_1\behav\xsim\out_00.ppm');
-verilog_result = imread('..\Resources\hand_ycbcr.ppm');
+% verilog_result = imread('..\Resources\hand_ycbcr.ppm');
 
-% RGB = imread('..\Resources\geirangerfjord_64.ppm');
-RGB = imread('..\Resources\hand.ppm');
+RGB = imread('..\Resources\geirangerfjord_64.ppm');
+% RGB = imread('..\Resources\hand.ppm');
 
 % --------------Double numbers--------------
 offset = [0; 128; 128];
@@ -71,7 +71,7 @@ for i=1:64
 end
 
 YCbCr_fix = uint8(YCbCr_fix);
-difference_img = imabsdiff(verilog_result, YCbCr);
+% difference_img = imabsdiff(verilog_result, YCbCr);
 
 figure(1);
 subplot(2,3,1);

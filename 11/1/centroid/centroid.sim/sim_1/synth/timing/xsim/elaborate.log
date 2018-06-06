@@ -1,0 +1,64 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 3102d823203b4f848b812a4b8649297b --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_hdmi_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_hdmi xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_hdmi_time_synth.sdf", for root module "tb_hdmi/dut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_hdmi_time_synth.sdf", for root module "tb_hdmi/dut".
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_in
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.DSP48E1(ACASCREG=0,ADREG=0,ALUMO...
+Compiling module xil_defaultlib.c_accum_0__xbip_dsp48e_wrapper_v...
+Compiling module xil_defaultlib.c_accum_0__xbip_dsp48_acc_synth
+Compiling module xil_defaultlib.c_accum_0__xbip_dsp48_acc_v3_0_4...
+Compiling module xil_defaultlib.c_accum_0__xbip_accum_v3_0_4_viv
+Compiling module xil_defaultlib.c_accum_0__c_accum_v12_0_11_viv
+Compiling module xil_defaultlib.c_accum_0__c_accum_v12_0_11
+Compiling module xil_defaultlib.c_accum_0
+Compiling module xil_defaultlib.c_accum_0__xbip_dsp48e_wrapper_v...
+Compiling module xil_defaultlib.c_accum_0__xbip_dsp48_acc_synth_...
+Compiling module xil_defaultlib.c_accum_0__xbip_dsp48_acc_v3_0_4...
+Compiling module xil_defaultlib.c_accum_0__xbip_accum_v3_0_4_viv...
+Compiling module xil_defaultlib.c_accum_0__c_accum_v12_0_11_viv_...
+Compiling module xil_defaultlib.c_accum_0__c_accum_v12_0_11_HD17
+Compiling module xil_defaultlib.c_accum_0_HD16
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.FDSE_default
+Compiling module simprims_ver.GND
+Compiling module xil_defaultlib.divider_32_20_0_delay_line__para...
+Compiling module simprims_ver.DSP48E1(ALUMODEREG=0,CARRYINREG=...
+Compiling module simprims_ver.DSP48E1(A_INPUT="CASCADE",BCASCR...
+Compiling module xil_defaultlib.divider_32_20_0_dsp
+Compiling module xil_defaultlib.divider_32_20_0_mult_gen_v12_0_1...
+Compiling module xil_defaultlib.divider_32_20_0_mult_gen_v12_0_1...
+Compiling module xil_defaultlib.divider_32_20_0_mult_32_20_lm
+Compiling module xil_defaultlib.divider_32_20_0_divider_32_20
+Compiling module xil_defaultlib.divider_32_20_0
+Compiling module xil_defaultlib.divider_32_20_0_delay_line__para...
+Compiling module xil_defaultlib.divider_32_20_0_dsp_HD29
+Compiling module xil_defaultlib.divider_32_20_0_mult_gen_v12_0_1...
+Compiling module xil_defaultlib.divider_32_20_0_mult_gen_v12_0_1...
+Compiling module xil_defaultlib.divider_32_20_0_mult_32_20_lm_HD...
+Compiling module xil_defaultlib.divider_32_20_0_divider_32_20_HD...
+Compiling module xil_defaultlib.divider_32_20_0_HD24
+Compiling module xil_defaultlib.centroid
+Compiling module xil_defaultlib.hdmi_out
+Compiling module xil_defaultlib.tb_hdmi
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_hdmi_time_synth

@@ -1,0 +1,35 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/vis_circle_0_5/src/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/vis_circle_0_5/src/delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/vis_circle_0_5/src/vis_circle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vis_circle
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/vis_circle_0_5/sim/vis_circle_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vis_circle_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/vis_centroid_0_2/src/vis_centroid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vis_centroid
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/vis_centroid_0_2/sim/vis_centroid_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vis_centroid_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/centroid_0/src/divider_32_20_0/src/divider_32_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_32_20
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/centroid_0/src/divider_32_20_0/sim/divider_32_20_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_32_20_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/centroid_0/src/centroid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centroid
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/centroid_0/sim/centroid_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centroid_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/rgb2ycbcr_0_1/src/delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_line
+WARNING: [VRFC 10-1195] overwriting previous definition of module delay_line [c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/rgb2ycbcr_0_1/src/delay_line.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2ycbcr
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/rgb2ycbcr_0_1/sim/rgb2ycbcr_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2ycbcr_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/hdmi_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/hdmi_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/vp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vp
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/users/bartek/reconfigurable-systems-laboratory-class/IPs/vp/src/tb_hdmi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi

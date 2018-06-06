@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.sim/sim_1/synth/func/xsim/tb_hdmi_func_synth.v,1527879552,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/hdmi_in.v,,glbl;vis_centroid,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/hdmi_in.v,1527860146,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/hdmi_out.v,,hdmi_in,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/hdmi_out.v,1523795546,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/tb_hdmi.v,,hdmi_out,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/tb_hdmi.v,1527873786,verilog,,,,tb_hdmi,,,,,,,,
