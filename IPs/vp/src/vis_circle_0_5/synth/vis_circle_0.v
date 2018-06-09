@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "vis_circle,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "vis_circle_0,vis_circle,{}" *)
-(* CORE_GENERATION_INFO = "vis_circle_0,vis_circle,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vis_circle,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=720,IMG_W=1280}" *)
+(* CORE_GENERATION_INFO = "vis_circle_0,vis_circle,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vis_circle,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=64,IMG_W=64}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module vis_circle_0 (
   clk,
@@ -83,8 +83,8 @@ output wire vsync_out;
 output wire [23 : 0] pixel_out;
 
   vis_circle #(
-    .IMG_H(720),
-    .IMG_W(1280)
+    .IMG_H(64),
+    .IMG_W(64)
   ) inst (
     .clk(clk),
     .de(de),

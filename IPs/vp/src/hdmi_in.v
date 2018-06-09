@@ -20,10 +20,10 @@ module hdmi_in
 
 //-----------------------------------------------
 // CHANGE THIS FOR DIFFERENT RESOLUTIONS AND IMAGE PATH
-parameter horizontal_res = 640;
-parameter vertical_res = 480;
-parameter header_bytes = 15;
-parameter image_path = "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/Resources/hand640x480.ppm";
+parameter horizontal_res = 64;
+parameter vertical_res = 64;
+parameter header_bytes = 13;
+parameter image_path = "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/Resources/hand64x64.ppm";
 //-----------------------------------------------
 
 //for now supports VGA 640x480 60Hz only

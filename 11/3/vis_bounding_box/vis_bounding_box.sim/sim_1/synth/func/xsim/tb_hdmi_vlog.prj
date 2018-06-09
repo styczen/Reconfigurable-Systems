@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_hdmi_func_synth.v" \
+"../../../../../vis_bounding_box.srcs/sim_1/imports/tb_hdmi/hdmi_in.v" \
+"../../../../../vis_bounding_box.srcs/sim_1/imports/tb_hdmi/hdmi_out.v" \
+"../../../../../vis_bounding_box.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v" \
+
+# Do not sort compile order
+nosort

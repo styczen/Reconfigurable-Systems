@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:vp:1.1
-// IP Revision: 52
+// IP Revision: 58
 
 (* X_CORE_INFO = "vp,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "hdmi_vga_vp_0_0,vp,{}" *)
-(* CORE_GENERATION_INFO = "hdmi_vga_vp_0_0,vp,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vp,x_ipVersion=1.1,x_ipCoreRevision=52,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "hdmi_vga_vp_0_0,vp,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vp,x_ipVersion=1.1,x_ipCoreRevision=58,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module hdmi_vga_vp_0_0 (
   clk,
@@ -74,7 +74,7 @@ input wire de_in;
 input wire h_sync_in;
 input wire v_sync_in;
 input wire [23 : 0] pixel_in;
-input wire [2 : 0] sw;
+input wire [3 : 0] sw;
 output wire de_out;
 output wire h_sync_out;
 output wire v_sync_out;

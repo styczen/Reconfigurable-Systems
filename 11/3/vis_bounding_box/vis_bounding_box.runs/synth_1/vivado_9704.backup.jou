@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jun  9 20:58:46 2018
+# Process ID: 9704
+# Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.runs/synth_1
+# Command line: vivado.exe -log vis_bounding_box.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vis_bounding_box.tcl
+# Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.runs/synth_1/vis_bounding_box.vds
+# Journal file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vis_bounding_box.tcl -notrace

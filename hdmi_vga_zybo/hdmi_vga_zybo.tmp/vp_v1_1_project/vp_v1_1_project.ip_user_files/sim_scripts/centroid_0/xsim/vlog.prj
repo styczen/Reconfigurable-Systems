@@ -1,9 +1,0 @@
-verilog xil_defaultlib  \
-"../../../../../../../IPs/vp/src/centroid_0/src/divider_32_20_0/src/divider_32_20.v" \
-"../../../../../../../IPs/vp/src/centroid_0/src/divider_32_20_0/sim/divider_32_20_0.v" \
-"../../../../../../../IPs/vp/src/centroid_0/src/centroid.v" \
-"../../../../../../../IPs/vp/src/centroid_0/sim/centroid_0.v" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

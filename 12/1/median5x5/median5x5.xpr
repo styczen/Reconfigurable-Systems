@@ -33,7 +33,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="0"/>
+    <Option Name="WTXSimLaunchSim" Val="16"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -64,6 +64,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/delay.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../05/Delay_line/Delay_line.srcs/sources_1/new/delay.v"/>
+          <Attr Name="ImportTime" Val="1521375867"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/Resources/delayLinieBRAM_WP.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Resources/delayLinieBRAM_WP.v"/>
@@ -73,9 +82,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/delay_line.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../05/Delay_line/Delay_line.srcs/sources_1/new/delay_line.v"/>
+          <Attr Name="ImportTime" Val="1521624948"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/median5x5.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -83,7 +100,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="delayLinieBRAM_WP"/>
+        <Option Name="TopModule" Val="median5x5"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -95,28 +112,28 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_in.v">
+      <File Path="$PSRCDIR/sim_1/imports/tb_hdmi/hdmi_in.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../08/Resources/hdmi_vga_zybo_src/tb_src/hdmi_in.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../tb_hdmi/hdmi_in.v"/>
+          <Attr Name="ImportTime" Val="1528279160"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_out.v">
+      <File Path="$PSRCDIR/sim_1/imports/tb_hdmi/hdmi_out.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../08/Resources/hdmi_vga_zybo_src/tb_src/hdmi_out.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../tb_hdmi/hdmi_out.v"/>
+          <Attr Name="ImportTime" Val="1528279181"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/tb_hdmi.v">
+      <File Path="$PSRCDIR/sim_1/imports/tb_hdmi/tb_hdmi.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../08/Resources/hdmi_vga_zybo_src/tb_src/tb_hdmi.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../tb_hdmi/tb_hdmi.v"/>
+          <Attr Name="ImportTime" Val="1528274993"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -152,11 +169,12 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z010clg400-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>

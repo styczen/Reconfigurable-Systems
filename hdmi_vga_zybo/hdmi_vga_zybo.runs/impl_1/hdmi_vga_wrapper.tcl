@@ -65,7 +65,6 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -75,7 +74,7 @@ set rc [catch {
   set_property ip_repo_paths C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/IPs [current_project]
   set_property ip_output_repo C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
@@ -154,26 +153,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-  catch { write_mem_info -force hdmi_vga_wrapper.mmi }
-  write_bitstream -force hdmi_vga_wrapper.bit 
-  catch { write_sysdef -hwdef hdmi_vga_wrapper.hwdef -bitfile hdmi_vga_wrapper.bit -meminfo hdmi_vga_wrapper.mmi -file hdmi_vga_wrapper.sysdef }
-  catch {write_debug_probes -quiet -force hdmi_vga_wrapper}
-  catch {file copy -force hdmi_vga_wrapper.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

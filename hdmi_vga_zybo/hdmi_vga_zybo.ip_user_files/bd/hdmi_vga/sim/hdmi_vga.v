@@ -1,7 +1,7 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Wed Jun  6 08:59:00 2018
+//Date        : Sat Jun  9 22:01:45 2018
 //Host        : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
@@ -42,7 +42,7 @@ module hdmi_vga
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_O" *) output hdmi_in_ddc_sda_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 hdmi_in_ddc SDA_T" *) output hdmi_in_ddc_sda_t;
   output [0:0]hdmi_out_en;
-  input [2:0]sw;
+  input [3:0]sw;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN hdmi_vga_sys_clk, FREQ_HZ 125000000, PHASE 0.000" *) input sys_clock;
   output [4:0]vga_pBlue;
   output [5:0]vga_pGreen;
@@ -73,7 +73,7 @@ module hdmi_vga
   wire rgb2vga_1_vga_pHSync;
   wire [4:0]rgb2vga_1_vga_pRed;
   wire rgb2vga_1_vga_pVSync;
-  wire [2:0]sw_1;
+  wire [3:0]sw_1;
   wire sys_clock_1;
   wire vp_0_de_out;
   wire vp_0_h_sync_out;
@@ -92,7 +92,7 @@ module hdmi_vga
   assign hdmi_in_ddc_sda_o = dvi2rgb_1_DDC_SDA_O;
   assign hdmi_in_ddc_sda_t = dvi2rgb_1_DDC_SDA_T;
   assign hdmi_out_en[0] = GND_dout;
-  assign sw_1 = sw[2:0];
+  assign sw_1 = sw[3:0];
   assign sys_clock_1 = sys_clock;
   assign vga_pBlue[4:0] = rgb2vga_1_vga_pBlue;
   assign vga_pGreen[5:0] = rgb2vga_1_vga_pGreen;

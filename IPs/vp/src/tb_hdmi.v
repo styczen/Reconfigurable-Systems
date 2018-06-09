@@ -45,8 +45,10 @@ wire [7:0] tx_blue;
 *   2 - binarize
 *   3 - center of mass visualization as CROSS
 *   4 - center of mass visualization as CIRCLE
+*   5 - median 5x5
+*   6 - bounding box
 */
-wire [2:0] sw = 3'd3;
+wire [3:0] sw = 3'd6;
 
 // --------------------------------------
 // HDMI input

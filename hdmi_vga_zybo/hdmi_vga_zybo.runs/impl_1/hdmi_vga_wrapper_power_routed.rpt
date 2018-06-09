@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Jun  6 09:03:33 2018
+| Date             : Sat Jun  9 22:07:40 2018
 | Host             : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 | Command          : report_power -file hdmi_vga_wrapper_power_routed.rpt -pb hdmi_vga_wrapper_power_summary_routed.pb -rpx hdmi_vga_wrapper_power_routed.rpx
 | Design           : hdmi_vga_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.353        |
+| Total On-Chip Power (W)  | 0.363        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.260        |
-| Device Static (W)        | 0.093        |
+| Dynamic (W)              | 0.267        |
+| Device Static (W)        | 0.096        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 80.9         |
-| Junction Temperature (C) | 29.1         |
+| Max Ambient (C)          | 80.8         |
+| Junction Temperature (C) | 29.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.008 |       12 |       --- |             --- |
-| Slice Logic              |     0.001 |     2117 |       --- |             --- |
-|   LUT as Logic           |     0.001 |      687 |     17600 |            3.90 |
-|   CARRY4                 |    <0.001 |       39 |      4400 |            0.89 |
-|   Register               |    <0.001 |      909 |     35200 |            2.58 |
+| Clocks                   |     0.009 |       12 |       --- |             --- |
+| Slice Logic              |     0.002 |     2540 |       --- |             --- |
+|   LUT as Logic           |     0.002 |      799 |     17600 |            4.54 |
+|   LUT as Shift Register  |    <0.001 |       61 |      6000 |            1.02 |
+|   Register               |    <0.001 |     1053 |     35200 |            2.99 |
+|   CARRY4                 |    <0.001 |       68 |      4400 |            1.55 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
-|   Others                 |    <0.001 |      174 |       --- |             --- |
-|   F7/F8 Muxes            |    <0.001 |       24 |     17600 |            0.14 |
-|   LUT as Shift Register  |     0.000 |       15 |      6000 |            0.25 |
-| Signals                  |     0.001 |     1936 |       --- |             --- |
+|   F7/F8 Muxes            |    <0.001 |       43 |     17600 |            0.24 |
+|   Others                 |    <0.001 |      195 |       --- |             --- |
+| Signals                  |     0.002 |     2167 |       --- |             --- |
+| Block RAM                |     0.002 |        1 |        60 |            1.67 |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
 | PLL                      |     0.110 |        1 |         2 |           50.00 |
-| DSPs                     |     0.002 |       29 |        80 |           36.25 |
-| I/O                      |     0.032 |       34 |       100 |           34.00 |
-| Static Power             |     0.093 |          |           |                 |
-| Total                    |     0.353 |          |           |                 |
+| DSPs                     |     0.001 |       29 |        80 |           36.25 |
+| I/O                      |     0.035 |       34 |       100 |           34.00 |
+| Static Power             |     0.096 |          |           |                 |
+| Total                    |     0.363 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,9 +78,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.030 |       0.026 |      0.004 |
+| Vccint    |       1.000 |     0.034 |       0.030 |      0.004 |
 | Vccaux    |       1.800 |     0.136 |       0.130 |      0.006 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -162,10 +163,10 @@ Table of Contents
 +-----------------------------------------------------------------------------------------+-----------+
 | Name                                                                                    | Power (W) |
 +-----------------------------------------------------------------------------------------+-----------+
-| hdmi_vga_wrapper                                                                        |     0.260 |
+| hdmi_vga_wrapper                                                                        |     0.267 |
 |   hdmi_in_ddc_scl_iobuf                                                                 |     0.000 |
 |   hdmi_in_ddc_sda_iobuf                                                                 |     0.000 |
-|   hdmi_vga_i                                                                            |     0.260 |
+|   hdmi_vga_i                                                                            |     0.264 |
 |     GND                                                                                 |     0.000 |
 |     VCC                                                                                 |     0.000 |
 |     clk_wiz_0                                                                           |     0.110 |
@@ -219,8 +220,10 @@ Table of Contents
 |             SyncAsyncx                                                                  |    <0.001 |
 |     rgb2vga_1                                                                           |    <0.001 |
 |       U0                                                                                |    <0.001 |
-|     vp_0                                                                                |     0.004 |
-|       inst                                                                              |     0.004 |
+|     vp_0                                                                                |     0.008 |
+|       inst                                                                              |     0.008 |
+|         bounding_box_i                                                                  |    <0.001 |
+|           inst                                                                          |    <0.001 |
 |         cm_i                                                                            |     0.003 |
 |           inst                                                                          |     0.003 |
 |             m01_calc_module                                                             |    <0.001 |
@@ -251,6 +254,24 @@ Table of Contents
 |                     i_mult                                                              |    <0.001 |
 |                       gDSP.gDSP_only.iDSP                                               |    <0.001 |
 |                         use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay |    <0.001 |
+|         median_i                                                                        |     0.004 |
+|           inst                                                                          |     0.004 |
+|             del_bram_1                                                                  |     0.002 |
+|               BRAM                                                                      |     0.002 |
+|                 U0                                                                      |     0.002 |
+|                   inst_blk_mem_gen                                                      |     0.002 |
+|                     gnbram.gnativebmg.native_blk_mem_gen                                |     0.002 |
+|                       valid.cstr                                                        |     0.002 |
+|                         ramloop[0].ram.r                                                |     0.002 |
+|                           prim_noinit.ram                                               |     0.002 |
+|             del_i                                                                       |    <0.001 |
+|               genblk1[126].delay_i                                                      |    <0.001 |
+|               genblk1[158].delay_i                                                      |    <0.001 |
+|               genblk1[165].delay_i                                                      |    <0.001 |
+|               genblk1[166].delay_i                                                      |    <0.001 |
+|               genblk1[30].delay_i                                                       |    <0.001 |
+|               genblk1[62].delay_i                                                       |    <0.001 |
+|               genblk1[94].delay_i                                                       |    <0.001 |
 |         rgb2ycbcr_i                                                                     |    <0.001 |
 |           inst                                                                          |    <0.001 |
 |             add_Cb1                                                                     |    <0.001 |
@@ -355,8 +376,8 @@ Table of Contents
 |               U0                                                                        |    <0.001 |
 |                 i_mult                                                                  |    <0.001 |
 |                   gDSP.gDSP_only.iDSP                                                   |    <0.001 |
-|         vc_circle_i                                                                     |     0.001 |
-|           inst                                                                          |     0.001 |
+|         vc_circle_i                                                                     |    <0.001 |
+|           inst                                                                          |    <0.001 |
 |             del_i                                                                       |    <0.001 |
 |               genblk1[5].delay_i                                                        |    <0.001 |
 |               genblk1[6].delay_i                                                        |    <0.001 |
@@ -390,6 +411,8 @@ Table of Contents
 |                 i_mult                                                                  |    <0.001 |
 |                   gDSP.gDSP_only.iDSP                                                   |    <0.001 |
 |         vc_i                                                                            |    <0.001 |
+|           inst                                                                          |    <0.001 |
+|         vis_bounding_box_i                                                              |    <0.001 |
 |           inst                                                                          |    <0.001 |
 +-----------------------------------------------------------------------------------------+-----------+
 

@@ -1,0 +1,13 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sim_1/imports/tb_hdmi/hdmi_in.v,1528458593,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sim_1/imports/tb_hdmi/hdmi_out.v,,hdmi_in,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sim_1/imports/tb_hdmi/hdmi_out.v,1528279181,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/new/median5x5.v,,hdmi_out,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v,1528459553,verilog,,,,tb_hdmi,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/imports/Resources/delayLinieBRAM_WP.v,1528281687,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/imports/new/delay_line.v,,delayLinieBRAM_WP,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/imports/new/delay.v,1521375867,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/imports/Resources/delayLinieBRAM_WP.v,,delay,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/imports/new/delay_line.v,1521624948,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sim_1/imports/tb_hdmi/hdmi_in.v,,delay_line,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v,1528269988,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/imports/new/delay.v,,delayLineBRAM,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sources_1/new/median5x5.v,1528459331,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/1/median5x5/median5x5.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v,,median5x5,,,,,,,,

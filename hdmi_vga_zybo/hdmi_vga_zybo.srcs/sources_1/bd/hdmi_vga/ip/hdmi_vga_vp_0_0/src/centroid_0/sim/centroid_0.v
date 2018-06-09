@@ -74,8 +74,8 @@ output wire [10 : 0] x;
 output wire [10 : 0] y;
 
   centroid #(
-    .IMG_H(720),
-    .IMG_W(1280)
+    .IMG_H(64),
+    .IMG_W(64)
   ) inst (
     .clk(clk),
     .de(de),

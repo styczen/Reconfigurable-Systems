@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../median5x5.srcs/sources_1/ip/delayLineBRAM/sim/delayLineBRAM.v" \
+"../../../../median5x5.srcs/sources_1/imports/new/delay.v" \
+"../../../../median5x5.srcs/sources_1/imports/Resources/delayLinieBRAM_WP.v" \
+"../../../../median5x5.srcs/sources_1/imports/new/delay_line.v" \
+"../../../../median5x5.srcs/sim_1/imports/tb_hdmi/hdmi_in.v" \
+"../../../../median5x5.srcs/sim_1/imports/tb_hdmi/hdmi_out.v" \
+"../../../../median5x5.srcs/sources_1/new/median5x5.v" \
+"../../../../median5x5.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

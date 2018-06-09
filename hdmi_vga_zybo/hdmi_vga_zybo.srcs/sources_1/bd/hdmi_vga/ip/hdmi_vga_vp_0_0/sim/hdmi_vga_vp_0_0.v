@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:vp:1.1
-// IP Revision: 52
+// IP Revision: 58
 
 `timescale 1ns/1ps
 
@@ -73,7 +73,7 @@ input wire de_in;
 input wire h_sync_in;
 input wire v_sync_in;
 input wire [23 : 0] pixel_in;
-input wire [2 : 0] sw;
+input wire [3 : 0] sw;
 output wire de_out;
 output wire h_sync_out;
 output wire v_sync_out;

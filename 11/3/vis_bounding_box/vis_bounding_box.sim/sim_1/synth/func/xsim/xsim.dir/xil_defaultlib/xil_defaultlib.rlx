@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.sim/sim_1/synth/func/xsim/tb_hdmi_func_synth.v,1528571470,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sim_1/imports/tb_hdmi/hdmi_in.v,,glbl;vis_bounding_box,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sim_1/imports/tb_hdmi/hdmi_in.v,1528571394,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sim_1/imports/tb_hdmi/hdmi_out.v,,hdmi_in,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sim_1/imports/tb_hdmi/hdmi_out.v,1528279181,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v,,hdmi_out,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v,1528536058,verilog,,,,tb_hdmi,,,,,,,,

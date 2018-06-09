@@ -24,6 +24,18 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_dvi2rg
 # IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/hdmi_vga_vp_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_vp_0_0 || ORIG_REF_NAME==hdmi_vga_vp_0_0} -quiet] -quiet
 
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_bounding_box_0/vis_bounding_box_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==vis_bounding_box_0 || ORIG_REF_NAME==vis_bounding_box_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/bounding_box_0/bounding_box_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==bounding_box_0 || ORIG_REF_NAME==bounding_box_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/median5x5_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==median5x5_0 || ORIG_REF_NAME==median5x5_0} -quiet] -quiet
+
+# IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLineBRAM/delayLineBRAM.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==delayLineBRAM || ORIG_REF_NAME==delayLineBRAM} -quiet] -quiet
+
 # IP: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/rgb2ycbcr_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rgb2ycbcr_0 || ORIG_REF_NAME==rgb2ycbcr_0} -quiet] -quiet
 
@@ -72,5 +84,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==hdmi_vga_dvi2rgb_1_1 || ORIG_REF_NAME==hdmi_vga_dvi2rgb_1_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/src/dvi2rgb_ooc.xdc
+
+# XDC: bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLineBRAM/delayLineBRAM_ooc.xdc
 
 # XDC: bd/hdmi_vga/hdmi_vga_ooc.xdc

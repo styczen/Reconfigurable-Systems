@@ -162,7 +162,7 @@ proc create_root_design { parentCell } {
   # Create ports
   set hdmi_hpd [ create_bd_port -dir O -from 0 -to 0 hdmi_hpd ]
   set hdmi_out_en [ create_bd_port -dir O -from 0 -to 0 hdmi_out_en ]
-  set sw [ create_bd_port -dir I -from 2 -to 0 sw ]
+  set sw [ create_bd_port -dir I -from 3 -to 0 sw ]
   set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
   set_property -dict [ list \
    CONFIG.CLK_DOMAIN {hdmi_vga_sys_clk} \

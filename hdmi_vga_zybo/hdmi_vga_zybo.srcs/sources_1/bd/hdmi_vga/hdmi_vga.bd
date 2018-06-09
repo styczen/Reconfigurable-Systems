@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xA9F915D9377D6655" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2017.4" bd:top="hdmi_vga" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xCE0E81AFCA0D5913" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2017.4" bd:top="hdmi_vga" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -155,7 +155,7 @@
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
-              <spirit:left>2</spirit:left>
+              <spirit:left>3</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -304,11 +304,6 @@
         <spirit:internalPortReference spirit:componentRef="vp_0" spirit:portRef="de_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>sw_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="sw"/>
-        <spirit:internalPortReference spirit:componentRef="vp_0" spirit:portRef="sw"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>vp_0_de_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="vp_0" spirit:portRef="de_out"/>
         <spirit:internalPortReference spirit:componentRef="rgb2vga_1" spirit:portRef="rgb_pVDE"/>
@@ -327,6 +322,11 @@
         <spirit:name>vp_0_pixel_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="vp_0" spirit:portRef="pixel_out"/>
         <spirit:internalPortReference spirit:componentRef="rgb2vga_1" spirit:portRef="rgb_pData"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sw_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sw"/>
+        <spirit:internalPortReference spirit:componentRef="vp_0" spirit:portRef="sw"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
