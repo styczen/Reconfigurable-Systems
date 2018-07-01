@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../rgb2hsv.srcs/sim_1/imports/tb_hdmi/hdmi_in.v" \
+"../../../../rgb2hsv.srcs/sim_1/imports/tb_hdmi/hdmi_out.v" \
+"../../../../rgb2hsv.srcs/sources_1/new/rgb2hsv.v" \
+"../../../../rgb2hsv.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

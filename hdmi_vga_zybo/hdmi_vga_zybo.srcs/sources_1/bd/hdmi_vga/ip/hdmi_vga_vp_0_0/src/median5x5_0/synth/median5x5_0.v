@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "median5x5,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "median5x5_0,median5x5,{}" *)
-(* CORE_GENERATION_INFO = "median5x5_0,median5x5,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=median5x5,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,H_SIZE=83}" *)
+(* CORE_GENERATION_INFO = "median5x5_0,median5x5,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=median5x5,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,H_SIZE=1650}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module median5x5_0 (
   clk,
@@ -79,7 +79,7 @@ output wire vsync_out;
 output wire [23 : 0] pixel_out;
 
   median5x5 #(
-    .H_SIZE(83)
+    .H_SIZE(1650)
   ) inst (
     .clk(clk),
     .de(de),

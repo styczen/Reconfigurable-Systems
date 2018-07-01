@@ -16,8 +16,10 @@ vhdl xil_defaultlib  \
 "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd" \
 "../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/sim/hdmi_vga_dvi2rgb_1_1.vhd" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/sim/mult_gen_1.vhd" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/c_addsub_1/sim/c_addsub_1.vhd" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/sim/c_accum_0.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_2/src/mult_gen_1/sim/mult_gen_1.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_2/src/c_addsub_1/sim/c_addsub_1.vhd" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_6/src/result/sim/result.vhd" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_6/src/sum/sim/sum.vhd" \
+"../../../../hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_6/src/mult/sim/mult.vhd" \
 
 nosort

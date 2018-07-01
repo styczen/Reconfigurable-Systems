@@ -17,15 +17,28 @@ module hdmi_in
   output [7:0]hdmi_g,
   output [7:0]hdmi_b
 ); 
+
 //-----------------------------------------------
+// CHANGE THIS FOR DIFFERENT RESOLUTIONS AND IMAGE PATH
+//parameter horizontal_res = 64;
+//parameter vertical_res = 64;
+//parameter header_bytes = 13;
+//parameter image_path = "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/Resources/hand_bin.ppm";
+
+parameter horizontal_res = 1280;
+parameter vertical_res = 720;
+parameter header_bytes = 16;
+parameter image_path = "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/12/Resources/hand_bin_1280x720.ppm";
+//-----------------------------------------------
+
 //for now supports VGA 640x480 60Hz only
   //horizontal
-  parameter hr=64; //resolution
+  parameter hr=horizontal_res; //resolution
   parameter hbp=8; //back porch
   parameter hfp=8; //front porch
   parameter hs=2;  //sync len
   //vertical
-  parameter vr=64; //resolution
+  parameter vr=vertical_res; //resolution
   parameter vbp=8; //back porch
   parameter vfp=8; //front porch
   parameter vs=4;   //sync len
@@ -38,7 +51,7 @@ module hdmi_in
   reg h_enable=1'b0;
   reg v_enable=1'b0;
   reg [10:0]hcounter=0;
-  reg [10:0]vcounter=64+1;//480+7
+  reg [10:0]vcounter=vertical_res+1;//480+7
 //-----------------------------------------------
   reg [7:0]red;
   reg [7:0]green;
@@ -119,10 +132,10 @@ begin
 	 //TB only
 	 vsc=vsc+1;
 
-    rgbfile = $fopen("C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/Resources/hand_bin.ppm","rb");
-    
+    rgbfile = $fopen(image_path,"rb");
+
 	 // read header file
-	 for(i=0;i<13;i=i+1)
+    for(i=0;i<header_bytes;i=i+1)
     begin
       v=$fgetc(rgbfile); 
     end	

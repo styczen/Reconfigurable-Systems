@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun 27 15:44:22 2018
+# Process ID: 10644
+# Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.runs/synth_1
+# Command line: vivado.exe -log main_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_module.tcl
+# Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.runs/synth_1/main_module.vds
+# Journal file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main_module.tcl -notrace

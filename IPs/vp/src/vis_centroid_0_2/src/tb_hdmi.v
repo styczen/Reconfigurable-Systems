@@ -60,8 +60,8 @@ wire [10:0] x_center = 11'd28;
 wire [10:0] y_center = 11'd37;
 
 vis_centroid #(
-    .IMG_H(64),
-    .IMG_W(64)
+    .IMG_H(720),
+    .IMG_W(1280)
 ) dut_i (
     .clk(rx_pclk),
     .de(rx_de),

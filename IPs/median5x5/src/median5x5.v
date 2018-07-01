@@ -26,7 +26,6 @@ module median5x5 #(
     wire [3:0] row_4_end;
         
     wire [7:0] mask_new;
-    wire [7:0] validated_mask_new;
     
     reg [3:0] d11 = 0;
     reg [3:0] d12 = 0;
@@ -118,36 +117,32 @@ module median5x5 #(
         context_valid = d11[2] & d12[2] & d13[2] & d14[2] & d15[2] & d21[2] & d22[2] & d23[2] & d24[2] & d25[2] & d31[2] & d32[2] & d33[2] & d34[2] & d35[2] & d41[2] & d42[2] & d43[2] & d44[2] & d45[2] & d51[2] & d52[2] & d53[2] & d54[2] & d55[2];
     end
     
-    delayLinieBRAM_WP #(
-        .WIDTH(16),
-        .BRAM_SIZE_W(11)
-    ) del_bram_1 (
+    delayLinieBRAM_WP del_bram_1 (
         .clk(clk),
         .rst(1'b0),
         .ce(1'b1),
         .din({d15, d25, d35, d45}),
-        .h_size(H_SIZE - 6),
+        .h_size(H_SIZE - 5),
         
         .dout({row_1_end, row_2_end, row_3_end, row_4_end})
     );
     
     delay_line #(
-        .N(6),
-        .DELAY(H_SIZE*2+1)
-    ) del_i (
-        .idata({sum, context_valid}),
+        .N(1),
+        .DELAY(2)
+    ) context_valid_del_i (
+        .idata(context_valid),
         .clk(clk),
         
-        .odata({sum_delayed, context_valid_delayed})
+        .odata(context_valid_delayed)
     );
     
-    assign mask_new = sum_delayed > 5'd12 ? 8'd255 : 8'd0; 
-    assign validated_mask_new = context_valid_delayed ? mask_new : 8'd0;
-    
+    assign mask_new = sum > 5'd12 ? 8'd255 : 8'd0; 
+        
 //    Output assignments
-    assign de_out = d55[2];
-    assign hsync_out = d55[1];
-    assign vsync_out = d55[0];
-    assign pixel_out = {validated_mask_new, validated_mask_new, validated_mask_new};
-
+    assign de_out = d35[2];
+    assign hsync_out = d35[1];
+    assign vsync_out = d35[0];
+    assign pixel_out = context_valid_delayed ? {mask_new, mask_new, mask_new} : {8'd0, 8'd0, 8'd0};
+    
 endmodule

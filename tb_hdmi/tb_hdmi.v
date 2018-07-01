@@ -17,9 +17,13 @@
 // Revision 0.01 - File Created
 // Additional Comments: 
 //
-//////////////////////////////////////////////////////////////////////////////////
-module tb_hdmi(
-    );
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+module tb_hdmi #(
+    parameter HORIZONTAL_RESOLUTION = 64,
+    parameter VERTICAL_RESOLUTION = 64,
+    parameter HEADER_BYTES = 13, // 64x64 -> 13, 640x480 ->15, 1280x720 -> 16 
+    parameter IMAGE_PATH = "image path"
+)();
 
 wire rx_pclk;
 
@@ -42,7 +46,12 @@ wire [7:0] tx_blue;
 // --------------------------------------
 // HDMI input
 // --------------------------------------
-hdmi_in file_input (
+hdmi_in #(
+    .HORIZONTAL_RES(HORIZONTAL_RESOLUTION),
+    .VERTICAL_RES(VERTICAL_RESOLUTION),
+    .HEADER_BYTES(HEADER_BYTES),
+    .IMAGE_PATH(IMAGE_PATH)
+) file_input (
     .hdmi_clk(rx_pclk), 
     .hdmi_de(rx_de), 
     .hdmi_hs(rx_hsync), 
@@ -52,10 +61,14 @@ hdmi_in file_input (
     .hdmi_b(rx_blue)
     );
 
+    
 // --------------------------------------
 // HDMI output
 // --------------------------------------
-hdmi_out file_output (
+hdmi_out #(
+    .HORIZONTAL_RES(HORIZONTAL_RESOLUTION),
+    .VERTICAL_RES(VERTICAL_RESOLUTION)
+) file_output (
     .hdmi_clk(rx_pclk), 
     .hdmi_vs(tx_vsync), 
     .hdmi_de(tx_de), 

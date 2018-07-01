@@ -30,9 +30,9 @@ Compiling package mult_gen_v12_0_13.mult_gen_v12_0_13_viv_comp
 Compiling package mult_gen_v12_0_13.mult_gen_v12_0_13_pkg
 Compiling package mult_gen_v12_0_13.dsp_pkg
 Compiling module xil_defaultlib.hdmi_in
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
-Compiling architecture dsp48e_v of entity unisim.DSP48E [\DSP48E(acascreg=0,alumodereg=0,...]
-Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e_wrapper_v3_0 [\xbip_dsp48e_wrapper_v3_0(preg=1...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,areg...]
+Compiling architecture dsp48e_v of entity unisim.DSP48E [\DSP48E(acascreg=0,areg=0,bcascr...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e_wrapper_v3_0 [\xbip_dsp48e_wrapper_v3_0(creg=1...]
 Compiling architecture synth of entity xbip_dsp48_acc_v3_0_4.xbip_dsp48_acc_synth [\xbip_dsp48_acc_synth(c_xdevicef...]
 Compiling architecture synth of entity xbip_dsp48_acc_v3_0_4.xbip_dsp48_acc_v3_0_4_viv [\xbip_dsp48_acc_v3_0_4_viv(c_xde...]
 Compiling architecture synth of entity xbip_accum_v3_0_4.xbip_accum_v3_0_4_viv [\xbip_accum_v3_0_4_viv(c_xdevice...]

@@ -38,10 +38,10 @@ module vis_circle #(
     always @(posedge clk)
     begin
         if (vsync == 1'b1) begin
-            x_pos <= 0;
-            y_pos <= 0;
-        end 
-        else begin 
+            x_pos <= 11'd0;
+            y_pos <= 11'd0;
+        end
+        else begin
             if (de == 1'b1) begin
                 x_pos <= x_pos + 1;
                 if (x_pos == (IMG_W - 1)) begin

@@ -18,7 +18,6 @@ module centroid #(
     reg [10:0] x_pos = 0;
     reg [10:0] y_pos = 0;
     reg prev_vsync = 1'b0;
-    reg current_vsync = 1'b0;
     
     reg [19:0] m00 = 0;
     wire [31:0] m01;
@@ -35,28 +34,26 @@ module centroid #(
     
     always @(posedge clk)
     begin
-        prev_vsync <= current_vsync;
-        current_vsync <= vsync;
-        
         if (vsync == 1'b1) begin
-            x_pos <= 0;
-            y_pos <= 0;
-        end 
-        else begin 
+            x_pos <= 11'd0;
+            y_pos <= 11'd0;
+        end
+        else begin
             if (de == 1'b1) begin
-                x_pos <= x_pos + 1;
+                x_pos = x_pos + 1;
                 if (x_pos == (IMG_W - 1)) begin
-                    x_pos <= 0;
+                    x_pos <= 11'd0;
                     y_pos <= y_pos + 1;
                 end 
                 if (y_pos == (IMG_H - 1)) begin
-                    y_pos <= 0;
+                    y_pos <= 11'd0;
                 end
             end
         end
+        prev_vsync <= vsync;
     end
     
-    assign eof = (prev_vsync == 1'b0 && current_vsync == 1'b1) ? 1'b1 : 1'b0;
+    assign eof = (prev_vsync == 1'b0 && vsync == 1'b1) ? 1'b1 : 1'b0;
     
     always @(posedge clk)
     begin

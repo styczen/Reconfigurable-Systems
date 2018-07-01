@@ -5,20 +5,17 @@
 // Create Date:    11:41:13 05/10/2011 
 // Description: log image to ppm file
 //-----------------------------------------------
-module hdmi_out
+module hdmi_out #(
+    parameter HORIZONTAL_RES = 64,
+    parameter VERTICAL_RES = 64
+)
 (
   input hdmi_clk,
   input hdmi_vs,
   input hdmi_de,
   input [31:0] hdmi_data
 );
-
 //-----------------------------------------------
-// SETUP FOR DIFFERENT RESOLUTIONS
-parameter horizontal_res = 64;
-parameter vertical_res = 64;
-//-----------------------------------------------
-
 integer fm1=0;
 
 // TK invert du to Zybo
@@ -48,7 +45,7 @@ begin
 
 	 $display("out%d.ppm saved",vsc);
 	 
-   $fwrite(fm1, "P6%c%d %d%c255\n", 10, horizontal_res, vertical_res, 10);
+   $fwrite(fm1, "P6%c%d %d%c255\n", 10, HORIZONTAL_RES, VERTICAL_RES, 10);
    
 
 	 vsc<=vsc+1;

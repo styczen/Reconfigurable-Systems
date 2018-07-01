@@ -78,7 +78,7 @@ output wire vsync_out;
 output wire [23 : 0] pixel_out;
 
   median5x5 #(
-    .H_SIZE(83)
+    .H_SIZE(1650)
   ) inst (
     .clk(clk),
     .de(de),

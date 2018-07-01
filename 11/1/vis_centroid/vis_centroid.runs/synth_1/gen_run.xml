@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1527879445">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1528902899">
   <File Type="PA-TCL" Name="vis_centroid.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="vis_centroid_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="vis_centroid_reports.tcl"/>
   <File Type="RDS-RDS" Name="vis_centroid.vds"/>
   <File Type="RDS-UTIL" Name="vis_centroid_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="vis_centroid_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="vis_centroid.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="vis_centroid_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="vis_centroid_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/vis_centroid.v">

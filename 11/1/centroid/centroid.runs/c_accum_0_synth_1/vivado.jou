@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jun 13 09:14:01 2018
+# Process ID: 2912
+# Current directory: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.runs/c_accum_0_synth_1
+# Command line: vivado.exe -log c_accum_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_accum_0.tcl
+# Log file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.runs/c_accum_0_synth_1/c_accum_0.vds
+# Journal file: C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/centroid/centroid.runs/c_accum_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source c_accum_0.tcl -notrace

@@ -370,8 +370,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>rgb2ycbcr_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-05-31T13:31:19Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-06-13T06:50:10Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:rgb2ycbcr:1.0_ARCHIVE_LOCATION">c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/IPs/rgb2ycbcr</xilinx:tag>
       </xilinx:tags>

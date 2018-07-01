@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_hdmi_64x64_behav/xsimk.exe -simmode gui -wdb tb_hdmi_64x64_behav.wdb -simrunnum 0 -socket 61843
+Design successfully loaded
+Design Loading Memory Usage: 6060 KB (Peak: 6060 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 8072 KB (Peak: 8072 KB)
+Simulation CPU Usage: 139 ms

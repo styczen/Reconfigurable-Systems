@@ -1,0 +1,9 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.srcs/sim_1/imports/tb_hdmi/hdmi_in.v,1528470937,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.srcs/sim_1/imports/tb_hdmi/hdmi_out.v,,hdmi_in,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.srcs/sim_1/imports/tb_hdmi/hdmi_out.v,1528279181,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.srcs/sources_1/new/rgb2hsv.v,,hdmi_out,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v,1528489433,verilog,,,,tb_hdmi,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.srcs/sources_1/new/rgb2hsv.v,1528489239,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/10/6/rgb2hsv/rgb2hsv.srcs/sim_1/imports/tb_hdmi/tb_hdmi.v,,max;min;rgb2hsv,,,,,,,,

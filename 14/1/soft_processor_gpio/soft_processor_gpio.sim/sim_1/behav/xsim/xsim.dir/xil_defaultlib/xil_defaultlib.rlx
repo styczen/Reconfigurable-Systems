@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sim_1/new/tb_gpio.v,1530106288,verilog,,,,tb_gpio,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sources_1/imports/Resources/d_mem.v,1530096764,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sources_1/imports/Resources/i_mem.v,,d_mem,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sources_1/imports/Resources/i_mem.v,1530106588,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sources_1/new/main_module.v,,i_mem,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sources_1/imports/new/soft_processor.v,1530107280,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sim_1/new/tb_gpio.v,,alu;condition;decoder;mux;soft_processor,,,,,,,,
+C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sources_1/new/main_module.v,1530107244,verilog,,C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/14/1/soft_processor_gpio/soft_processor_gpio.srcs/sources_1/imports/new/soft_processor.v,,main_module,,,,,,,,

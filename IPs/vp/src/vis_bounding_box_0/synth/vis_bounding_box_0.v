@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "vis_bounding_box,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "vis_bounding_box_0,vis_bounding_box,{}" *)
-(* CORE_GENERATION_INFO = "vis_bounding_box_0,vis_bounding_box,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vis_bounding_box,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=64,IMG_W=64}" *)
+(* CORE_GENERATION_INFO = "vis_bounding_box_0,vis_bounding_box,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=vis_bounding_box,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IMG_H=720,IMG_W=1280}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module vis_bounding_box_0 (
   clk,
@@ -87,8 +87,8 @@ output wire vsync_out;
 output wire [23 : 0] pixel_out;
 
   vis_bounding_box #(
-    .IMG_H(64),
-    .IMG_W(64)
+    .IMG_H(720),
+    .IMG_W(1280)
   ) inst (
     .clk(clk),
     .de_in(de_in),

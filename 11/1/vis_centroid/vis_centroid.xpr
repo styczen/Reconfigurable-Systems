@@ -35,20 +35,20 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="17"/>
+    <Option Name="WTXSimLaunchSim" Val="41"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="1"/>
-    <Option Name="WTModelSimExportSim" Val="1"/>
-    <Option Name="WTQuestaExportSim" Val="1"/>
-    <Option Name="WTIesExportSim" Val="1"/>
-    <Option Name="WTVcsExportSim" Val="1"/>
-    <Option Name="WTRivieraExportSim" Val="1"/>
-    <Option Name="WTActivehdlExportSim" Val="1"/>
+    <Option Name="WTXSimExportSim" Val="3"/>
+    <Option Name="WTModelSimExportSim" Val="3"/>
+    <Option Name="WTQuestaExportSim" Val="3"/>
+    <Option Name="WTIesExportSim" Val="3"/>
+    <Option Name="WTVcsExportSim" Val="3"/>
+    <Option Name="WTRivieraExportSim" Val="3"/>
+    <Option Name="WTActivehdlExportSim" Val="3"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -61,6 +61,14 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/vis_centroid.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/centroid_0/centroid_0.xci">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -80,28 +88,28 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_in.v">
+      <File Path="$PSRCDIR/sim_1/imports/tb_hdmi_64x64/hdmi_in_64x64.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../08/Resources/hdmi_vga_zybo_src/tb_src/hdmi_in.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../tb_hdmi/tb_hdmi_64x64/hdmi_in_64x64.v"/>
+          <Attr Name="ImportTime" Val="1528889869"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/hdmi_out.v">
+      <File Path="$PSRCDIR/sim_1/imports/tb_hdmi_64x64/hdmi_out_64x64.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../08/Resources/hdmi_vga_zybo_src/tb_src/hdmi_out.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../tb_hdmi/tb_hdmi_64x64/hdmi_out_64x64.v"/>
+          <Attr Name="ImportTime" Val="1528889869"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/imports/tb_src/tb_hdmi.v">
+      <File Path="$PSRCDIR/sim_1/imports/tb_hdmi_64x64/tb_hdmi_64x64.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../08/Resources/hdmi_vga_zybo_src/tb_src/tb_hdmi.v"/>
-          <Attr Name="ImportTime" Val="1523795546"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../tb_hdmi/tb_hdmi_64x64/tb_hdmi_64x64.v"/>
+          <Attr Name="ImportTime" Val="1528889869"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -109,12 +117,11 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="tb_hdmi"/>
+        <Option Name="TopModule" Val="tb_hdmi_64x64"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
-        <Option Name="SimMode" Val="post-synthesis"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>

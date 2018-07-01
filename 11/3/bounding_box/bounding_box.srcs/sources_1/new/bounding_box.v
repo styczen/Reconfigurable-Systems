@@ -28,26 +28,27 @@ module bounding_box #(
 //    Main design
     always @(posedge clk)
     begin   
-        if (vsync_in == 1'b1) begin
-            x_pos <= 0;
-            y_pos <= 0;
-        end 
-        else begin 
-            if (de_in == 1'b1) begin
-                x_pos <= x_pos + 1;
-                if (x_pos == (IMG_W - 1)) begin
-                    x_pos <= 0;
-                    y_pos <= y_pos + 1;
-                end 
-                if (y_pos == (IMG_H - 1)) begin
-                    y_pos <= 0;
-                end
+        if (de_in == 1'b1) begin
+            x_pos <= x_pos + 1;
+            if (x_pos == (IMG_W - 1)) begin
+                x_pos <= 0;
+                y_pos <= y_pos + 1;
+            end 
+            if (y_pos == (IMG_H - 1)) begin
+                y_pos <= 0;
             end
+            
+//            if (mask == 1'b1) begin
+//                if (x_pos < r_left) r_left <= x_pos;
+//                if (x_pos > r_right) r_right <= x_pos;
+//                if (y_pos < r_top) r_top <= y_pos;
+//                if (y_pos > r_bottom) r_bottom <= y_pos;
+//            end
         end
     end
     
     always @(posedge clk)
-    begin
+    begin   
         if (de_in == 1'b1) begin
             if (mask == 1'b1) begin
                 if (x_pos < r_left) r_left <= x_pos;

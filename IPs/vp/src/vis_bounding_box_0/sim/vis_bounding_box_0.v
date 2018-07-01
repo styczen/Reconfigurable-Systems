@@ -86,8 +86,8 @@ output wire vsync_out;
 output wire [23 : 0] pixel_out;
 
   vis_bounding_box #(
-    .IMG_H(64),
-    .IMG_W(64)
+    .IMG_H(720),
+    .IMG_W(1280)
   ) inst (
     .clk(clk),
     .de_in(de_in),

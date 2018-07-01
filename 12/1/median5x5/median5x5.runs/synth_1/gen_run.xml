@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1528459336">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1528747082">
   <File Type="PA-TCL" Name="median5x5.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="median5x5_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="median5x5_reports.tcl"/>
   <File Type="RDS-RDS" Name="median5x5.vds"/>
   <File Type="RDS-UTIL" Name="median5x5_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="median5x5_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="median5x5.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="median5x5_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="median5x5_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/delayLineBRAM/delayLineBRAM.xci">
@@ -30,7 +27,7 @@
     <File Path="$PSRCDIR/sources_1/imports/Resources/delayLinieBRAM_WP.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../Resources/delayLinieBRAM_WP.v"/>
-        <Attr Name="ImportTime" Val="1528270161"/>
+        <Attr Name="ImportTime" Val="1528746828"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -57,7 +57,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e3c5ad8f</spirit:value>
+            <spirit:value>850d93f5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -94,7 +94,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e3c5ad8f</spirit:value>
+            <spirit:value>850d93f5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -109,7 +109,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b98f9d99</spirit:value>
+            <spirit:value>1e9a4566</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -277,37 +277,37 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/vis_bounding_box_0/vis_bounding_box_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/bounding_box_0/bounding_box_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/median5x5_0/median5x5_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/rgb2ycbcr_0_1/rgb2ycbcr_0.xci</spirit:name>
+        <spirit:name>src/rgb2ycbcr_0_2/rgb2ycbcr_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/centroid_0/centroid_0.xci</spirit:name>
+        <spirit:name>src/centroid_0_1/centroid_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/vis_centroid_0_2/vis_centroid_0.xci</spirit:name>
+        <spirit:name>src/vis_centroid_0_3/vis_centroid_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/vis_circle_0_5/vis_circle_0.xci</spirit:name>
+        <spirit:name>src/vis_circle_0_6/vis_circle_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/bounding_box_0_1/bounding_box_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/vis_bounding_box_0_1/vis_bounding_box_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/vp.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4aa9349c</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_c425ccb9</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -384,31 +384,31 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/vis_bounding_box_0/vis_bounding_box_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/bounding_box_0/bounding_box_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/median5x5_0/median5x5_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/rgb2ycbcr_0_1/rgb2ycbcr_0.xci</spirit:name>
+        <spirit:name>src/rgb2ycbcr_0_2/rgb2ycbcr_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/centroid_0/centroid_0.xci</spirit:name>
+        <spirit:name>src/centroid_0_1/centroid_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/vis_centroid_0_2/vis_centroid_0.xci</spirit:name>
+        <spirit:name>src/vis_centroid_0_3/vis_centroid_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/vis_circle_0_5/vis_circle_0.xci</spirit:name>
+        <spirit:name>src/vis_circle_0_6/vis_circle_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/bounding_box_0_1/bounding_box_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/vis_bounding_box_0_1/vis_bounding_box_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -543,11 +543,11 @@
       </xilinx:taxonomies>
       <xilinx:displayName>vp_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>58</xilinx:coreRevision>
+      <xilinx:coreRevision>82</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:vp:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2018-06-09T20:01:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2018-06-20T07:12:33Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:vp:1.0_ARCHIVE_LOCATION">c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/My_IPs/vp</xilinx:tag>
         <xilinx:tag xilinx:name="xilinx.com:user:vp:1.1_ARCHIVE_LOCATION">c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/IPs/vp</xilinx:tag>
@@ -556,7 +556,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7694568b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4090ebf4"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ded6cb83"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2d01aa17"/>
     </xilinx:packagingInfo>

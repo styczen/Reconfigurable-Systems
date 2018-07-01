@@ -39,7 +39,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>69dc0f46</spirit:value>
+            <spirit:value>69e1deda</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -58,7 +58,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>69dc0f46</spirit:value>
+            <spirit:value>69e1deda</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -66,14 +66,14 @@
         <spirit:name>xilinx_testbench</spirit:name>
         <spirit:displayName>Test Bench</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
-        <spirit:modelName>tb_hdmi</spirit:modelName>
+        <spirit:modelName>tb_hdmi_HD</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1ca79a0b</spirit:value>
+            <spirit:value>35e611ce</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -253,7 +253,7 @@
       <spirit:file>
         <spirit:name>src/median5x5.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_d483feac</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_cfab3ccc</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -308,17 +308,17 @@
     <spirit:fileSet>
       <spirit:name>xilinx_testbench_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>src/hdmi_in.v</spirit:name>
+        <spirit:name>src/hdmi_in_HD.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/hdmi_out.v</spirit:name>
+        <spirit:name>src/hdmi_out_HD.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/tb_hdmi.v</spirit:name>
+        <spirit:name>src/tb_hdmi_HD.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
@@ -359,7 +359,7 @@
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-06-08T12:07:43Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2018-06-20T04:35:52Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:median5x5:1.0_ARCHIVE_LOCATION">c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/IPs/median5x5</xilinx:tag>
       </xilinx:tags>
@@ -367,7 +367,7 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ac783d9e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c219e134"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ed7558e3"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a44e9a54"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2d8236fe"/>

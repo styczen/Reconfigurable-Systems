@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date                      : Sat Jun  9 22:07:08 2018
+| Date                      : Wed Jun 20 09:19:12 2018
 | Host                      : DESKTOP-35S9QF6 running 64-bit major release  (build 9200)
 | Command                   : report_io -file hdmi_vga_wrapper_io_placed.rpt
 | Design                    : hdmi_vga_wrapper
@@ -350,7 +350,7 @@ Table of Contents
 | T13        |                    |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | T14        |                    | High Range | IO_L5P_T0_34            | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T15        |                    | High Range | IO_L5N_T0_34            | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| T16        |                    | High Range | IO_L9P_T1_DQS_34        | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| T16        | sw[3]              | High Range | IO_L9P_T1_DQS_34        | INPUT         | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T17        |                    | High Range | IO_L20P_T3_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | T18        |                    | High Range | VCCO_34                 | VCCO          |             |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | T19        |                    | High Range | IO_25_34                | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

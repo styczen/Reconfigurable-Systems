@@ -1,8 +1,16 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/hdmi_in.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hdmi_in
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/hdmi_out.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module hdmi_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sources_1/ip/centroid_0/src/divider_32_20_0/src/divider_32_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_32_20
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sources_1/ip/centroid_0/src/divider_32_20_0/sim/divider_32_20_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_32_20_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sources_1/ip/centroid_0/src/centroid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centroid
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sources_1/ip/centroid_0/sim/centroid_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centroid_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_hdmi_64x64/hdmi_in_64x64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_in_64x64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_hdmi_64x64/hdmi_out_64x64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_out_64x64
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sources_1/new/vis_centroid.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module vis_centroid
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_src/tb_hdmi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_hdmi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/1/vis_centroid/vis_centroid.srcs/sim_1/imports/tb_hdmi_64x64/tb_hdmi_64x64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_hdmi_64x64

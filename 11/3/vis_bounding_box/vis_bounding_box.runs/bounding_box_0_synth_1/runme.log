@@ -1,0 +1,281 @@
+
+*** Running vivado
+    with args -log bounding_box_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bounding_box_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source bounding_box_0.tcl -notrace
+Command: synth_design -top bounding_box_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4944 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 367.617 ; gain = 98.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bounding_box_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sources_1/ip/bounding_box_0/synth/bounding_box_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bounding_box' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sources_1/ip/bounding_box_0/src/bounding_box.v:3]
+	Parameter IMG_H bound to: 64 - type: integer 
+	Parameter IMG_W bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bounding_box' (1#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sources_1/ip/bounding_box_0/src/bounding_box.v:3]
+INFO: [Synth 8-256] done synthesizing module 'bounding_box_0' (2#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sources_1/ip/bounding_box_0/synth/bounding_box_0.v:57]
+WARNING: [Synth 8-3331] design bounding_box has unconnected port hsync_in
+WARNING: [Synth 8-3331] design bounding_box has unconnected port vsync_in
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 420.047 ; gain = 150.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 420.047 ; gain = 150.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 420.047 ; gain = 150.656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 420.047 ; gain = 150.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bounding_box 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "inst/y_pos" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design bounding_box_0 has unconnected port hsync_in
+WARNING: [Synth 8-3331] design bounding_box_0 has unconnected port vsync_in
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 560.762 ; gain = 291.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 560.762 ; gain = 291.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[10]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[9]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[8]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[7]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[6]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[10]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[9]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[8]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[7]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[6]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[10]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[9]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[8]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[7]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[6]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[10]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[9]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[8]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[7]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[6]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[10]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[9]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[8]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[7]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[6]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[10]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[9]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[8]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[7]) is unused and will be removed from module bounding_box_0.
+INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[6]) is unused and will be removed from module bounding_box_0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     2|
+|3     |LUT2   |     3|
+|4     |LUT3   |     6|
+|5     |LUT4   |    28|
+|6     |LUT5   |     2|
+|7     |LUT6   |     3|
+|8     |FDRE   |    36|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |    88|
+|2     |  inst   |bounding_box |    88|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 560.953 ; gain = 291.563
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 666.766 ; gain = 408.844
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.runs/bounding_box_0_synth_1/bounding_box_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1153.801 ; gain = 487.035
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.srcs/sources_1/ip/bounding_box_0/bounding_box_0.xci
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/11/3/vis_bounding_box/vis_bounding_box.runs/bounding_box_0_synth_1/bounding_box_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bounding_box_0_utilization_synth.rpt -pb bounding_box_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1157.813 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 13 20:04:22 2018...

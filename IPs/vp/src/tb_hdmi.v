@@ -17,9 +17,13 @@
 // Revision 0.01 - File Created
 // Additional Comments: 
 //
-//////////////////////////////////////////////////////////////////////////////////
-module tb_hdmi(
-    );
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+module tb_hdmi #(
+    parameter HORIZONTAL_RESOLUTION = 64,
+    parameter VERTICAL_RESOLUTION = 64,
+    parameter HEADER_BYTES = 13, // 64x64 -> 13, 640x480 ->15, 1280x720 -> 16 
+    parameter IMAGE_PATH = "image path"
+)();
 
 wire rx_pclk;
 
@@ -39,21 +43,15 @@ wire [7:0] tx_red;
 wire [7:0] tx_green;
 wire [7:0] tx_blue;
 
-/* sw
-*   0 - RGB
-*   1 - YCbCr   
-*   2 - binarize
-*   3 - center of mass visualization as CROSS
-*   4 - center of mass visualization as CIRCLE
-*   5 - median 5x5
-*   6 - bounding box
-*/
-wire [3:0] sw = 3'd6;
-
 // --------------------------------------
 // HDMI input
 // --------------------------------------
-hdmi_in file_input (
+hdmi_in #(
+    .HORIZONTAL_RES(HORIZONTAL_RESOLUTION),
+    .VERTICAL_RES(VERTICAL_RESOLUTION),
+    .HEADER_BYTES(HEADER_BYTES),
+    .IMAGE_PATH(IMAGE_PATH)
+) file_input (
     .hdmi_clk(rx_pclk), 
     .hdmi_de(rx_de), 
     .hdmi_hs(rx_hsync), 
@@ -62,28 +60,15 @@ hdmi_in file_input (
     .hdmi_g(rx_green), 
     .hdmi_b(rx_blue)
     );
-	 
-// --------------------------------------
-// Video processing
-// --------------------------------------
-vp video_processing_i (
-    .clk(rx_pclk), 
-    .de_in(rx_de), 
-    .h_sync_in(rx_hsync), 
-    .v_sync_in(rx_vsync), 
-    .pixel_in({rx_red, rx_green, rx_blue}),
-    .sw(sw),
-    
-    .de_out(tx_de), 
-    .h_sync_out(tx_hsync), 
-    .v_sync_out(tx_vsync), 
-    .pixel_out({tx_red, tx_green, tx_blue})
-    );
 
+    
 // --------------------------------------
 // HDMI output
 // --------------------------------------
-hdmi_out file_output (
+hdmi_out #(
+    .HORIZONTAL_RES(HORIZONTAL_RESOLUTION),
+    .VERTICAL_RES(VERTICAL_RESOLUTION)
+) file_output (
     .hdmi_clk(rx_pclk), 
     .hdmi_vs(tx_vsync), 
     .hdmi_de(tx_de), 

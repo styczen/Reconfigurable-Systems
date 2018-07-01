@@ -16,20 +16,11 @@ Command: synth_design -top hdmi_vga_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
-CRITICAL WARNING: [filemgmt 20-1741] File 'delay_line.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay_line.v)
-* rgb2ycbcr_0 (c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v)
-Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9192 
-CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module delay_line [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
+INFO: Helper process launched with PID 3488 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 388.191 ; gain = 116.742
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 375.082 ; gain = 103.328
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:128]
-WARNING: [Synth 8-1565] actual for formal port arst is neither a static name nor a globally static expression [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd:161]
-WARNING: [Synth 8-1565] actual for formal port potherchrdy is neither a static name nor a globally static expression [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd:182]
-WARNING: [Synth 8-1565] actual for formal port potherchvld is neither a static name nor a globally static expression [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd:183]
 INFO: [Synth 8-638] synthesizing module 'hdmi_vga_wrapper' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v:12]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
 	Parameter DRIVE bound to: 12 - type: integer 
@@ -38,761 +29,24 @@ INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-256] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
 INFO: [Synth 8-638] synthesizing module 'hdmi_vga' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:13]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/synth/hdmi_vga_xlconstant_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'xlconstant_v1_1_3_xlconstant' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0750/hdl/xlconstant_v1_1_vl_rfs.v:23]
-	Parameter CONST_VAL bound to: 0 - type: integer 
-	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xlconstant_v1_1_3_xlconstant' (2#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0750/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_0' (3#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/synth/hdmi_vga_xlconstant_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/synth/hdmi_vga_xlconstant_0_1.v:57]
-INFO: [Synth 8-638] synthesizing module 'xlconstant_v1_1_3_xlconstant__parameterized0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0750/hdl/xlconstant_v1_1_vl_rfs.v:23]
-	Parameter CONST_VAL bound to: 1 - type: integer 
-	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'xlconstant_v1_1_3_xlconstant__parameterized0' (3#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0750/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_1' (4#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_1/synth/hdmi_vga_xlconstant_0_1.v:57]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_clk_wiz_0_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.v:70]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_clk_wiz_0_0_clk_wiz' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_clk_wiz.v:68]
-INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
-	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
-	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
-	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
-	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-256] done synthesizing module 'IBUF' (5#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
-INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40051]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
-	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE bound to: 5 - type: integer 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
-	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
-	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
-	Parameter IS_RST_INVERTED bound to: 1'b0 
-	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
-	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
-	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV' (6#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40051]
-INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'BUFG' (7#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_clk_wiz_0_0_clk_wiz' (8#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_clk_wiz.v:68]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_clk_wiz_0_0' (9#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_0' (2#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconstant_0_1' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconstant_0_1' (3#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_clk_wiz_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_clk_wiz_0_0' (4#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_clk_wiz_0_0_stub.v:5]
 WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'hdmi_vga_clk_wiz_0_0' requires 4 connections, but only 3 given [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:106]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_dvi2rgb_1_1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/synth/hdmi_vga_dvi2rgb_1_1.vhd:80]
-	Parameter kEmulateDDC bound to: 1 - type: bool 
-	Parameter kRstActiveHigh bound to: 1 - type: bool 
-	Parameter kClkRange bound to: 3 - type: integer 
-	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
-	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-	Parameter kAddBUFG bound to: 1 - type: bool 
-	Parameter kEdidFileName bound to: dgl_720p_cea.data - type: string 
-INFO: [Synth 8-3491] module 'dvi2rgb' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd:64' bound to instance 'U0' of component 'dvi2rgb' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/synth/hdmi_vga_dvi2rgb_1_1.vhd:146]
-INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd:110]
-	Parameter kEmulateDDC bound to: 1 - type: bool 
-	Parameter kRstActiveHigh bound to: 1 - type: bool 
-	Parameter kAddBUFG bound to: 1 - type: bool 
-	Parameter kClkRange bound to: 3 - type: integer 
-	Parameter kEdidFileName bound to: dgl_720p_cea.data - type: string 
-	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
-	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd:116]
-INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:75]
-	Parameter kClkRange bound to: 3 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsyncReset.vhd:72]
-	Parameter kPolarity bound to: 1'b1 
-INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsyncReset.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsync.vhd:72]
-	Parameter kResetTo bound to: 1'b1 
-	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsync.vhd:73]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (10#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (11#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsyncReset.vhd:72]
-	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:118]
-	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter DIFF_TERM bound to: 0 - type: bool 
-	Parameter DQS_BIAS bound to: FALSE - type: string 
-	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
-	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
-	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
-	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
-INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:132]
-	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
-	Parameter CLKFBOUT_MULT_F bound to: 15.000000 - type: float 
-	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKIN1_PERIOD bound to: 18.000000 - type: float 
-	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_DIVIDE_F bound to: 3.000000 - type: float 
-	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
-	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
-	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
-	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
-	Parameter COMPENSATION bound to: ZHOLD - type: string 
-	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
-	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
-	Parameter IS_PSEN_INVERTED bound to: 1'b0 
-	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
-	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
-	Parameter IS_RST_INVERTED bound to: 1'b0 
-	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
-	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
-	Parameter SS_EN bound to: FALSE - type: string 
-	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
-	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
-	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:173]
-INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:232]
-	Parameter BUFR_DIVIDE bound to: 5 - type: string 
-	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:238]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsync.vhd:72]
-	Parameter kResetTo bound to: 1'b0 
-	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (11#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (12#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:96]
-	Parameter kCtlTknCount bound to: 128 - type: integer 
-	Parameter kTimeoutMs bound to: 50 - type: integer 
-	Parameter kRefClkFrqMHz bound to: 200 - type: integer 
-	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
-	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'InputSERDES' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/InputSERDES.vhd:85]
-	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-	Parameter kParallelWidth bound to: 10 - type: integer 
-	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter DIFF_TERM bound to: 0 - type: bool 
-	Parameter DQS_BIAS bound to: FALSE - type: string 
-	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
-	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
-	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
-	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
-INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/InputSERDES.vhd:92]
-	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
-	Parameter DELAY_SRC bound to: IDATAIN - type: string 
-	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
-	Parameter IDELAY_TYPE bound to: VARIABLE - type: string 
-	Parameter IDELAY_VALUE bound to: 0 - type: integer 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
-	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
-	Parameter PIPE_SEL bound to: FALSE - type: string 
-	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
-	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
-INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/InputSERDES.vhd:102]
-	Parameter DATA_RATE bound to: DDR - type: string 
-	Parameter DATA_WIDTH bound to: 10 - type: integer 
-	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
-	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
-	Parameter INIT_Q1 bound to: 1'b0 
-	Parameter INIT_Q2 bound to: 1'b0 
-	Parameter INIT_Q3 bound to: 1'b0 
-	Parameter INIT_Q4 bound to: 1'b0 
-	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
-	Parameter IOBDELAY bound to: IFD - type: string 
-	Parameter IS_CLKB_INVERTED bound to: 1'b0 
-	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
-	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
-	Parameter IS_CLK_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
-	Parameter IS_OCLK_INVERTED bound to: 1'b0 
-	Parameter NUM_CE bound to: 2 - type: integer 
-	Parameter OFB_USED bound to: FALSE - type: string 
-	Parameter SERDES_MODE bound to: MASTER - type: string 
-	Parameter SRVAL_Q1 bound to: 1'b0 
-	Parameter SRVAL_Q2 bound to: 1'b0 
-	Parameter SRVAL_Q3 bound to: 1'b0 
-	Parameter SRVAL_Q4 bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/InputSERDES.vhd:130]
-	Parameter DATA_RATE bound to: DDR - type: string 
-	Parameter DATA_WIDTH bound to: 10 - type: integer 
-	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
-	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
-	Parameter INIT_Q1 bound to: 1'b0 
-	Parameter INIT_Q2 bound to: 1'b0 
-	Parameter INIT_Q3 bound to: 1'b0 
-	Parameter INIT_Q4 bound to: 1'b0 
-	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
-	Parameter IOBDELAY bound to: IFD - type: string 
-	Parameter IS_CLKB_INVERTED bound to: 1'b0 
-	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
-	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
-	Parameter IS_CLK_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
-	Parameter IS_OCLK_INVERTED bound to: 1'b0 
-	Parameter NUM_CE bound to: 2 - type: integer 
-	Parameter OFB_USED bound to: FALSE - type: string 
-	Parameter SERDES_MODE bound to: SLAVE - type: string 
-	Parameter SRVAL_Q1 bound to: 1'b0 
-	Parameter SRVAL_Q2 bound to: 1'b0 
-	Parameter SRVAL_Q3 bound to: 1'b0 
-	Parameter SRVAL_Q4 bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/InputSERDES.vhd:172]
-INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (13#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/InputSERDES.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncBase.vhd:74]
-	Parameter kResetTo bound to: 1'b0 
-	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsync.vhd:72]
-	Parameter kResetTo bound to: 1'b0 
-	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (13#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'SyncBase' (14#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncBase.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncBase.vhd:74]
-	Parameter kResetTo bound to: 1'b1 
-	Parameter kStages bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (14#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/SyncBase.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:95]
-	Parameter kUseFastAlgorithm bound to: 0 - type: bool 
-	Parameter kCtlTknCount bound to: 128 - type: integer 
-	Parameter kIDLY_TapValuePs bound to: 78 - type: integer 
-	Parameter kIDLY_TapWidth bound to: 5 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element pTkn0FlagQ_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:172]
-WARNING: [Synth 8-6014] Unused sequential element pTkn1FlagQ_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:173]
-WARNING: [Synth 8-6014] Unused sequential element pTkn2FlagQ_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:174]
-WARNING: [Synth 8-6014] Unused sequential element pTkn3FlagQ_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:175]
-WARNING: [Synth 8-6014] Unused sequential element pDelayFastOvf_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:209]
-INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (15#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:95]
-INFO: [Synth 8-638] synthesizing module 'ChannelBond' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (16#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (17#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:96]
-INFO: [Synth 8-638] synthesizing module 'ResyncToBUFG' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ResyncToBUFG.vhd:78]
-INFO: [Synth 8-113] binding component instance 'InstBUFG' to cell 'BUFG' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ResyncToBUFG.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'ResyncToBUFG' (18#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ResyncToBUFG.vhd:78]
-INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/EEPROM_8b.vhd:85]
-	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
-	Parameter kSlaveAddress bound to: 7'b1010000 
-	Parameter kAddrBits bound to: 8 - type: integer 
-	Parameter kWritable bound to: 0 - type: bool 
-	Parameter kInitFileName bound to: dgl_720p_cea.data - type: string 
-INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TWI_SlaveCtl.vhd:87]
-	Parameter SLAVE_ADDRESS bound to: 8'b10100000 
-	Parameter kSampleClkFreqInMHz bound to: 200 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TWI_SlaveCtl.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/GlitchFilter.vhd:69]
-	Parameter kNoOfPeriodsToFilter bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (19#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/GlitchFilter.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (20#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TWI_SlaveCtl.vhd:87]
-INFO: [Synth 8-226] default block is never used [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/EEPROM_8b.vhd:201]
-INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (21#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/EEPROM_8b.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (22#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/dvi2rgb.vhd:110]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_dvi2rgb_1_1' (23#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/synth/hdmi_vga_dvi2rgb_1_1.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_dvi2rgb_1_1' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_dvi2rgb_1_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_dvi2rgb_1_1' (5#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_dvi2rgb_1_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'dvi2rgb_1' of module 'hdmi_vga_dvi2rgb_1_1' requires 19 connections, but only 18 given [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:110]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_rgb2vga_1_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_1_0/synth/hdmi_vga_rgb2vga_1_0.vhd:71]
-	Parameter VID_IN_DATA_WIDTH bound to: 24 - type: integer 
-	Parameter kRedDepth bound to: 5 - type: integer 
-	Parameter kGreenDepth bound to: 6 - type: integer 
-	Parameter kBlueDepth bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'rgb2vga' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/69dc/src/rgb2vga.vhd:58' bound to instance 'U0' of component 'rgb2vga' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_1_0/synth/hdmi_vga_rgb2vga_1_0.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'rgb2vga' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/69dc/src/rgb2vga.vhd:81]
-	Parameter VID_IN_DATA_WIDTH bound to: 24 - type: integer 
-	Parameter kRedDepth bound to: 5 - type: integer 
-	Parameter kGreenDepth bound to: 6 - type: integer 
-	Parameter kBlueDepth bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rgb2vga' (24#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/69dc/src/rgb2vga.vhd:81]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_rgb2vga_1_0' (25#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_1_0/synth/hdmi_vga_rgb2vga_1_0.vhd:71]
-INFO: [Synth 8-638] synthesizing module 'hdmi_vga_vp_0_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/synth/hdmi_vga_vp_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vp' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/9efc/src/vp.v:3]
-	Parameter Ta bound to: 105 - type: integer 
-	Parameter Tb bound to: 140 - type: integer 
-	Parameter Tc bound to: 130 - type: integer 
-	Parameter Td bound to: 160 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/synth/rgb2ycbcr_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v:3]
-INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/synth/mult_gen_1.vhd:68]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/synth/mult_gen_1.vhd:71]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/synth/mult_gen_1.vhd:71]
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
-	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_HAS_CE bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_LATENCY bound to: 3 - type: integer 
-	Parameter C_A_WIDTH bound to: 18 - type: integer 
-	Parameter C_A_TYPE bound to: 0 - type: integer 
-	Parameter C_B_WIDTH bound to: 9 - type: integer 
-	Parameter C_B_TYPE bound to: 0 - type: integer 
-	Parameter C_OUT_HIGH bound to: 26 - type: integer 
-	Parameter C_OUT_LOW bound to: 0 - type: integer 
-	Parameter C_MULT_TYPE bound to: 1 - type: integer 
-	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
-	Parameter C_CCM_IMP bound to: 0 - type: integer 
-	Parameter C_B_VALUE bound to: 10000001 - type: string 
-	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
-	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
-	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/synth/mult_gen_1.vhd:120]
-WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-256] done synthesizing module 'mult_gen_1' (31#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/synth/mult_gen_1.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'c_addsub_1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/c_addsub_1/synth/c_addsub_1.vhd:68]
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_IMPLEMENTATION bound to: 1 - type: integer 
-	Parameter C_A_WIDTH bound to: 9 - type: integer 
-	Parameter C_B_WIDTH bound to: 9 - type: integer 
-	Parameter C_OUT_WIDTH bound to: 9 - type: integer 
-	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
-	Parameter C_A_TYPE bound to: 0 - type: integer 
-	Parameter C_B_TYPE bound to: 0 - type: integer 
-	Parameter C_LATENCY bound to: 2 - type: integer 
-	Parameter C_ADD_MODE bound to: 0 - type: integer 
-	Parameter C_B_CONSTANT bound to: 0 - type: integer 
-	Parameter C_B_VALUE bound to: 000000000 - type: string 
-	Parameter C_AINIT_VAL bound to: 0 - type: string 
-	Parameter C_SINIT_VAL bound to: 0 - type: string 
-	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
-	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
-	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
-	Parameter C_HAS_C_IN bound to: 0 - type: integer 
-	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
-	Parameter C_BORROW_LOW bound to: 1 - type: integer 
-	Parameter C_HAS_CE bound to: 0 - type: integer 
-	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_HAS_SSET bound to: 0 - type: integer 
-	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'c_addsub_v12_0_11' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/c_addsub_1/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_11' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/c_addsub_1/synth/c_addsub_1.vhd:133]
-INFO: [Synth 8-256] done synthesizing module 'c_addsub_1' (39#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/c_addsub_1/synth/c_addsub_1.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'delay_line' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
-	Parameter N bound to: 3 - type: integer 
-	Parameter DELAY bound to: 7 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delay' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay.v:23]
-	Parameter N bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay' (40#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'delay_line' (41#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
-INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr' (42#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/rgb2ycbcr.v:3]
-INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr_0' (43#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/synth/rgb2ycbcr_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'centroid_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/synth/centroid_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'centroid' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/centroid.v:3]
-	Parameter IMG_H bound to: 64 - type: integer 
-	Parameter IMG_W bound to: 64 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'c_accum_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/synth/c_accum_0.vhd:69]
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_IMPLEMENTATION bound to: 1 - type: integer 
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_B_WIDTH bound to: 11 - type: integer 
-	Parameter C_OUT_WIDTH bound to: 32 - type: integer 
-	Parameter C_B_TYPE bound to: 1 - type: integer 
-	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
-	Parameter C_ADD_MODE bound to: 0 - type: integer 
-	Parameter C_HAS_C_IN bound to: 0 - type: integer 
-	Parameter C_HAS_CE bound to: 1 - type: integer 
-	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 1 - type: integer 
-	Parameter C_LATENCY bound to: 1 - type: integer 
-	Parameter C_SCALE bound to: 0 - type: integer 
-	Parameter C_AINIT_VAL bound to: 0 - type: string 
-	Parameter C_SINIT_VAL bound to: 0 - type: string 
-	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
-	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
-	Parameter C_HAS_SSET bound to: 0 - type: integer 
-	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'c_accum_v12_0_11' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/hdl/c_accum_v12_0_vh_rfs.vhd:2296' bound to instance 'U0' of component 'c_accum_v12_0_11' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/synth/c_accum_0.vhd:127]
-INFO: [Synth 8-256] done synthesizing module 'c_accum_0' (50#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/c_accum_0/synth/c_accum_0.vhd:69]
-INFO: [Synth 8-638] synthesizing module 'divider_32_20_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/synth/divider_32_20_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'divider_32_20' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/divider_32_20.v:8]
-	Parameter LATENCY bound to: 4 - type: integer 
-	Parameter DIVIDEND_W bound to: 32 - type: integer 
-	Parameter DIVISOR_W bound to: 20 - type: integer 
-	Parameter QUOTIENT_W bound to: 32 - type: integer 
-	Parameter IDLE bound to: 2'b00 
-	Parameter DIV bound to: 2'b01 
-	Parameter NOP bound to: 2'b10 
-	Parameter END bound to: 2'b11 
-INFO: [Synth 8-638] synthesizing module 'mult_32_20_lm' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
-	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_HAS_CE bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_LATENCY bound to: 4 - type: integer 
-	Parameter C_A_WIDTH bound to: 32 - type: integer 
-	Parameter C_A_TYPE bound to: 1 - type: integer 
-	Parameter C_B_WIDTH bound to: 20 - type: integer 
-	Parameter C_B_TYPE bound to: 1 - type: integer 
-	Parameter C_OUT_HIGH bound to: 51 - type: integer 
-	Parameter C_OUT_LOW bound to: 0 - type: integer 
-	Parameter C_MULT_TYPE bound to: 1 - type: integer 
-	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
-	Parameter C_CCM_IMP bound to: 0 - type: integer 
-	Parameter C_B_VALUE bound to: 10000001 - type: string 
-	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
-	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
-	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:120]
-INFO: [Synth 8-256] done synthesizing module 'mult_32_20_lm' (51#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
-INFO: [Synth 8-256] done synthesizing module 'divider_32_20' (52#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/src/divider_32_20.v:8]
-INFO: [Synth 8-256] done synthesizing module 'divider_32_20_0' (53#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/divider_32_20_0/synth/divider_32_20_0.v:56]
-INFO: [Synth 8-256] done synthesizing module 'centroid' (54#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/centroid.v:3]
-INFO: [Synth 8-256] done synthesizing module 'centroid_0' (55#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/synth/centroid_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vis_centroid_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_centroid_0_2/synth/vis_centroid_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vis_centroid' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_centroid_0_2/src/vis_centroid.v:3]
-	Parameter IMG_H bound to: 64 - type: integer 
-	Parameter IMG_W bound to: 64 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'vis_centroid' (56#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_centroid_0_2/src/vis_centroid.v:3]
-INFO: [Synth 8-256] done synthesizing module 'vis_centroid_0' (57#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_centroid_0_2/synth/vis_centroid_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vis_circle_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/synth/vis_circle_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vis_circle' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/vis_circle.v:3]
-	Parameter IMG_H bound to: 64 - type: integer 
-	Parameter IMG_W bound to: 64 - type: integer 
-	Parameter r_square bound to: 200 - type: integer 
-	Parameter offset bound to: 50 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'sum' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/sum/synth/sum.vhd:68]
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_IMPLEMENTATION bound to: 1 - type: integer 
-	Parameter C_A_WIDTH bound to: 11 - type: integer 
-	Parameter C_B_WIDTH bound to: 11 - type: integer 
-	Parameter C_OUT_WIDTH bound to: 11 - type: integer 
-	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
-	Parameter C_A_TYPE bound to: 1 - type: integer 
-	Parameter C_B_TYPE bound to: 1 - type: integer 
-	Parameter C_LATENCY bound to: 2 - type: integer 
-	Parameter C_ADD_MODE bound to: 1 - type: integer 
-	Parameter C_B_CONSTANT bound to: 0 - type: integer 
-	Parameter C_B_VALUE bound to: 00000000000 - type: string 
-	Parameter C_AINIT_VAL bound to: 0 - type: string 
-	Parameter C_SINIT_VAL bound to: 0 - type: string 
-	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
-	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
-	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
-	Parameter C_HAS_C_IN bound to: 0 - type: integer 
-	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
-	Parameter C_BORROW_LOW bound to: 1 - type: integer 
-	Parameter C_HAS_CE bound to: 0 - type: integer 
-	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_HAS_SSET bound to: 0 - type: integer 
-	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'c_addsub_v12_0_11' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/c_addsub_1/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_11' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/sum/synth/sum.vhd:133]
-INFO: [Synth 8-256] done synthesizing module 'sum' (58#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/sum/synth/sum.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'mult' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/mult/synth/mult.vhd:68]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/mult/synth/mult.vhd:71]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/mult/synth/mult.vhd:71]
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
-	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_HAS_CE bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_LATENCY bound to: 3 - type: integer 
-	Parameter C_A_WIDTH bound to: 11 - type: integer 
-	Parameter C_A_TYPE bound to: 0 - type: integer 
-	Parameter C_B_WIDTH bound to: 11 - type: integer 
-	Parameter C_B_TYPE bound to: 0 - type: integer 
-	Parameter C_OUT_HIGH bound to: 21 - type: integer 
-	Parameter C_OUT_LOW bound to: 0 - type: integer 
-	Parameter C_MULT_TYPE bound to: 1 - type: integer 
-	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
-	Parameter C_CCM_IMP bound to: 0 - type: integer 
-	Parameter C_B_VALUE bound to: 10000001 - type: string 
-	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
-	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
-	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_13' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/mult_gen_1/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_13' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/mult/synth/mult.vhd:120]
-WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-256] done synthesizing module 'mult' (59#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/mult/synth/mult.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'result' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/result/synth/result.vhd:68]
-	Parameter C_VERBOSITY bound to: 0 - type: integer 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_IMPLEMENTATION bound to: 1 - type: integer 
-	Parameter C_A_WIDTH bound to: 22 - type: integer 
-	Parameter C_B_WIDTH bound to: 22 - type: integer 
-	Parameter C_OUT_WIDTH bound to: 22 - type: integer 
-	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
-	Parameter C_A_TYPE bound to: 1 - type: integer 
-	Parameter C_B_TYPE bound to: 1 - type: integer 
-	Parameter C_LATENCY bound to: 2 - type: integer 
-	Parameter C_ADD_MODE bound to: 0 - type: integer 
-	Parameter C_B_CONSTANT bound to: 0 - type: integer 
-	Parameter C_B_VALUE bound to: 0000000000000000000000 - type: string 
-	Parameter C_AINIT_VAL bound to: 0 - type: string 
-	Parameter C_SINIT_VAL bound to: 0 - type: string 
-	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
-	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
-	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
-	Parameter C_HAS_C_IN bound to: 0 - type: integer 
-	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
-	Parameter C_BORROW_LOW bound to: 1 - type: integer 
-	Parameter C_HAS_CE bound to: 0 - type: integer 
-	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
-	Parameter C_HAS_SCLR bound to: 0 - type: integer 
-	Parameter C_HAS_SSET bound to: 0 - type: integer 
-	Parameter C_HAS_SINIT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'c_addsub_v12_0_11' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/c_addsub_1/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_11' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/result/synth/result.vhd:133]
-INFO: [Synth 8-256] done synthesizing module 'result' (60#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/result/synth/result.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
-	Parameter N bound to: 27 - type: integer 
-	Parameter DELAY bound to: 7 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay.v:23]
-	Parameter N bound to: 27 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (60#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized0' (60#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
-INFO: [Synth 8-256] done synthesizing module 'vis_circle' (61#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/src/vis_circle.v:3]
-INFO: [Synth 8-256] done synthesizing module 'vis_circle_0' (62#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_circle_0_5/synth/vis_circle_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'median5x5_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/synth/median5x5_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'median5x5' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/median5x5.v:3]
-	Parameter H_SIZE bound to: 83 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delayLinieBRAM_WP' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLinieBRAM_WP.v:21]
-	Parameter WIDTH bound to: 16 - type: integer 
-	Parameter BRAM_SIZE_W bound to: 11 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delayLineBRAM' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
-	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
-	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
-	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
-	Parameter C_AXI_TYPE bound to: 1 - type: integer 
-	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
-	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
-	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
-	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
-	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
-	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
-	Parameter C_MEM_TYPE bound to: 0 - type: integer 
-	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
-	Parameter C_ALGORITHM bound to: 1 - type: integer 
-	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
-	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
-	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
-	Parameter C_INIT_FILE bound to: delayLineBRAM.mem - type: string 
-	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
-	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
-	Parameter C_HAS_RSTA bound to: 0 - type: integer 
-	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
-	Parameter C_RSTRAM_A bound to: 0 - type: integer 
-	Parameter C_INITA_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENA bound to: 0 - type: integer 
-	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
-	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
-	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
-	Parameter C_WRITE_MODE_A bound to: READ_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 17 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 17 - type: integer 
-	Parameter C_WRITE_DEPTH_A bound to: 2048 - type: integer 
-	Parameter C_READ_DEPTH_A bound to: 2048 - type: integer 
-	Parameter C_ADDRA_WIDTH bound to: 11 - type: integer 
-	Parameter C_HAS_RSTB bound to: 0 - type: integer 
-	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
-	Parameter C_RSTRAM_B bound to: 0 - type: integer 
-	Parameter C_INITB_VAL bound to: 0 - type: string 
-	Parameter C_HAS_ENB bound to: 0 - type: integer 
-	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
-	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
-	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
-	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_B bound to: 17 - type: integer 
-	Parameter C_READ_WIDTH_B bound to: 17 - type: integer 
-	Parameter C_WRITE_DEPTH_B bound to: 2048 - type: integer 
-	Parameter C_READ_DEPTH_B bound to: 2048 - type: integer 
-	Parameter C_ADDRB_WIDTH bound to: 11 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
-	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
-	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
-	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
-	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
-	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
-	Parameter C_USE_ECC bound to: 0 - type: integer 
-	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
-	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
-	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
-	Parameter C_COMMON_CLK bound to: 0 - type: integer 
-	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
-	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
-	Parameter C_USE_URAM bound to: 0 - type: integer 
-	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
-	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
-	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
-	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
-	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
-	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
-	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
-	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.862 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLineBRAM/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:232]
-INFO: [Synth 8-256] done synthesizing module 'delayLineBRAM' (71#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'delayLinieBRAM_WP' (72#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLinieBRAM_WP.v:21]
-INFO: [Synth 8-638] synthesizing module 'delay_line__parameterized1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
-	Parameter N bound to: 6 - type: integer 
-	Parameter DELAY bound to: 167 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay.v:23]
-	Parameter N bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (72#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay.v:23]
-INFO: [Synth 8-256] done synthesizing module 'delay_line__parameterized1' (72#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v:23]
-INFO: [Synth 8-256] done synthesizing module 'median5x5' (73#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/median5x5.v:3]
-INFO: [Synth 8-256] done synthesizing module 'median5x5_0' (74#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/synth/median5x5_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'bounding_box_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/bounding_box_0/synth/bounding_box_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'bounding_box' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/bounding_box_0/src/bounding_box.v:3]
-	Parameter IMG_H bound to: 64 - type: integer 
-	Parameter IMG_W bound to: 64 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'bounding_box' (75#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/bounding_box_0/src/bounding_box.v:3]
-INFO: [Synth 8-256] done synthesizing module 'bounding_box_0' (76#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/bounding_box_0/synth/bounding_box_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vis_bounding_box_0' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_bounding_box_0/synth/vis_bounding_box_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'vis_bounding_box' [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_bounding_box_0/src/vis_bounding_box.v:3]
-	Parameter IMG_H bound to: 64 - type: integer 
-	Parameter IMG_W bound to: 64 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'vis_bounding_box' (77#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_bounding_box_0/src/vis_bounding_box.v:3]
-INFO: [Synth 8-256] done synthesizing module 'vis_bounding_box_0' (78#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/vis_bounding_box_0/synth/vis_bounding_box_0.v:57]
-WARNING: [Synth 8-3848] Net rgb_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/9efc/src/vp.v:17]
-WARNING: [Synth 8-3848] Net hsync_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/9efc/src/vp.v:19]
-WARNING: [Synth 8-3848] Net vsync_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/9efc/src/vp.v:20]
-WARNING: [Synth 8-3848] Net de_mux[7] in module/entity vp does not have driver. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/9efc/src/vp.v:18]
-INFO: [Synth 8-256] done synthesizing module 'vp' (79#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/9efc/src/vp.v:3]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_vp_0_0' (80#1) [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/synth/hdmi_vga_vp_0_0.v:57]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga' (81#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:13]
-INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_wrapper' (82#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v:12]
-WARNING: [Synth 8-3331] design bounding_box has unconnected port hsync_in
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRA
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port CLKB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SSRB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ENB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port REGCEB
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port WEB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[10]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[9]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[8]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[7]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[6]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[5]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[4]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ADDRB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[17]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[16]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[15]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[14]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[13]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[12]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[11]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[10]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[9]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[8]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[7]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[6]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[5]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[4]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[3]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[2]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port DINB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port SLEEP
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTSBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port INJECTDBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ECCPIPECE
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ram_rstram_b
-WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper has unconnected port ram_rstreg_b
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port RSTA[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEA[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port REGCEB[0]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port WEB[1]
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTSBITERR
-WARNING: [Synth 8-3331] design blk_mem_gen_generic_cstr has unconnected port INJECTDBITERR
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port CLKB
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[16]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[15]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[14]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[13]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[12]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[11]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[10]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[9]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[8]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[7]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[6]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[5]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[4]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[3]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[2]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[1]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DOUTB_I[0]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port SBITERR_I
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port DBITERR_I
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[10]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[9]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[8]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[7]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[6]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[5]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[4]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[3]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[2]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[1]
-WARNING: [Synth 8-3331] design blk_mem_output_block has unconnected port RDADDRECC_I[0]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTA
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENA
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEA
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port CLKB
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port RSTB
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ENB
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port REGCEB
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port WEB[0]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[10]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[9]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[8]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[7]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[6]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[5]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[4]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[3]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[2]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[1]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port ADDRB[0]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[16]
-WARNING: [Synth 8-3331] design blk_mem_input_block has unconnected port DINB[15]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_rgb2vga_1_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_rgb2vga_1_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_rgb2vga_1_0' (6#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_rgb2vga_1_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_vp_0_0' [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_vp_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_vp_0_0' (7#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/realtime/hdmi_vga_vp_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga' (8#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/synth/hdmi_vga.v:13]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_wrapper' (9#1) [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 754.848 ; gain = 483.398
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 427.652 ; gain = 155.898
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -801,63 +55,72 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[16] to constant 0 [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLinieBRAM_WP.v:65]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 754.848 ; gain = 483.398
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 427.652 ; gain = 155.898
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc] for cell 'hdmi_vga_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc] for cell 'hdmi_vga_i/clk_wiz_0/inst'
-Parsing XDC File [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc] for cell 'hdmi_vga_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc] for cell 'hdmi_vga_i/clk_wiz_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_vga_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_vga_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/src/dvi2rgb.xdc] for cell 'hdmi_vga_i/dvi2rgb_1/U0'
-Finished Parsing XDC File [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/src/dvi2rgb.xdc] for cell 'hdmi_vga_i/dvi2rgb_1/U0'
-INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc] for cell 'hdmi_vga_i/clk_wiz_0'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp7/hdmi_vga_xlconstant_0_0_in_context.xdc] for cell 'hdmi_vga_i/GND'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp7/hdmi_vga_xlconstant_0_0_in_context.xdc] for cell 'hdmi_vga_i/GND'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp8/hdmi_vga_xlconstant_0_1_in_context.xdc] for cell 'hdmi_vga_i/VCC'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp8/hdmi_vga_xlconstant_0_1_in_context.xdc] for cell 'hdmi_vga_i/VCC'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp9/hdmi_vga_rgb2vga_1_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_1'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp9/hdmi_vga_rgb2vga_1_0_in_context.xdc] for cell 'hdmi_vga_i/rgb2vga_1'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_1'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc] for cell 'hdmi_vga_i/dvi2rgb_1'
+Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp11/hdmi_vga_vp_0_0_in_context.xdc] for cell 'hdmi_vga_i/vp_0'
+Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp11/hdmi_vga_vp_0_0_in_context.xdc] for cell 'hdmi_vga_i/vp_0'
 Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
 Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/constrs_1/imports/hdmi_vga_zybo_src/Zybo_HDMI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_vga_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_vga_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hdmi_vga_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/hdmi_vga_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  DSP48E => DSP48E1: 2 instances
+  A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 783.367 ; gain = 0.000
-CRITICAL WARNING: [filemgmt 20-1741] File 'delay_line.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
-* median5x5_0 (c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delay_line.v)
-* rgb2ycbcr_0 (c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/rgb2ycbcr_0_1/src/delay_line.v)
-Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 709.836 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 783.367 ; gain = 511.918
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 709.836 ; gain = 438.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:19 ; elapsed = 00:02:24 . Memory (MB): peak = 783.367 ; gain = 511.918
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 709.836 ; gain = 438.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-WARNING: set_property IODELAY_GROUP could not find object (constraint file  c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_1_1/src/dvi2rgb.xdc, line 8).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/clk_wiz_0/inst. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/dont_touch.xdc, line 76).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/dvi2rgb_1/U0. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/dont_touch.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp6/hdmi_vga_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_n. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_clk_p. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_n[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[0]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[1]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_in_data_p[2]. (constraint file  C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/.Xil/Vivado-6596-DESKTOP-35S9QF6/dcp10/hdmi_vga_dvi2rgb_1_1_in_context.xdc, line 17).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/GND. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/VCC. (constraint file  auto generated constraint, line ).
@@ -865,115 +128,11 @@ Applied set_property DONT_TOUCH = true for hdmi_vga_i/clk_wiz_0. (constraint fil
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/dvi2rgb_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/rgb2vga_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/bounding_box_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/cm_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/cm_i/inst/m01_calc_module. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/cm_i/inst/m10_calc_module. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/cm_i/inst/x_center_calc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/cm_i/inst/x_center_calc/inst/instance_name. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/cm_i/inst/y_center_calc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/cm_i/inst/y_center_calc/inst/instance_name. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/median_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/median_i/inst/del_bram_1/BRAM. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Cb1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Cb2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Cb3. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Cr1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Cr2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Cr3. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Y1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Y2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/add_Y3. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Cb1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Cb2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Cb3. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Cr1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Cr2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Cr3. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Y1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Y2. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/rgb2ycbcr_i/inst/mul_Y3. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vc_circle_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vc_circle_i/inst/dist. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vc_circle_i/inst/x_diff. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vc_circle_i/inst/x_diff_square. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vc_circle_i/inst/y_diff. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vc_circle_i/inst/y_diff_square. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vc_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for hdmi_vga_i/vp_0/inst/vis_bounding_box_i. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:19 ; elapsed = 00:02:25 . Memory (MB): peak = 783.367 ; gain = 511.918
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 709.836 ; gain = 438.082
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element rDlyRstCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:108]
-INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module 'PhaseAlign'
-INFO: [Synth 8-5546] ROM "pCtlTknRst" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pCtlTknOvf" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pEyeOpenEn" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pDelayOvf" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "pDelayWaitOvf" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "pStateNxt" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pIDLY_LD" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pAligned" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pError" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pFoundJtrFlag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pTkn3Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pTkn2Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pTkn1Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pTkn0Flag" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element pCtlTknCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:148]
-WARNING: [Synth 8-6014] Unused sequential element pEyeOpenCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:187]
-WARNING: [Synth 8-6014] Unused sequential element pWrA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:94]
-WARNING: [Synth 8-6014] Unused sequential element pRdA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:96]
-INFO: [Synth 8-5544] ROM "pAlignRst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "pC0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "pVde" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element rTimeoutCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:146]
-INFO: [Synth 8-5544] ROM "sOut" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element Filter.cntPeriods_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/GlitchFilter.vhd:83]
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWI_SlaveCtl'
-INFO: [Synth 8-5544] ROM "shiftBitOut" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "nstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "eeprom" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3936] Found unconnected internal register 'r_y_reg' and it is trimmed from '32' to '11' bits. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/centroid.v:115]
-WARNING: [Synth 8-3936] Found unconnected internal register 'r_x_reg' and it is trimmed from '32' to '11' bits. [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/centroid.v:112]
-INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element m00_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/centroid.v:64]
-INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element position_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLinieBRAM_WP.v:50]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/median5x5.v:114]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/median5x5.v:113]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/median5x5.v:111]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/median5x5.v:112]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/median5x5.v:110]
-INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  stidle |                              000 |                              000
-               staddress |                              001 |                              001
-            stturnaround |                              011 |                              110
-                  stsack |                              010 |                              100
-                  stread |                              111 |                              010
-                  stmack |                              100 |                              101
-                 stwrite |                              110 |                              011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWI_SlaveCtl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:21 ; elapsed = 00:02:27 . Memory (MB): peak = 783.367 ; gain = 511.918
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 709.836 ; gain = 438.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -984,12 +143,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -1005,95 +166,8 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/pC0_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:264]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/pC1_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:265]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/pVde_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:266]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/pC0_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:264]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/pC1_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:265]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/pVde_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:266]
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pTkn1Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pTkn2Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pTkn3Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pTkn0Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pCtlTknRst" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pCtlTknOvf" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pEyeOpenEn" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pIDLY_LD" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pAligned" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[2].DecoderX/PhaseAlignX/pError" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pTkn1Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pTkn2Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pTkn3Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pTkn0Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pCtlTknRst" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pCtlTknOvf" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pEyeOpenEn" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pIDLY_LD" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pAligned" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[1].DecoderX/PhaseAlignX/pError" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pTkn1Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pTkn2Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pTkn3Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pTkn0Flag" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pCtlTknRst" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pCtlTknOvf" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pEyeOpenEn" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pIDLY_INC" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pIDLY_LD" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pAligned" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/PhaseAlignX/pError" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/pC0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "DataDecoders[0].DecoderX/pVde" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element TMDS_ClockingX/rDlyRstCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Clocking.vhd:108]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/PhaseAlignX/pCtlTknCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:148]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/PhaseAlignX/pEyeOpenCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:187]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/ChannelBondX/pWrA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:94]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:96]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[2].DecoderX/rTimeoutCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:146]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/PhaseAlignX/pCtlTknCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:148]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/PhaseAlignX/pEyeOpenCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:187]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/ChannelBondX/pWrA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:94]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:96]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[1].DecoderX/rTimeoutCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:146]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[0].DecoderX/PhaseAlignX/pCtlTknCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:148]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[0].DecoderX/PhaseAlignX/pEyeOpenCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/PhaseAlign.vhd:187]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[0].DecoderX/ChannelBondX/pWrA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:94]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/ChannelBond.vhd:96]
-WARNING: [Synth 8-6014] Unused sequential element DataDecoders[0].DecoderX/rTimeoutCnt_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/TMDS_Decoder.vhd:146]
-WARNING: [Synth 8-6014] Unused sequential element GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SDA/Filter.cntPeriods_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/GlitchFilter.vhd:83]
-WARNING: [Synth 8-6014] Unused sequential element GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SCL/Filter.cntPeriods_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ipshared/0387/src/GlitchFilter.vhd:83]
-INFO: [Synth 8-5546] ROM "inst/i" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "inst/i" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "inst/y_pos" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element inst/m00_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/centroid_0/src/centroid.v:64]
-INFO: [Synth 8-5546] ROM "inst/y_pos" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "inst/y_pos" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element inst/del_bram_1/position_reg was removed.  [c:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vp_0_0/src/median5x5_0/src/delayLinieBRAM_WP.v:50]
-INFO: [Synth 8-5546] ROM "inst/y_pos" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "inst/y_pos" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[18]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[17]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[16]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[10]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[9]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[8]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[1]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3332] Sequential element (U0/int_pData_reg[0]) is unused and will be removed from module hdmi_vga_rgb2vga_1_0.
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pAllVld_q_reg' (FD) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pAllVld_q_reg'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pAllVld_q_reg' (FD) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pAllVld_q_reg'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pAllVldBgnFlag_reg' (FD) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pAllVldBgnFlag_reg'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pAllVldBgnFlag_reg' (FD) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pAllVldBgnFlag_reg'
-WARNING: [Synth 8-3332] Sequential element (DataDecoders[2].DecoderX/PhaseAlignX/pDataQ_reg[9]) is unused and will be removed from module dvi2rgb.
-WARNING: [Synth 8-3332] Sequential element (DataDecoders[1].DecoderX/PhaseAlignX/pDataQ_reg[9]) is unused and will be removed from module dvi2rgb.
-WARNING: [Synth 8-3332] Sequential element (DataDecoders[0].DecoderX/PhaseAlignX/pDataQ_reg[9]) is unused and will be removed from module dvi2rgb.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:33 ; elapsed = 00:02:41 . Memory (MB): peak = 783.367 ; gain = 511.918
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 709.836 ; gain = 438.082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1104,14 +178,17 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_vga_i/clk_wiz_0/clk_out1' to pin 'hdmi_vga_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'hdmi_vga_i/dvi2rgb_1/PixelClk' to pin 'hdmi_vga_i/dvi2rgb_1/bbstub_PixelClk/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:53 ; elapsed = 00:03:01 . Memory (MB): peak = 862.773 ; gain = 591.324
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 744.953 ; gain = 473.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:54 ; elapsed = 00:03:03 . Memory (MB): peak = 891.270 ; gain = 619.820
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 745.027 ; gain = 473.273
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1122,83 +199,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[10]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[9]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[8]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[7]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[6]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[10]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[9]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[8]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[7]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[6]) is unused and will be removed from module centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[10]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[9]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[8]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[7]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[6]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[10]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[9]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[8]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[7]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[6]) is unused and will be removed from module vis_centroid_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[10]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[9]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[8]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[7]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[6]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[10]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[9]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[8]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[7]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[6]) is unused and will be removed from module vis_circle_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[10]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[9]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[8]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[7]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[6]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[10]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[9]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[8]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[7]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_left_reg[6]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[10]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[9]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[8]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[7]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/y_pos_reg[6]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[10]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[9]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[8]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[7]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_top_reg[6]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[10]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[9]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[8]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[7]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_right_reg[6]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[10]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[9]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[8]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[7]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3332] Sequential element (inst/r_bottom_reg[6]) is unused and will be removed from module bounding_box_0.
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[4]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[3]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[2]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[0]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdA_reg[1]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[4]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[3]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[2]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[0]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdA_reg[1]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[4]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[4]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[3]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[3]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[2]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[2]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[0]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[0]'
-INFO: [Synth 8-3886] merging instance 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg_rep[1]' (FDRE) to 'hdmi_vga_i/dvi2rgb_1/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdA_reg[1]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:56 ; elapsed = 00:03:06 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1221,9 +223,8 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3295] tying undriven pin inst/del_bram_1/BRAM:dina[16] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:03:07 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1236,7 +237,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:03:07 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1248,100 +249,84 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:59 ; elapsed = 00:03:08 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:59 ; elapsed = 00:03:08 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------+----------+
-|      |BlackBox name |Instances |
-+------+--------------+----------+
-|1     |DSP48E        |         2|
-+------+--------------+----------+
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |hdmi_vga_xlconstant_0_0 |         1|
+|2     |hdmi_vga_xlconstant_0_1 |         1|
+|3     |hdmi_vga_clk_wiz_0_0    |         1|
+|4     |hdmi_vga_dvi2rgb_1_1    |         1|
+|5     |hdmi_vga_rgb2vga_1_0    |         1|
+|6     |hdmi_vga_vp_0_0         |         1|
++------+------------------------+----------+
 
 Report Cell Usage: 
-+------+-----------------+------+
-|      |Cell             |Count |
-+------+-----------------+------+
-|1     |DSP48E_bbox_0    |     1|
-|2     |DSP48E_bbox_0__1 |     1|
-|3     |BUFG             |     3|
-|4     |BUFIO            |     1|
-|5     |BUFR             |     1|
-|6     |CARRY4           |    68|
-|7     |DSP48E1          |    11|
-|8     |DSP48E1_1        |    12|
-|9     |DSP48E1_2        |     2|
-|10    |DSP48E1_3        |     2|
-|11    |IDELAYCTRL       |     1|
-|12    |IDELAYE2         |     3|
-|13    |ISERDESE2        |     3|
-|14    |ISERDESE2_1      |     3|
-|15    |LUT1             |    40|
-|16    |LUT2             |   140|
-|17    |LUT3             |   163|
-|18    |LUT4             |   238|
-|19    |LUT5             |   214|
-|20    |LUT6             |   359|
-|21    |MMCME2_ADV       |     1|
-|22    |MUXF7            |    43|
-|23    |MUXF8            |     8|
-|24    |PLLE2_ADV        |     1|
-|25    |RAM32M           |     6|
-|26    |RAMB36E1         |     1|
-|27    |SRL16E           |    40|
-|28    |SRLC32E          |    36|
-|29    |FDCE             |    10|
-|30    |FDPE             |    20|
-|31    |FDRE             |  1063|
-|32    |FDSE             |    30|
-|33    |IBUF             |     4|
-|34    |IBUFDS           |     4|
-|35    |IOBUF            |     2|
-|36    |OBUF             |    20|
-+------+-----------------+------+
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |hdmi_vga_clk_wiz_0_0    |     1|
+|2     |hdmi_vga_dvi2rgb_1_1    |     1|
+|3     |hdmi_vga_rgb2vga_1_0    |     1|
+|4     |hdmi_vga_vp_0_0         |     1|
+|5     |hdmi_vga_xlconstant_0_0 |     1|
+|6     |hdmi_vga_xlconstant_0_1 |     1|
+|7     |IBUF                    |     4|
+|8     |IOBUF                   |     2|
+|9     |OBUF                    |    20|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |   108|
+|2     |  hdmi_vga_i |hdmi_vga |    82|
++------+-------------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:59 ; elapsed = 00:03:08 . Memory (MB): peak = 897.711 ; gain = 626.262
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 266 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:02:54 . Memory (MB): peak = 897.711 ; gain = 597.742
-Synthesis Optimization Complete : Time (s): cpu = 00:02:59 ; elapsed = 00:03:08 . Memory (MB): peak = 897.711 ; gain = 626.262
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 754.563 ; gain = 200.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 754.563 ; gain = 482.809
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 177 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 10 instances were transformed.
-  DSP48E => DSP48E1: 2 instances
+  A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-353 Infos, 165 Warnings, 3 Critical Warnings and 0 Errors encountered.
+38 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:03 ; elapsed = 00:03:15 . Memory (MB): peak = 897.711 ; gain = 638.949
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 764.793 ; gain = 505.348
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Bartek/Reconfigurable-Systems-Laboratory-Class/hdmi_vga_zybo/hdmi_vga_zybo.runs/synth_1/hdmi_vga_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hdmi_vga_wrapper_utilization_synth.rpt -pb hdmi_vga_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 897.711 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Jun  9 22:06:00 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 764.793 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 20 09:18:09 2018...

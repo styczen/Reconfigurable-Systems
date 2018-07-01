@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1528574554">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1529478853">
   <File Type="PWROPT-DCP" Name="hdmi_vga_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="hdmi_vga_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="hdmi_vga_wrapper.tcl"/>
@@ -111,4 +111,5 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_vp_0_0"/>
 </GenRun>

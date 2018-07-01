@@ -25,10 +25,10 @@ module vis_centroid #(
     always @(posedge clk)
     begin
         if (vsync == 1'b1) begin
-            x_pos <= 0;
-            y_pos <= 0;
-        end 
-        else begin 
+            x_pos <= 11'd0;
+            y_pos <= 11'd0;
+        end
+        else begin
             if (de == 1'b1) begin
                 x_pos <= x_pos + 1;
                 if (x_pos == (IMG_W - 1)) begin
@@ -46,6 +46,5 @@ module vis_centroid #(
     assign de_out = de;
     assign hsync_out = hsync;
     assign vsync_out = vsync;
-    assign pixel_out = ((x_pos == x_center || y_pos == y_center) ? {8'hff, 8'd0, 8'd0} : pixel_in);
-    
+    assign pixel_out = ((x_pos == x_center || y_pos == y_center) ? {8'hff, 8'h00, 8'h00} : pixel_in);
 endmodule

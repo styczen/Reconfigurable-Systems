@@ -5,7 +5,12 @@
 // Create Date: 23:14:48 04/19/2011 
 // Description: vga generator
 //-----------------------------------------------
-module hdmi_in
+module hdmi_in #(
+    parameter HORIZONTAL_RES = 64,
+    parameter VERTICAL_RES = 64,
+    parameter HEADER_BYTES = 13,
+    parameter IMAGE_PATH = ""
+)
 (
   //hdmi outputs
   output reg hdmi_clk,
@@ -17,26 +22,18 @@ module hdmi_in
   output [7:0]hdmi_g,
   output [7:0]hdmi_b
 ); 
-
 //-----------------------------------------------
-// CHANGE THIS FOR DIFFERENT RESOLUTIONS AND IMAGE PATH
-parameter horizontal_res = 64;
-parameter vertical_res = 64;
-parameter header_bytes = 13;
-parameter image_path = "here goes absolute image file path";
-//-----------------------------------------------
-
 //for now supports VGA 640x480 60Hz only
   //horizontal
-  parameter hr=horizontal_res; //resolution
-  parameter hbp=8; //back porch
-  parameter hfp=8; //front porch
-  parameter hs=2;  //sync len
+  localparam hr=HORIZONTAL_RES; //resolution
+  localparam hbp=8; //back porch
+  localparam hfp=8; //front porch
+  localparam hs=2;  //sync len
   //vertical
-  parameter vr=vertical_res; //resolution
-  parameter vbp=8; //back porch
-  parameter vfp=8; //front porch
-  parameter vs=4;   //sync len
+  localparam vr=VERTICAL_RES; //resolution
+  localparam vbp=8; //back porch
+  localparam vfp=8; //front porch
+  localparam vs=4;   //sync len
 //-----------------------------------------------
   reg line=1'b0;
   reg vsync=1'b1;
@@ -46,7 +43,7 @@ parameter image_path = "here goes absolute image file path";
   reg h_enable=1'b0;
   reg v_enable=1'b0;
   reg [10:0]hcounter=0;
-  reg [10:0]vcounter=vertical_res+1;//480+7
+  reg [10:0]vcounter=VERTICAL_RES+1;//480+7
 //-----------------------------------------------
   reg [7:0]red;
   reg [7:0]green;
@@ -127,10 +124,10 @@ begin
 	 //TB only
 	 vsc=vsc+1;
 
-    rgbfile = $fopen(image_path,"rb");
+    rgbfile = $fopen(IMAGE_PATH,"rb");
 
 	 // read header file
-    for(i=0;i<header_bytes;i=i+1)
+    for(i=0;i<HEADER_BYTES;i=i+1)
     begin
       v=$fgetc(rgbfile); 
     end	
